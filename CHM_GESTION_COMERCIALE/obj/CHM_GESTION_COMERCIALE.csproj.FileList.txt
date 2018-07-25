@@ -1,0 +1,5 @@
+bin\Debug\CHM_GESTION_COMERCIALE.dll
+bin\Debug\CHM_GESTION_COMERCIALE.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\CHM_GESTION_COMERCIALE.dll
+obj\Debug\CHM_GESTION_COMERCIALE.pdb

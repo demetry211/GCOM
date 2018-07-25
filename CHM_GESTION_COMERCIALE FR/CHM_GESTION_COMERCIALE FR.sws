@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?PowerDesigner signature="Workspace" version="15.1.0.2850"?>
+<!-- Veuillez ne pas modifier ce fichier -->
+
+<Workspace>
+	<Local Expanded="Yes" Name="CHM_GESTION_COMERCIALE FR">
+		<Model Expanded="Yes" ID="{04670B37-C1A9-4242-A249-2658FE913490}" Loaded="No" Name="Définition de cas d&#39;utilisation_1" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="/Mon Dossier/Esprit/Premiere annee/UML/ex2.moo"/>
+	</Local>
+	<BrowserModule Name="Référentiel"/>
+</Workspace>

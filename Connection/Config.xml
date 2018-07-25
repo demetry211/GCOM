@@ -1,0 +1,10 @@
+﻿<Configurations>
+  <Configuration id="x">
+    <Serveur>PO3-HBENSALAH</Serveur>
+    <Db>GCOM</Db>
+    <Usr>sa</Usr>
+    <Pwd>cegid.2005</Pwd>
+    <Login>Admin</Login>    
+	  <chemin_bd>C:\Users\dell\Documents\Visual Studio 2005\Projects\GCM\Connection\GCMDB.mdf</chemin_bd>
+  </Configuration>
+</Configurations>

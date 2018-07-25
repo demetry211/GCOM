@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="CHM_GESTION_COMERCIALE FR">
+</Property><Property Name="Solution File" Value="F:\Mon travail\ANNAJMA\CHM_GESTION_COMERCIALE FR 2008\CHM_GESTION_COMERCIALE FR\CHM_GESTION_COMERCIALE FR.sln">
+</Property><Property Name="Date" Value="dimanche 26 juin 2016">
+</Property><Property Name="Time" Value="14:39">
+</Property></Properties><Event ErrorLevel="0" Project="CHM_CLIENT_APP" Source="..\CHM_CLIENT_APP\CHM_CLIENT_APP.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="CHM_CLIENT_APP" Source="..\CHM_CLIENT_APP\CHM_CLIENT_APP.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="License" Source="..\License\License.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="License" Source="..\License\License.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="CHM_GESTION_COMERCIALE" Source="..\CHM_GESTION_COMERCIALE\CHM_GESTION_COMERCIALE.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="CHM_GESTION_COMERCIALE" Source="..\CHM_GESTION_COMERCIALE\CHM_GESTION_COMERCIALE.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="CHM_GESTION_COMERCIALE FR.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="CHM_GESTION_COMERCIALE FR.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="CHM_CLIENT_APP" Source="..\CHM_CLIENT_APP\CHM_CLIENT_APP.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="License" Source="..\License\License.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="CHM_GESTION_COMERCIALE" Source="..\CHM_GESTION_COMERCIALE\CHM_GESTION_COMERCIALE.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

@@ -1,0 +1,20 @@
+﻿CREATE TABLE [dbo].[LG_FI] (
+    [NUM_FI]       NVARCHAR (20)   NOT NULL,
+    [CODE_ARTICLE] DECIMAL (18)    NOT NULL,
+    [QTE_FI]       DECIMAL (18, 3) NULL,
+    [P_HT_FI]      DECIMAL (18, 3) NULL,
+    [TVA_FI]       DECIMAL (18, 3) NULL,
+    [REMISE_FI]    DECIMAL (18, 3) NULL,
+    CONSTRAINT [PK_LG_FI] PRIMARY KEY CLUSTERED ([NUM_FI] ASC, [CODE_ARTICLE] ASC),
+    CONSTRAINT [FK_LG_FI_ARTICLE] FOREIGN KEY ([CODE_ARTICLE]) REFERENCES [dbo].[ARTICLE] ([CODE_ARTICLE]),
+    CONSTRAINT [FK_LG_FI_FICHE_INTERVENTION1] FOREIGN KEY ([NUM_FI]) REFERENCES [dbo].[FICHE_INTERVENTION] ([NUM_FI])
+);
+
+
+GO
+ALTER TABLE [dbo].[LG_FI] NOCHECK CONSTRAINT [FK_LG_FI_FICHE_INTERVENTION1];
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'N° Fiche Intervention', @level0type = N'SCHEMA', @level0name = N'dbo', @level1type = N'TABLE', @level1name = N'LG_FI', @level2type = N'COLUMN', @level2name = N'NUM_FI';
+

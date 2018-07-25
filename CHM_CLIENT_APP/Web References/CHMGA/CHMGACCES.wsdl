@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://192.168.1.213:10001/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://192.168.1.213:10001/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://192.168.1.213:10001/">
+      <s:element name="Connection">
+        <s:complexType />
+      </s:element>
+      <s:element name="ConnectionResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="close">
+        <s:complexType />
+      </s:element>
+      <s:element name="closeResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getDate">
+        <s:complexType />
+      </s:element>
+      <s:element name="getDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getDateResult" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMENU">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetMENUResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMENUResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetACCES_MENU">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetACCES_MENUResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetACCES_MENUResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGROUPE_USERS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="codeCurrentGroupeUser" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGROUPE_USERSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGROUPE_USERSResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SELECT_FONCTION_USER">
+        <s:complexType />
+      </s:element>
+      <s:element name="SELECT_FONCTION_USERResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SELECT_FONCTION_USERResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ajouteMENU">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dtMENU">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ajouteMENUResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="saveAccesGroupUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="code_groupe" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dt">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="saveAccesGroupUserResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="saveGroupUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="designation" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="code_Privilège" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="saveGroupUserResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="updateGroupUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="code_fonction" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="designation" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="code_Privilège" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateGroupUserResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="LOAD_FONCTION_USER">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="code_fonction" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LOAD_FONCTION_USERResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LOAD_FONCTION_USERResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ConnectionSoapIn">
+    <wsdl:part name="parameters" element="tns:Connection" />
+  </wsdl:message>
+  <wsdl:message name="ConnectionSoapOut">
+    <wsdl:part name="parameters" element="tns:ConnectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="closeSoapIn">
+    <wsdl:part name="parameters" element="tns:close" />
+  </wsdl:message>
+  <wsdl:message name="closeSoapOut">
+    <wsdl:part name="parameters" element="tns:closeResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDateSoapIn">
+    <wsdl:part name="parameters" element="tns:getDate" />
+  </wsdl:message>
+  <wsdl:message name="getDateSoapOut">
+    <wsdl:part name="parameters" element="tns:getDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMENUSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMENU" />
+  </wsdl:message>
+  <wsdl:message name="GetMENUSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMENUResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetACCES_MENUSoapIn">
+    <wsdl:part name="parameters" element="tns:GetACCES_MENU" />
+  </wsdl:message>
+  <wsdl:message name="GetACCES_MENUSoapOut">
+    <wsdl:part name="parameters" element="tns:GetACCES_MENUResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGROUPE_USERSSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGROUPE_USERS" />
+  </wsdl:message>
+  <wsdl:message name="GetGROUPE_USERSSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGROUPE_USERSResponse" />
+  </wsdl:message>
+  <wsdl:message name="SELECT_FONCTION_USERSoapIn">
+    <wsdl:part name="parameters" element="tns:SELECT_FONCTION_USER" />
+  </wsdl:message>
+  <wsdl:message name="SELECT_FONCTION_USERSoapOut">
+    <wsdl:part name="parameters" element="tns:SELECT_FONCTION_USERResponse" />
+  </wsdl:message>
+  <wsdl:message name="ajouteMENUSoapIn">
+    <wsdl:part name="parameters" element="tns:ajouteMENU" />
+  </wsdl:message>
+  <wsdl:message name="ajouteMENUSoapOut">
+    <wsdl:part name="parameters" element="tns:ajouteMENUResponse" />
+  </wsdl:message>
+  <wsdl:message name="saveAccesGroupUserSoapIn">
+    <wsdl:part name="parameters" element="tns:saveAccesGroupUser" />
+  </wsdl:message>
+  <wsdl:message name="saveAccesGroupUserSoapOut">
+    <wsdl:part name="parameters" element="tns:saveAccesGroupUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="saveGroupUserSoapIn">
+    <wsdl:part name="parameters" element="tns:saveGroupUser" />
+  </wsdl:message>
+  <wsdl:message name="saveGroupUserSoapOut">
+    <wsdl:part name="parameters" element="tns:saveGroupUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateGroupUserSoapIn">
+    <wsdl:part name="parameters" element="tns:updateGroupUser" />
+  </wsdl:message>
+  <wsdl:message name="updateGroupUserSoapOut">
+    <wsdl:part name="parameters" element="tns:updateGroupUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="LOAD_FONCTION_USERSoapIn">
+    <wsdl:part name="parameters" element="tns:LOAD_FONCTION_USER" />
+  </wsdl:message>
+  <wsdl:message name="LOAD_FONCTION_USERSoapOut">
+    <wsdl:part name="parameters" element="tns:LOAD_FONCTION_USERResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CHMGACCESSoap">
+    <wsdl:operation name="Connection">
+      <wsdl:input message="tns:ConnectionSoapIn" />
+      <wsdl:output message="tns:ConnectionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="close">
+      <wsdl:input message="tns:closeSoapIn" />
+      <wsdl:output message="tns:closeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getDate">
+      <wsdl:input message="tns:getDateSoapIn" />
+      <wsdl:output message="tns:getDateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMENU">
+      <wsdl:input message="tns:GetMENUSoapIn" />
+      <wsdl:output message="tns:GetMENUSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetACCES_MENU">
+      <wsdl:input message="tns:GetACCES_MENUSoapIn" />
+      <wsdl:output message="tns:GetACCES_MENUSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGROUPE_USERS">
+      <wsdl:input message="tns:GetGROUPE_USERSSoapIn" />
+      <wsdl:output message="tns:GetGROUPE_USERSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SELECT_FONCTION_USER">
+      <wsdl:input message="tns:SELECT_FONCTION_USERSoapIn" />
+      <wsdl:output message="tns:SELECT_FONCTION_USERSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ajouteMENU">
+      <wsdl:input message="tns:ajouteMENUSoapIn" />
+      <wsdl:output message="tns:ajouteMENUSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="saveAccesGroupUser">
+      <wsdl:input message="tns:saveAccesGroupUserSoapIn" />
+      <wsdl:output message="tns:saveAccesGroupUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="saveGroupUser">
+      <wsdl:input message="tns:saveGroupUserSoapIn" />
+      <wsdl:output message="tns:saveGroupUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateGroupUser">
+      <wsdl:input message="tns:updateGroupUserSoapIn" />
+      <wsdl:output message="tns:updateGroupUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LOAD_FONCTION_USER">
+      <wsdl:input message="tns:LOAD_FONCTION_USERSoapIn" />
+      <wsdl:output message="tns:LOAD_FONCTION_USERSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CHMGACCESSoap" type="tns:CHMGACCESSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Connection">
+      <soap:operation soapAction="http://192.168.1.213:10001/Connection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="close">
+      <soap:operation soapAction="http://192.168.1.213:10001/close" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDate">
+      <soap:operation soapAction="http://192.168.1.213:10001/getDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMENU">
+      <soap:operation soapAction="http://192.168.1.213:10001/GetMENU" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetACCES_MENU">
+      <soap:operation soapAction="http://192.168.1.213:10001/GetACCES_MENU" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGROUPE_USERS">
+      <soap:operation soapAction="http://192.168.1.213:10001/GetGROUPE_USERS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SELECT_FONCTION_USER">
+      <soap:operation soapAction="http://192.168.1.213:10001/SELECT_FONCTION_USER" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ajouteMENU">
+      <soap:operation soapAction="http://192.168.1.213:10001/ajouteMENU" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveAccesGroupUser">
+      <soap:operation soapAction="http://192.168.1.213:10001/saveAccesGroupUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveGroupUser">
+      <soap:operation soapAction="http://192.168.1.213:10001/saveGroupUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateGroupUser">
+      <soap:operation soapAction="http://192.168.1.213:10001/updateGroupUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LOAD_FONCTION_USER">
+      <soap:operation soapAction="http://192.168.1.213:10001/LOAD_FONCTION_USER" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CHMGACCESSoap12" type="tns:CHMGACCESSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Connection">
+      <soap12:operation soapAction="http://192.168.1.213:10001/Connection" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="close">
+      <soap12:operation soapAction="http://192.168.1.213:10001/close" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDate">
+      <soap12:operation soapAction="http://192.168.1.213:10001/getDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMENU">
+      <soap12:operation soapAction="http://192.168.1.213:10001/GetMENU" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetACCES_MENU">
+      <soap12:operation soapAction="http://192.168.1.213:10001/GetACCES_MENU" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGROUPE_USERS">
+      <soap12:operation soapAction="http://192.168.1.213:10001/GetGROUPE_USERS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SELECT_FONCTION_USER">
+      <soap12:operation soapAction="http://192.168.1.213:10001/SELECT_FONCTION_USER" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ajouteMENU">
+      <soap12:operation soapAction="http://192.168.1.213:10001/ajouteMENU" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveAccesGroupUser">
+      <soap12:operation soapAction="http://192.168.1.213:10001/saveAccesGroupUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveGroupUser">
+      <soap12:operation soapAction="http://192.168.1.213:10001/saveGroupUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateGroupUser">
+      <soap12:operation soapAction="http://192.168.1.213:10001/updateGroupUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LOAD_FONCTION_USER">
+      <soap12:operation soapAction="http://192.168.1.213:10001/LOAD_FONCTION_USER" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CHMGACCES">
+    <wsdl:port name="CHMGACCESSoap" binding="tns:CHMGACCESSoap">
+      <soap:address location="http://localhost:10001/CHMGACCES.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CHMGACCESSoap12" binding="tns:CHMGACCESSoap12">
+      <soap12:address location="http://localhost:10001/CHMGACCES.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

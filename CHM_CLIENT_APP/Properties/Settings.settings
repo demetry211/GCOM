@@ -1,0 +1,84 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CHM_CLIENT_APP.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="GESTION_COMMERCIALEConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=.\SQLEXPRESS;AttachDbFilename="C:\Documents and Settings\DELL\Mes documents\Visual Studio 2005\Projects\CHM_GESTION_COMERCIALE\CHM_SERVER\bin\Debug\GESTION_COMMERCIALE.mdf";Integrated Security=True;Connect Timeout=30;User Instance=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=.\SQLEXPRESS;AttachDbFilename="C:\Documents and Settings\DELL\Mes documents\Visual Studio 2005\Projects\CHM_GESTION_COMERCIALE\CHM_SERVER\bin\Debug\GESTION_COMMERCIALE.mdf";Integrated Security=True;Connect Timeout=30;User Instance=True</Value>
+    </Setting>
+    <Setting Name="GCConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=192.168.0.2;Initial Catalog=GC;User ID=sa;Password=miros05:&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=192.168.0.2;Initial Catalog=GC;User ID=sa;Password=miros05:</Value>
+    </Setting>
+    <Setting Name="GCConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=DBSRV\CHM;Initial Catalog=GC;Persist Security Info=True;User ID=sa;Password=miros05:&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=DBSRV\CHM;Initial Catalog=GC;Persist Security Info=True;User ID=sa;Password=miros05:</Value>
+    </Setting>
+    <Setting Name="CHM_CLIENT_APP_CHMCNX_CHMCNX" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:10001/CHMCNX.asmx</Value>
+    </Setting>
+    <Setting Name="CHM_CLIENT_APP_CHMSTAT_CHMSTAT" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:10001/CHMSTAT.asmx</Value>
+    </Setting>
+    <Setting Name="CHM_CLIENT_APP_CHMMARQUE_CHM_MARQUE" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:10001/CHM_MARQUE.asmx</Value>
+    </Setting>
+    <Setting Name="CHM_CLIENT_APP_CHM_LIGNE_ARTICLE_CHM_LIGNE_ARTICLE" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:10001/CHM_LIGNE_ARTICLE.asmx</Value>
+    </Setting>
+    <Setting Name="CHM_CLIENT_APP_CHM_FAMILLE_ARTICLE_CHM_FAMILLE_ARTICLE" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:10001/CHM_FAMILLE_ARTICLE.asmx</Value>
+    </Setting>
+    <Setting Name="CHM_CLIENT_APP_CHMGACCES_CHMGACCES" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:10001/CHMGACCES.asmx</Value>
+    </Setting>
+    <Setting Name="CHM_CLIENT_APP_CHMGA_CHMGACCES" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:10001/CHMGACCES.asmx</Value>
+    </Setting>
+    <Setting Name="CHM_CLIENT_APP_CHM_SERIE_CHM_SERIE_ARTICLE" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:10001/CHM_SERIE_ARTICLE.asmx</Value>
+    </Setting>
+    <Setting Name="GC_ENNEJMAConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=DBSRV\CHM;Initial Catalog=GC_ENNEJMA;User ID=sa&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=DBSRV\CHM;Initial Catalog=GC_ENNEJMA;User ID=sa</Value>
+    </Setting>
+    <Setting Name="client_fav" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="CHM_CLIENT_APP_CHMGC_GSWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:10001/GSWS.asmx</Value>
+    </Setting>
+    <Setting Name="GC2S2EConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=DBSRV\CHM;Initial Catalog=GC2S2E;User ID=sa&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=DBSRV\CHM;Initial Catalog=GC2S2E;User ID=sa</Value>
+    </Setting>
+    <Setting Name="GCOMConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=PO3-HBENSALAH;Initial Catalog=GCOM;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=PO3-HBENSALAH;Initial Catalog=GCOM;Integrated Security=True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

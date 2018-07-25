@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://192.168.1.213:10001/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://192.168.1.213:10001/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://192.168.1.213:10001/">
+      <s:element name="Connection">
+        <s:complexType />
+      </s:element>
+      <s:element name="ConnectionResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="close">
+        <s:complexType />
+      </s:element>
+      <s:element name="closeResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getDateS">
+        <s:complexType />
+      </s:element>
+      <s:element name="getDateSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getDateSResult" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getListeFamilleArticle">
+        <s:complexType />
+      </s:element>
+      <s:element name="getListeFamilleArticleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getListeFamilleArticleResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getNewRefFAMILLE">
+        <s:complexType />
+      </s:element>
+      <s:element name="getNewRefFAMILLEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getNewRefFAMILLEResult" type="tns:RESULT_QUERY" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="RESULT_QUERY">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CODE" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="OK" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="MESSAGE" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="loadFamilleArticle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CODE_FAMILLE" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="loadFamilleArticleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loadFamilleArticleResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertFAMILLE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="REF_FAMILLE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DESIGNATION_FAMILLE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DESCRIPTION_FAMILLE" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PARENT" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="TYPE" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertFAMILLEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="insertFAMILLEResult" type="tns:RESULT_QUERY" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateFamille">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CODE_FAMILLE" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="REF_FAMILLE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DESIGNATION_FAMILLE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DESCRIPTION_FAMILLE" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PARENT" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateFamilleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="updateFamilleResult" type="tns:RESULT_QUERY" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteFamille">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CODE_FAMILLE" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteFamilleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="deleteFamilleResult" type="tns:RESULT_QUERY" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ConnectionSoapIn">
+    <wsdl:part name="parameters" element="tns:Connection" />
+  </wsdl:message>
+  <wsdl:message name="ConnectionSoapOut">
+    <wsdl:part name="parameters" element="tns:ConnectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="closeSoapIn">
+    <wsdl:part name="parameters" element="tns:close" />
+  </wsdl:message>
+  <wsdl:message name="closeSoapOut">
+    <wsdl:part name="parameters" element="tns:closeResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDateSSoapIn">
+    <wsdl:part name="parameters" element="tns:getDateS" />
+  </wsdl:message>
+  <wsdl:message name="getDateSSoapOut">
+    <wsdl:part name="parameters" element="tns:getDateSResponse" />
+  </wsdl:message>
+  <wsdl:message name="getListeFamilleArticleSoapIn">
+    <wsdl:part name="parameters" element="tns:getListeFamilleArticle" />
+  </wsdl:message>
+  <wsdl:message name="getListeFamilleArticleSoapOut">
+    <wsdl:part name="parameters" element="tns:getListeFamilleArticleResponse" />
+  </wsdl:message>
+  <wsdl:message name="getNewRefFAMILLESoapIn">
+    <wsdl:part name="parameters" element="tns:getNewRefFAMILLE" />
+  </wsdl:message>
+  <wsdl:message name="getNewRefFAMILLESoapOut">
+    <wsdl:part name="parameters" element="tns:getNewRefFAMILLEResponse" />
+  </wsdl:message>
+  <wsdl:message name="loadFamilleArticleSoapIn">
+    <wsdl:part name="parameters" element="tns:loadFamilleArticle" />
+  </wsdl:message>
+  <wsdl:message name="loadFamilleArticleSoapOut">
+    <wsdl:part name="parameters" element="tns:loadFamilleArticleResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertFAMILLESoapIn">
+    <wsdl:part name="parameters" element="tns:insertFAMILLE" />
+  </wsdl:message>
+  <wsdl:message name="insertFAMILLESoapOut">
+    <wsdl:part name="parameters" element="tns:insertFAMILLEResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateFamilleSoapIn">
+    <wsdl:part name="parameters" element="tns:updateFamille" />
+  </wsdl:message>
+  <wsdl:message name="updateFamilleSoapOut">
+    <wsdl:part name="parameters" element="tns:updateFamilleResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteFamilleSoapIn">
+    <wsdl:part name="parameters" element="tns:deleteFamille" />
+  </wsdl:message>
+  <wsdl:message name="deleteFamilleSoapOut">
+    <wsdl:part name="parameters" element="tns:deleteFamilleResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CHM_FAMILLE_ARTICLESoap">
+    <wsdl:operation name="Connection">
+      <wsdl:input message="tns:ConnectionSoapIn" />
+      <wsdl:output message="tns:ConnectionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="close">
+      <wsdl:input message="tns:closeSoapIn" />
+      <wsdl:output message="tns:closeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getDateS">
+      <wsdl:input message="tns:getDateSSoapIn" />
+      <wsdl:output message="tns:getDateSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getListeFamilleArticle">
+      <wsdl:input message="tns:getListeFamilleArticleSoapIn" />
+      <wsdl:output message="tns:getListeFamilleArticleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getNewRefFAMILLE">
+      <wsdl:input message="tns:getNewRefFAMILLESoapIn" />
+      <wsdl:output message="tns:getNewRefFAMILLESoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="loadFamilleArticle">
+      <wsdl:input message="tns:loadFamilleArticleSoapIn" />
+      <wsdl:output message="tns:loadFamilleArticleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insertFAMILLE">
+      <wsdl:input message="tns:insertFAMILLESoapIn" />
+      <wsdl:output message="tns:insertFAMILLESoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateFamille">
+      <wsdl:input message="tns:updateFamilleSoapIn" />
+      <wsdl:output message="tns:updateFamilleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteFamille">
+      <wsdl:input message="tns:deleteFamilleSoapIn" />
+      <wsdl:output message="tns:deleteFamilleSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CHM_FAMILLE_ARTICLESoap" type="tns:CHM_FAMILLE_ARTICLESoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Connection">
+      <soap:operation soapAction="http://192.168.1.213:10001/Connection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="close">
+      <soap:operation soapAction="http://192.168.1.213:10001/close" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDateS">
+      <soap:operation soapAction="http://192.168.1.213:10001/getDateS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListeFamilleArticle">
+      <soap:operation soapAction="http://192.168.1.213:10001/getListeFamilleArticle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getNewRefFAMILLE">
+      <soap:operation soapAction="http://192.168.1.213:10001/getNewRefFAMILLE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loadFamilleArticle">
+      <soap:operation soapAction="http://192.168.1.213:10001/loadFamilleArticle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertFAMILLE">
+      <soap:operation soapAction="http://192.168.1.213:10001/insertFAMILLE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateFamille">
+      <soap:operation soapAction="http://192.168.1.213:10001/updateFamille" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteFamille">
+      <soap:operation soapAction="http://192.168.1.213:10001/deleteFamille" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CHM_FAMILLE_ARTICLESoap12" type="tns:CHM_FAMILLE_ARTICLESoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Connection">
+      <soap12:operation soapAction="http://192.168.1.213:10001/Connection" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="close">
+      <soap12:operation soapAction="http://192.168.1.213:10001/close" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDateS">
+      <soap12:operation soapAction="http://192.168.1.213:10001/getDateS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListeFamilleArticle">
+      <soap12:operation soapAction="http://192.168.1.213:10001/getListeFamilleArticle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getNewRefFAMILLE">
+      <soap12:operation soapAction="http://192.168.1.213:10001/getNewRefFAMILLE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loadFamilleArticle">
+      <soap12:operation soapAction="http://192.168.1.213:10001/loadFamilleArticle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertFAMILLE">
+      <soap12:operation soapAction="http://192.168.1.213:10001/insertFAMILLE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateFamille">
+      <soap12:operation soapAction="http://192.168.1.213:10001/updateFamille" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteFamille">
+      <soap12:operation soapAction="http://192.168.1.213:10001/deleteFamille" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CHM_FAMILLE_ARTICLE">
+    <wsdl:port name="CHM_FAMILLE_ARTICLESoap" binding="tns:CHM_FAMILLE_ARTICLESoap">
+      <soap:address location="http://localhost:10001/CHM_FAMILLE_ARTICLE.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CHM_FAMILLE_ARTICLESoap12" binding="tns:CHM_FAMILLE_ARTICLESoap12">
+      <soap12:address location="http://localhost:10001/CHM_FAMILLE_ARTICLE.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

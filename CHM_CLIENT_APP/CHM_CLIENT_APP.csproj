@@ -1,0 +1,2709 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BA07C897-2731-4C73-A633-6A39D5BDBCCD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CHM_CLIENT_APP</RootNamespace>
+    <AssemblyName>CHM_CLIENT_APP</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+    <NoWin32Manifest>true</NoWin32Manifest>
+    <ManifestCertificateThumbprint>4F923158C43899E4B567227EBB154555D8D5347A</ManifestCertificateThumbprint>
+    <ManifestKeyFile>CHM_CLIENT_APP_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/GCOM2S2E/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://localhost/GCOM2S2E/</InstallUrl>
+    <ProductName>CHM G.COM</ProductName>
+    <PublisherName>CHM Projects</PublisherName>
+    <SuiteName>CHM Commercial Management Program</SuiteName>
+    <MinimumRequiredVersion>1.0.0.18</MinimumRequiredVersion>
+    <ApplicationRevision>20</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>CHM_CLIENT_APP.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AMAL_FCT, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AMAL_FCT.dll</HintPath>
+    </Reference>
+    <Reference Include="BARRE_CODE, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BARRE_CODE.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Common, Version=1.0.20031.116, Culture=neutral, PublicKeyToken=e272bb32d11b1948">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\C1.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1List, Version=1.1.20044.56, Culture=neutral, PublicKeyToken=6b24f8f981dbd7bc">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\C1.Win.C1List.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1TrueDBGrid, Version=1.3.20044.40922, Culture=neutral, PublicKeyToken=75ae3fb0e2b1e0da">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\C1.Win.C1TrueDBGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="CHM_STYLE, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\CHM_STYLE\bin\Debug\CHM_STYLE.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.BonusSkins.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.Xpo.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.Win.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Persistent.Base.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v15.2.Core, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v15.2.Core, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="LABEL_NUM, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LABEL_NUM.dll</HintPath>
+    </Reference>
+    <Reference Include="NUM_TO_LETTRE, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\NUM_TO_LETTRE.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BON_RECEPTION\CHM_FRM_BR_FOURNISSEUR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BON_RECEPTION\CHM_FRM_BR_FOURNISSEUR.Designer.cs">
+      <DependentUpon>CHM_FRM_BR_FOURNISSEUR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BON_RECEPTION\CHM_FRM_LOAD_BRECEP_FR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BON_RECEPTION\CHM_FRM_LOAD_BRECEP_FR.Designer.cs">
+      <DependentUpon>CHM_FRM_LOAD_BRECEP_FR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BON_RECEPTION\CHM_LISTE_BONRECEPTION_FR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BON_RECEPTION\CHM_LISTE_BONRECEPTION_FR.Designer.cs">
+      <DependentUpon>CHM_LISTE_BONRECEPTION_FR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BON_RECEPTION\RPT_BR_FR1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_BR_FR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BON_RETOUR_CLIENT\CHM_FRM_BON_RETOUR_CLIENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BON_RETOUR_CLIENT\CHM_FRM_BON_RETOUR_CLIENT.Designer.cs">
+      <DependentUpon>CHM_FRM_BON_RETOUR_CLIENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BON_RETOUR_CLIENT\CHM_LISTE_BON_RETOUR_CLIENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BON_RETOUR_CLIENT\CHM_LISTE_BON_RETOUR_CLIENT.Designer.cs">
+      <DependentUpon>CHM_LISTE_BON_RETOUR_CLIENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BON_RETOUR_CLIENT\CHM_RPT_LISTE_BR_CL1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CHM_RPT_LISTE_BR_CL.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BON_RETOUR_CLIENT\CHM_TICKET_BON_RETOUR_CLIENT1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CHM_TICKET_BON_RETOUR_CLIENT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BON_RETOUR_CLIENT\RPT_BR_CL_UTILISATEUR1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_BR_CL_UTILISATEUR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\CHM_DS_IMP_CB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CHM_DS_IMP_CB.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\CHM_FRM_IMP_CB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\CHM_FRM_IMP_CB.Designer.cs">
+      <DependentUpon>CHM_FRM_IMP_CB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\CHM_RPT_IMP_CB5.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CHM_RPT_IMP_CB5.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\CHM_RPT_IMP_CB4.cs">
+      <DependentUpon>CHM_RPT_IMP_CB4.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\CHM_RPT_IMP_CB1.cs">
+      <DependentUpon>CHM_RPT_IMP_CB1.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\TARIFICATION_VENTE\CHM_FRM_TRV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\TARIFICATION_VENTE\CHM_FRM_TRV.Designer.cs">
+      <DependentUpon>CHM_FRM_TRV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\TARIFICATION_VENTE\DS_TRV.cs">
+      <DependentUpon>DS_TRV.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\TARIFICATION_VENTE\DS_TRV.Designer.cs">
+      <DependentUpon>DS_TRV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_CLIENT\CHM_FRM_ENCOURS_CLIENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_CLIENT\CHM_FRM_ENCOURS_CLIENT.Designer.cs">
+      <DependentUpon>CHM_FRM_ENCOURS_CLIENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_FACTURE_FOURNISSEUR\CHM_FRM_FACTURE_FOURNISSEUR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_FACTURE_FOURNISSEUR\CHM_FRM_FACTURE_FOURNISSEUR.Designer.cs">
+      <DependentUpon>CHM_FRM_FACTURE_FOURNISSEUR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_FACTURE_FOURNISSEUR\CHM_FRM_LIST_FACT_FRN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_FACTURE_FOURNISSEUR\CHM_FRM_LIST_FACT_FRN.Designer.cs">
+      <DependentUpon>CHM_FRM_LIST_FACT_FRN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_Fenetre_principale\CHM_COMMERCIAL_MANAGEMENT_PROGRAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_Fenetre_principale\CHM_COMMERCIAL_MANAGEMENT_PROGRAM.designer.cs">
+      <DependentUpon>CHM_COMMERCIAL_MANAGEMENT_PROGRAM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_Fenetre_principale\CHM_DB_CONFIG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_Fenetre_principale\CHM_DB_CONFIG.Designer.cs">
+      <DependentUpon>CHM_DB_CONFIG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_Fenetre_principale\CHM_FRM_ABOUT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_Fenetre_principale\CHM_FRM_ABOUT.Designer.cs">
+      <DependentUpon>CHM_FRM_ABOUT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_Fenetre_principale\CHM_FRM_GAIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_Fenetre_principale\CHM_FRM_GAIN.Designer.cs">
+      <DependentUpon>CHM_FRM_GAIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_Fenetre_principale\CHM_FRM_GAIN_DETAIL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_Fenetre_principale\CHM_FRM_GAIN_DETAIL.Designer.cs">
+      <DependentUpon>CHM_FRM_GAIN_DETAIL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_Fenetre_principale\CHM_FRM_INTRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_Fenetre_principale\CHM_FRM_INTRO.Designer.cs">
+      <DependentUpon>CHM_FRM_INTRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_Fenetre_principale\CHM_FRM_LICENSE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_Fenetre_principale\CHM_FRM_LICENSE.Designer.cs">
+      <DependentUpon>CHM_FRM_LICENSE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_Fenetre_principale\CHM_FRM_RAPPORT_VENTE_TOTAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_Fenetre_principale\CHM_FRM_RAPPORT_VENTE_TOTAL.Designer.cs">
+      <DependentUpon>CHM_FRM_RAPPORT_VENTE_TOTAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_Fenetre_principale\CHM_LISTE_VENTE.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CHM_LISTE_VENTE.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CHM_Fenetre_principale\CHM_LISTE_VENTE_PAR_UTILISATEUR.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CHM_LISTE_VENTE_PAR_UTILISATEUR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CHM_Fenetre_principale\CHM_RAPPORT_VENTE_TOTAL_PAR_DATE_TICKET.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_Fenetre_principale\CHM_RAPPORT_VENTE_TOTAL_PAR_DATE_TICKET.Designer.cs">
+      <DependentUpon>CHM_RAPPORT_VENTE_TOTAL_PAR_DATE_TICKET.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_Fenetre_principale\CHM_RPT_BR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_Fenetre_principale\CHM_RPT_BR.Designer.cs">
+      <DependentUpon>CHM_RPT_BR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_Fenetre_principale\CHM_RPT_BR_ALL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_Fenetre_principale\CHM_RPT_BR_ALL.Designer.cs">
+      <DependentUpon>CHM_RPT_BR_ALL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_Fenetre_principale\CHM_RPT_LISTE_VENTE_PAR_UTILISATEUR.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CHM_RPT_LISTE_VENTE_PAR_UTILISATEUR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CHM_Fenetre_principale\RPT_VENTE_TOTAL_PAR_FACTURE_PAR_DATE.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_VENTE_TOTAL_PAR_FACTURE_PAR_DATE.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CHM_Fenetre_principale\RPT_VENTE_TOTAL_PAR_FACTURE_PAR_DATE_PAR_UTILISATEUR.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_VENTE_TOTAL_PAR_FACTURE_PAR_DATE_PAR_UTILISATEUR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CHM_APPLICATION_TACTILE\APPLICATION_TACTILE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_APPLICATION_TACTILE\APPLICATION_TACTILE.Designer.cs">
+      <DependentUpon>APPLICATION_TACTILE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_APPLICATION_TACTILE\CHM_FRM_PV_TACTILE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_APPLICATION_TACTILE\CHM_FRM_PV_TACTILE.Designer.cs">
+      <DependentUpon>CHM_FRM_PV_TACTILE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_APPLICATION_TACTILE\CHM_FRM_QTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_APPLICATION_TACTILE\CHM_FRM_QTE.Designer.cs">
+      <DependentUpon>CHM_FRM_QTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_APPLICATION_TACTILE\Template_Ligne_Facture.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CHM_APPLICATION_TACTILE\Template_Ligne_Facture.Designer.cs">
+      <DependentUpon>Template_Ligne_Facture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_APPLICATION_TACTILE\Template_Liste_Facture_Ouverte.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CHM_APPLICATION_TACTILE\Template_Liste_Facture_Ouverte.Designer.cs">
+      <DependentUpon>Template_Liste_Facture_Ouverte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_APPLICATION_TACTILE\Template_Vente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CHM_APPLICATION_TACTILE\Template_Vente.Designer.cs">
+      <DependentUpon>Template_Vente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\CHM_ARTICLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\CHM_ARTICLE.Designer.cs">
+      <DependentUpon>CHM_ARTICLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\CHM_ARTICLE_CATEGORIE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\CHM_ARTICLE_CATEGORIE.Designer.cs">
+      <DependentUpon>CHM_ARTICLE_CATEGORIE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\CHM_ARTICLE_FOURNISSEUR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\CHM_ARTICLE_FOURNISSEUR.Designer.cs">
+      <DependentUpon>CHM_ARTICLE_FOURNISSEUR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\CHM_ARTICLE_MAGAZIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\CHM_ARTICLE_MAGAZIN.Designer.cs">
+      <DependentUpon>CHM_ARTICLE_MAGAZIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\CHM_CMP_BARCODE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\CHM_CMP_BARCODE.Designer.cs">
+      <DependentUpon>CHM_CMP_BARCODE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\CHM_FRM_LISTE_MAJ_PRIX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\CHM_FRM_LISTE_MAJ_PRIX.Designer.cs">
+      <DependentUpon>CHM_FRM_LISTE_MAJ_PRIX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\CHM_FRM_MAJ_PRIX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\CHM_FRM_MAJ_PRIX.Designer.cs">
+      <DependentUpon>CHM_FRM_MAJ_PRIX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\CHM_LISTE_ARTICLES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\CHM_LISTE_ARTICLES.Designer.cs">
+      <DependentUpon>CHM_LISTE_ARTICLES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\CHM_NV_ARTICLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\CHM_NV_ARTICLE.Designer.cs">
+      <DependentUpon>CHM_NV_ARTICLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\CHM_NV_CATEGORIE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\CHM_NV_CATEGORIE.Designer.cs">
+      <DependentUpon>CHM_NV_CATEGORIE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\CHM_RECHERCHE_STOCK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_ARTICLES\CHM_RECHERCHE_STOCK.Designer.cs">
+      <DependentUpon>CHM_RECHERCHE_STOCK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_AVOIR\CHM_AVOIR_CLIENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_AVOIR\CHM_AVOIR_CLIENT.Designer.cs">
+      <DependentUpon>CHM_AVOIR_CLIENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_BON_DE_LIVRAISON\CHM_FICHE_BON_LIVRAISON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_BON_DE_LIVRAISON\CHM_FICHE_BON_LIVRAISON.Designer.cs">
+      <DependentUpon>CHM_FICHE_BON_LIVRAISON.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_BON_DE_LIVRAISON\CHM_FICHE_B_LIV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_BON_DE_LIVRAISON\CHM_FICHE_B_LIV.Designer.cs">
+      <DependentUpon>CHM_FICHE_B_LIV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_BON_DE_LIVRAISON\CHM_FRM_SELECTION_ARTICLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_BON_DE_LIVRAISON\CHM_FRM_SELECTION_ARTICLE.Designer.cs">
+      <DependentUpon>CHM_FRM_SELECTION_ARTICLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_BON_DE_LIVRAISON\CHM_LISTE_BONS_LIVRAISON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_BON_DE_LIVRAISON\CHM_LISTE_BONS_LIVRAISON.Designer.cs">
+      <DependentUpon>CHM_LISTE_BONS_LIVRAISON.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_BON_DE_LIVRAISON\CHM_LIVRAISON_CLIENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_BON_DE_LIVRAISON\CHM_LIVRAISON_CLIENT.Designer.cs">
+      <DependentUpon>CHM_LIVRAISON_CLIENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_BON_DE_LIVRAISON\CHM_SELECTION_CONTROL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CHM_BON_DE_LIVRAISON\CHM_SELECTION_CONTROL.Designer.cs">
+      <DependentUpon>CHM_SELECTION_CONTROL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_BON_DE_LIVRAISON\RPT_B_LIV1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_B_LIV.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CHM_CLIENT\CHM_COMPTE_CREDIT_CLIENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_CLIENT\CHM_COMPTE_CREDIT_CLIENT.Designer.cs">
+      <DependentUpon>CHM_COMPTE_CREDIT_CLIENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_CLIENT\CHM_FICHE_CLIENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_CLIENT\CHM_FICHE_CLIENT.Designer.cs">
+      <DependentUpon>CHM_FICHE_CLIENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_CLIENT\CHM_FRM_LISTE_VEHICULE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_CLIENT\CHM_FRM_LISTE_VEHICULE.Designer.cs">
+      <DependentUpon>CHM_FRM_LISTE_VEHICULE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_CLIENT\CHM_FRM_MAJ_VEHICULE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_CLIENT\CHM_FRM_MAJ_VEHICULE.Designer.cs">
+      <DependentUpon>CHM_FRM_MAJ_VEHICULE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_CLIENT\CHM_LISTE_FACTURE_CLIENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_CLIENT\CHM_LISTE_FACTURE_CLIENT.Designer.cs">
+      <DependentUpon>CHM_LISTE_FACTURE_CLIENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_CLIENT\CHM_NOUVEAU_CLIENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_CLIENT\CHM_NOUVEAU_CLIENT.Designer.cs">
+      <DependentUpon>CHM_NOUVEAU_CLIENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_CLIENT\CHM_REGLEMENT_CLIENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_CLIENT\CHM_REGLEMENT_CLIENT.Designer.cs">
+      <DependentUpon>CHM_REGLEMENT_CLIENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_CLIENT\CHM_SUIVI_REGLEMENT_CLIENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_CLIENT\CHM_SUIVI_REGLEMENT_CLIENT.Designer.cs">
+      <DependentUpon>CHM_SUIVI_REGLEMENT_CLIENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_CLIENT\liste_client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_CLIENT\liste_client.Designer.cs">
+      <DependentUpon>liste_client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_COMMANDE\CHM_COMMANDE_ARTICLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_COMMANDE\CHM_COMMANDE_ARTICLE.Designer.cs">
+      <DependentUpon>CHM_COMMANDE_ARTICLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_COMMANDE\CHM_COMMANDE_CLIENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_COMMANDE\CHM_COMMANDE_CLIENT.Designer.cs">
+      <DependentUpon>CHM_COMMANDE_CLIENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_COMMANDE\CHM_LISTE_COMMANDE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_COMMANDE\CHM_LISTE_COMMANDE.Designer.cs">
+      <DependentUpon>CHM_LISTE_COMMANDE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_COMMANDE\CHM_NV_FICHE_COMMANDE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_COMMANDE\CHM_NV_FICHE_COMMANDE.Designer.cs">
+      <DependentUpon>CHM_NV_FICHE_COMMANDE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_CONFIG_POSTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_CONFIG_POSTE.designer.cs">
+      <DependentUpon>CHM_CONFIG_POSTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_DEVI\CHM_FRM_LISTE_DEVIS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_DEVI\CHM_FRM_LISTE_DEVIS.Designer.cs">
+      <DependentUpon>CHM_FRM_LISTE_DEVIS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_DEVI\CHM_NV_DEVI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_DEVI\CHM_NV_DEVI.Designer.cs">
+      <DependentUpon>CHM_NV_DEVI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_DEVI\CHM_RPT_DEVI_CLIENT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CHM_RPT_DEVI_CLIENT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CHM_EMPLOYE\CHM_NOUVEAU_EMPLOYE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_EMPLOYE\CHM_NOUVEAU_EMPLOYE.Designer.cs">
+      <DependentUpon>CHM_NOUVEAU_EMPLOYE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_EMPLOYE\FONCTIONNALITE_UTILISATEUR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_EMPLOYE\FONCTIONNALITE_UTILISATEUR.Designer.cs">
+      <DependentUpon>FONCTIONNALITE_UTILISATEUR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_EMPLOYE\NV_FONCTION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_EMPLOYE\NV_FONCTION.Designer.cs">
+      <DependentUpon>NV_FONCTION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_ETAT\CHM_BRECEP_FR1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CHM_BRECEP_FR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="CHM_ETAT\CHM_CODE_BARRE_ARTICLE_SOLDE1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CHM_CODE_BARRE_ARTICLE_SOLDE.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CHM_ETAT\CHM_ETATS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_ETAT\CHM_ETATS.Designer.cs">
+      <DependentUpon>CHM_ETATS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_ETAT\CHM_ETAT_BON_LIVRAISON1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CHM_ETAT_BON_LIVRAISON.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CHM_ETAT\CHM_INVENTAIRE_VIERGE1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CHM_INVENTAIRE_VIERGE.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CHM_ETAT\CODE_BARRE_ARTICLE1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CODE_BARRE_ARTICLE.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CHM_ETAT\RPT_BON_RETOUR_A41.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_BON_RETOUR_A4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CHM_ETAT\RPT_TOUS_LISTE_VENTE_A41.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_TOUS_LISTE_VENTE_A4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CHM_ETAT\RPT_TOUS_LISTE_VENTE_A4_PAR_UTILISATEUR1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_TOUS_LISTE_VENTE_A4_PAR_UTILISATEUR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CHM_ETAT_COMMANDE1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CHM_ETAT_COMMANDE.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CHM_REGLEMENTS_CLIENT\RPT_RETENUE_SOURCE.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_RETENUE_SOURCE.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CHM_TICKET_CAISSE\CHMItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CHM_TICKET_CAISSE\CHMItem.Designer.cs">
+      <DependentUpon>CHMItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_TICKET_CAISSE\CHM_FACTURE_POS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_TICKET_CAISSE\CHM_FACTURE_POS.Designer.cs">
+      <DependentUpon>CHM_FACTURE_POS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_FACTURE\CHM_FACTURE_TICKET_CLIENT1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CHM_FACTURE_TICKET_CLIENT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CHM_FACTURE\CHM_FICHE_FACTURE_CLIENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_FACTURE\CHM_FICHE_FACTURE_CLIENT.Designer.cs">
+      <DependentUpon>CHM_FICHE_FACTURE_CLIENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_FACTURE\CHM_FRM_NV_FACTURE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_FACTURE\CHM_FRM_NV_FACTURE.Designer.cs">
+      <DependentUpon>CHM_FRM_NV_FACTURE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_REGLEMENTS_CLIENT\CHM_FRM_REG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_REGLEMENTS_CLIENT\CHM_FRM_REG.Designer.cs">
+      <DependentUpon>CHM_FRM_REG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_FACTURE\CHM_LISTE_FACTURES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_FACTURE\CHM_LISTE_FACTURES.Designer.cs">
+      <DependentUpon>CHM_LISTE_FACTURES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_FACTURE\CHM_RPT_FACTURE1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CHM_RPT_FACTURE.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CHM_FACTURE\CHM_SELECTION_FACTURE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_FACTURE\CHM_SELECTION_FACTURE.Designer.cs">
+      <DependentUpon>CHM_SELECTION_FACTURE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_FAMILLES_ART\CHM_FRM_LISTE_FAMILLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_FAMILLES_ART\CHM_FRM_LISTE_FAMILLE.Designer.cs">
+      <DependentUpon>CHM_FRM_LISTE_FAMILLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_FAMILLES_ART\CHM_FRM_MAJ_FAMILLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_FAMILLES_ART\CHM_FRM_MAJ_FAMILLE.Designer.cs">
+      <DependentUpon>CHM_FRM_MAJ_FAMILLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_FOURNISSEUR\CHM_FICHE_FOURNISSEUR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_FOURNISSEUR\CHM_FICHE_FOURNISSEUR.Designer.cs">
+      <DependentUpon>CHM_FICHE_FOURNISSEUR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_FOURNISSEUR\CHM_FRM_SELECT_FOURNISSEUR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_FOURNISSEUR\CHM_FRM_SELECT_FOURNISSEUR.Designer.cs">
+      <DependentUpon>CHM_FRM_SELECT_FOURNISSEUR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_FOURNISSEUR\CHM_LISTE_FOURNISSEUR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_FOURNISSEUR\CHM_LISTE_FOURNISSEUR.Designer.cs">
+      <DependentUpon>CHM_LISTE_FOURNISSEUR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_FOURNISSEUR\CHM_NV_FOURNISSEUR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_FOURNISSEUR\CHM_NV_FOURNISSEUR.Designer.cs">
+      <DependentUpon>CHM_NV_FOURNISSEUR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_FRM_COPIE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_FRM_COPIE.designer.cs">
+      <DependentUpon>CHM_FRM_COPIE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_FRM_PASSWORD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_FRM_PASSWORD.designer.cs">
+      <DependentUpon>CHM_FRM_PASSWORD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_GESTION_CONTROL.cs" />
+    <Compile Include="CHM_INVENTAIRE\CHM_FRM_INVENTAIRE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_INVENTAIRE\CHM_FRM_INVENTAIRE.Designer.cs">
+      <DependentUpon>CHM_FRM_INVENTAIRE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_INVENTAIRE\CHM_FRM_LISTE_INVENTAIRE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_INVENTAIRE\CHM_FRM_LISTE_INVENTAIRE.Designer.cs">
+      <DependentUpon>CHM_FRM_LISTE_INVENTAIRE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_INVENTAIRE\CHM_INVENTAIRE1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CHM_INVENTAIRE.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CHM_INVENTAIRE\CHM_RPT_RECAP_INVENTAIRE1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CHM_RPT_RECAP_INVENTAIRE.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CHM_MAGAZIN\CHM_LISTE_MAGAZIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_MAGAZIN\CHM_LISTE_MAGAZIN.Designer.cs">
+      <DependentUpon>CHM_LISTE_MAGAZIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_MAGAZIN\CHM_LISTE_STOCK_PAR_MAGAZIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_MAGAZIN\CHM_LISTE_STOCK_PAR_MAGAZIN.Designer.cs">
+      <DependentUpon>CHM_LISTE_STOCK_PAR_MAGAZIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_MAGAZIN\CHM_NV_MAGAZIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_MAGAZIN\CHM_NV_MAGAZIN.Designer.cs">
+      <DependentUpon>CHM_NV_MAGAZIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_MARQUE_ARTICLE\CHM_FRM_LISTE_MARQUES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_MARQUE_ARTICLE\CHM_FRM_LISTE_MARQUES.Designer.cs">
+      <DependentUpon>CHM_FRM_LISTE_MARQUES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_MARQUE_ARTICLE\CHM_FRM_MAJ_MARQUE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_MARQUE_ARTICLE\CHM_FRM_MAJ_MARQUE.Designer.cs">
+      <DependentUpon>CHM_FRM_MAJ_MARQUE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_REGLEMENTS_CLIENT\CHM_FRM_REGLEMENT_CLIENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_REGLEMENTS_CLIENT\CHM_FRM_REGLEMENT_CLIENT.Designer.cs">
+      <DependentUpon>CHM_FRM_REGLEMENT_CLIENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_STOCK\CHM_FRM_RUPTURE_STOCK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_STOCK\CHM_FRM_RUPTURE_STOCK.Designer.cs">
+      <DependentUpon>CHM_FRM_RUPTURE_STOCK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_TICKET_CAISSE\CHM_FRM_LISTE_TICKET.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_TICKET_CAISSE\CHM_FRM_LISTE_TICKET.Designer.cs">
+      <DependentUpon>CHM_FRM_LISTE_TICKET.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_TICKET_CAISSE\CHM_RPT_TICKET_CAISSE.cs" />
+    <Compile Include="CHM_TICKET_CAISSE\CHM_RPT_TICKET_CAISSE1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CHM_RPT_TICKET_CAISSE.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CHM_TVA\CHM_LIST_TVA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_TVA\CHM_LIST_TVA.Designer.cs">
+      <DependentUpon>CHM_LIST_TVA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_TVA\DSTVA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSTVA.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_UNITE\CHM_FRM_MAJ_UNITE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_UNITE\CHM_FRM_MAJ_UNITE.Designer.cs">
+      <DependentUpon>CHM_FRM_MAJ_UNITE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_UTILISATEUR\CHM_ACTIVER_UTILISATEUR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_UTILISATEUR\CHM_ACTIVER_UTILISATEUR.Designer.cs">
+      <DependentUpon>CHM_ACTIVER_UTILISATEUR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_UTILISATEUR\CHM_FICHE_UTILISATEUR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_UTILISATEUR\CHM_FICHE_UTILISATEUR.Designer.cs">
+      <DependentUpon>CHM_FICHE_UTILISATEUR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_UTILISATEUR\CHM_FRM_DroitsAcces.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_UTILISATEUR\CHM_FRM_DroitsAcces.Designer.cs">
+      <DependentUpon>CHM_FRM_DroitsAcces.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_UTILISATEUR\CHM_FRM_MAJ_GU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_UTILISATEUR\CHM_FRM_MAJ_GU.Designer.cs">
+      <DependentUpon>CHM_FRM_MAJ_GU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_UTILISATEUR\CHM_IDENTIFICATION_UTILISATEUR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_UTILISATEUR\CHM_IDENTIFICATION_UTILISATEUR.Designer.cs">
+      <DependentUpon>CHM_IDENTIFICATION_UTILISATEUR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_UTILISATEUR\CHM_LISTE_UTILISATEURS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_UTILISATEUR\CHM_LISTE_UTILISATEURS.Designer.cs">
+      <DependentUpon>CHM_LISTE_UTILISATEURS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_UTILISATEUR\CHM_MON_TRAVAIL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_UTILISATEUR\CHM_MON_TRAVAIL.Designer.cs">
+      <DependentUpon>CHM_MON_TRAVAIL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_UTILISATEUR\CHM_NV_UTILISATEUR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_UTILISATEUR\CHM_NV_UTILISATEUR.Designer.cs">
+      <DependentUpon>CHM_NV_UTILISATEUR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHM_VENTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHM_VENTE.designer.cs">
+      <DependentUpon>CHM_VENTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CLIENT_APP_PARAM.cs" />
+    <Compile Include="COMMANDE_FOURNISSEUR\CHM_FRM_LISTE_CMD_FRN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COMMANDE_FOURNISSEUR\CHM_FRM_LISTE_CMD_FRN.Designer.cs">
+      <DependentUpon>CHM_FRM_LISTE_CMD_FRN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="COMMANDE_FOURNISSEUR\CHM_FRM_NV_CMD_FR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COMMANDE_FOURNISSEUR\CHM_FRM_NV_CMD_FR.Designer.cs">
+      <DependentUpon>CHM_FRM_NV_CMD_FR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="COMMANDE_FOURNISSEUR\CHM_RPT_CMD_FR.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CHM_RPT_CMD_FR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_GC.cs">
+      <DependentUpon>DS_GC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_GC2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_GC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_MOUV.cs">
+      <DependentUpon>DS_MOUV.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_MOUV.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_MOUV.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EQUIPEMENTS\CHM_FRM_EQP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EQUIPEMENTS\CHM_FRM_EQP.Designer.cs">
+      <DependentUpon>CHM_FRM_EQP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EQUIPEMENTS\CHM_FRM_LISTE_EQP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EQUIPEMENTS\CHM_FRM_LISTE_EQP.Designer.cs">
+      <DependentUpon>CHM_FRM_LISTE_EQP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EQUIPEMENTS\CHM_FRM_MAJ_CONFIG_MAINT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EQUIPEMENTS\CHM_FRM_MAJ_CONFIG_MAINT.Designer.cs">
+      <DependentUpon>CHM_FRM_MAJ_CONFIG_MAINT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EQUIPEMENTS\CHM_RPT_FICHE_SUIVEUSE_EQP.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CHM_RPT_FICHE_SUIVEUSE_EQP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EQUIPEMENTS\FRM_SELECT_EQP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EQUIPEMENTS\FRM_SELECT_EQP.Designer.cs">
+      <DependentUpon>FRM_SELECT_EQP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EQUIPEMENTS\TYPE_MAINTENANCE\CHM_FRM_LISTE_TYPE_MAINT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EQUIPEMENTS\TYPE_MAINTENANCE\CHM_FRM_LISTE_TYPE_MAINT.Designer.cs">
+      <DependentUpon>CHM_FRM_LISTE_TYPE_MAINT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EQUIPEMENTS\TYPE_MAINTENANCE\CHM_FRM_MAJ_TYPE_MAINT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EQUIPEMENTS\TYPE_MAINTENANCE\CHM_FRM_MAJ_TYPE_MAINT.Designer.cs">
+      <DependentUpon>CHM_FRM_MAJ_TYPE_MAINT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FICHE_INTERVENTION\CHM_FRM_LISTE_FI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FICHE_INTERVENTION\CHM_FRM_LISTE_FI.Designer.cs">
+      <DependentUpon>CHM_FRM_LISTE_FI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FICHE_INTERVENTION\CHM_FRM_MAJ_FI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FICHE_INTERVENTION\CHM_FRM_MAJ_FI.Designer.cs">
+      <DependentUpon>CHM_FRM_MAJ_FI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel_Designer.cs" />
+    <Compile Include="PARAMETRES\CHM_FICHE_SOCIETE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PARAMETRES\CHM_FICHE_SOCIETE.Designer.cs">
+      <DependentUpon>CHM_FICHE_SOCIETE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BON_RECEPTION\CHM_FRM_BR_FOURNISSEUR.resx">
+      <DependentUpon>CHM_FRM_BR_FOURNISSEUR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BON_RECEPTION\CHM_FRM_LOAD_BRECEP_FR.resx">
+      <DependentUpon>CHM_FRM_LOAD_BRECEP_FR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BON_RECEPTION\CHM_LISTE_BONRECEPTION_FR.resx">
+      <DependentUpon>CHM_LISTE_BONRECEPTION_FR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BON_RECEPTION\RPT_BR_FR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_BR_FR1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BON_RETOUR_CLIENT\CHM_FRM_BON_RETOUR_CLIENT.resx">
+      <DependentUpon>CHM_FRM_BON_RETOUR_CLIENT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BON_RETOUR_CLIENT\CHM_LISTE_BON_RETOUR_CLIENT.resx">
+      <DependentUpon>CHM_LISTE_BON_RETOUR_CLIENT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BON_RETOUR_CLIENT\CHM_RPT_LISTE_BR_CL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CHM_RPT_LISTE_BR_CL1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BON_RETOUR_CLIENT\CHM_TICKET_BON_RETOUR_CLIENT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CHM_TICKET_BON_RETOUR_CLIENT1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BON_RETOUR_CLIENT\RPT_BR_CL_UTILISATEUR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_BR_CL_UTILISATEUR1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_ARTICLES\CHM_FRM_IMP_CB.resx">
+      <DependentUpon>CHM_FRM_IMP_CB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_ARTICLES\CHM_RPT_IMP_CB5.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CHM_RPT_IMP_CB5.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_ARTICLES\CHM_RPT_IMP_CB4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CHM_RPT_IMP_CB4.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_ARTICLES\CHM_RPT_IMP_CB1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CHM_RPT_IMP_CB1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_ARTICLES\TARIFICATION_VENTE\CHM_FRM_TRV.resx">
+      <DependentUpon>CHM_FRM_TRV.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_CLIENT\CHM_FRM_ENCOURS_CLIENT.resx">
+      <DependentUpon>CHM_FRM_ENCOURS_CLIENT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_FACTURE\CHM_FRM_NV_FACTURE.fr-FR.resx">
+      <DependentUpon>CHM_FRM_NV_FACTURE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_FACTURE_FOURNISSEUR\CHM_FRM_FACTURE_FOURNISSEUR.resx">
+      <DependentUpon>CHM_FRM_FACTURE_FOURNISSEUR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_FACTURE_FOURNISSEUR\CHM_FRM_LIST_FACT_FRN.resx">
+      <DependentUpon>CHM_FRM_LIST_FACT_FRN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_Fenetre_principale\CHM_COMMERCIAL_MANAGEMENT_PROGRAM.resx">
+      <DependentUpon>CHM_COMMERCIAL_MANAGEMENT_PROGRAM.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_Fenetre_principale\CHM_DB_CONFIG.resx">
+      <DependentUpon>CHM_DB_CONFIG.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_Fenetre_principale\CHM_FRM_ABOUT.resx">
+      <DependentUpon>CHM_FRM_ABOUT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_Fenetre_principale\CHM_FRM_GAIN.resx">
+      <DependentUpon>CHM_FRM_GAIN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_Fenetre_principale\CHM_FRM_GAIN_DETAIL.resx">
+      <DependentUpon>CHM_FRM_GAIN_DETAIL.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_Fenetre_principale\CHM_FRM_INTRO.resx">
+      <DependentUpon>CHM_FRM_INTRO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_Fenetre_principale\CHM_FRM_LICENSE.resx">
+      <DependentUpon>CHM_FRM_LICENSE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_Fenetre_principale\CHM_FRM_RAPPORT_VENTE_TOTAL.resx">
+      <DependentUpon>CHM_FRM_RAPPORT_VENTE_TOTAL.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_Fenetre_principale\CHM_LISTE_VENTE.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CHM_LISTE_VENTE.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_Fenetre_principale\CHM_LISTE_VENTE_PAR_UTILISATEUR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CHM_LISTE_VENTE_PAR_UTILISATEUR.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_Fenetre_principale\CHM_RAPPORT_VENTE_TOTAL_PAR_DATE_TICKET.resx">
+      <DependentUpon>CHM_RAPPORT_VENTE_TOTAL_PAR_DATE_TICKET.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_Fenetre_principale\CHM_RPT_BR.resx">
+      <DependentUpon>CHM_RPT_BR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_Fenetre_principale\CHM_RPT_BR_ALL.resx">
+      <DependentUpon>CHM_RPT_BR_ALL.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_Fenetre_principale\CHM_RPT_LISTE_VENTE_PAR_UTILISATEUR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CHM_RPT_LISTE_VENTE_PAR_UTILISATEUR.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_Fenetre_principale\RPT_VENTE_TOTAL_PAR_FACTURE_PAR_DATE.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_VENTE_TOTAL_PAR_FACTURE_PAR_DATE.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_Fenetre_principale\RPT_VENTE_TOTAL_PAR_FACTURE_PAR_DATE_PAR_UTILISATEUR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_VENTE_TOTAL_PAR_FACTURE_PAR_DATE_PAR_UTILISATEUR.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_APPLICATION_TACTILE\APPLICATION_TACTILE.resx">
+      <DependentUpon>APPLICATION_TACTILE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_APPLICATION_TACTILE\CHM_FRM_PV_TACTILE.resx">
+      <DependentUpon>CHM_FRM_PV_TACTILE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_APPLICATION_TACTILE\CHM_FRM_QTE.resx">
+      <DependentUpon>CHM_FRM_QTE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_APPLICATION_TACTILE\Template_Ligne_Facture.resx">
+      <DependentUpon>Template_Ligne_Facture.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_APPLICATION_TACTILE\Template_Liste_Facture_Ouverte.resx">
+      <DependentUpon>Template_Liste_Facture_Ouverte.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_APPLICATION_TACTILE\Template_Vente.resx">
+      <DependentUpon>Template_Vente.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_ARTICLES\CHM_ARTICLE.resx">
+      <DependentUpon>CHM_ARTICLE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_ARTICLES\CHM_ARTICLE_CATEGORIE.resx">
+      <DependentUpon>CHM_ARTICLE_CATEGORIE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_ARTICLES\CHM_ARTICLE_FOURNISSEUR.resx">
+      <DependentUpon>CHM_ARTICLE_FOURNISSEUR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_ARTICLES\CHM_ARTICLE_MAGAZIN.resx">
+      <DependentUpon>CHM_ARTICLE_MAGAZIN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_ARTICLES\CHM_CMP_BARCODE.resx">
+      <DependentUpon>CHM_CMP_BARCODE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_ARTICLES\CHM_FRM_LISTE_MAJ_PRIX.resx">
+      <DependentUpon>CHM_FRM_LISTE_MAJ_PRIX.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_ARTICLES\CHM_FRM_MAJ_PRIX.resx">
+      <DependentUpon>CHM_FRM_MAJ_PRIX.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_ARTICLES\CHM_LISTE_ARTICLES.resx">
+      <DependentUpon>CHM_LISTE_ARTICLES.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_ARTICLES\CHM_NV_ARTICLE.resx">
+      <DependentUpon>CHM_NV_ARTICLE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_ARTICLES\CHM_NV_CATEGORIE.resx">
+      <DependentUpon>CHM_NV_CATEGORIE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_ARTICLES\CHM_RECHERCHE_STOCK.resx">
+      <DependentUpon>CHM_RECHERCHE_STOCK.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_AVOIR\CHM_AVOIR_CLIENT.resx">
+      <DependentUpon>CHM_AVOIR_CLIENT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_BON_DE_LIVRAISON\CHM_FICHE_BON_LIVRAISON.resx">
+      <DependentUpon>CHM_FICHE_BON_LIVRAISON.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_BON_DE_LIVRAISON\CHM_FICHE_B_LIV.resx">
+      <DependentUpon>CHM_FICHE_B_LIV.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_BON_DE_LIVRAISON\CHM_FRM_SELECTION_ARTICLE.resx">
+      <DependentUpon>CHM_FRM_SELECTION_ARTICLE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_BON_DE_LIVRAISON\CHM_LISTE_BONS_LIVRAISON.resx">
+      <DependentUpon>CHM_LISTE_BONS_LIVRAISON.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_BON_DE_LIVRAISON\CHM_LIVRAISON_CLIENT.resx">
+      <DependentUpon>CHM_LIVRAISON_CLIENT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_BON_DE_LIVRAISON\CHM_SELECTION_CONTROL.resx">
+      <DependentUpon>CHM_SELECTION_CONTROL.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_BON_DE_LIVRAISON\RPT_B_LIV.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_B_LIV1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_CLIENT\CHM_COMPTE_CREDIT_CLIENT.resx">
+      <DependentUpon>CHM_COMPTE_CREDIT_CLIENT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_CLIENT\CHM_FICHE_CLIENT.resx">
+      <DependentUpon>CHM_FICHE_CLIENT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_CLIENT\CHM_FRM_LISTE_VEHICULE.resx">
+      <DependentUpon>CHM_FRM_LISTE_VEHICULE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_CLIENT\CHM_FRM_MAJ_VEHICULE.resx">
+      <DependentUpon>CHM_FRM_MAJ_VEHICULE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_CLIENT\CHM_LISTE_FACTURE_CLIENT.resx">
+      <DependentUpon>CHM_LISTE_FACTURE_CLIENT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_CLIENT\CHM_NOUVEAU_CLIENT.resx">
+      <DependentUpon>CHM_NOUVEAU_CLIENT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_CLIENT\CHM_REGLEMENT_CLIENT.resx">
+      <DependentUpon>CHM_REGLEMENT_CLIENT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_CLIENT\CHM_SUIVI_REGLEMENT_CLIENT.resx">
+      <DependentUpon>CHM_SUIVI_REGLEMENT_CLIENT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_CLIENT\liste_client.resx">
+      <DependentUpon>liste_client.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_COMMANDE\CHM_COMMANDE_ARTICLE.resx">
+      <DependentUpon>CHM_COMMANDE_ARTICLE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_COMMANDE\CHM_COMMANDE_CLIENT.resx">
+      <DependentUpon>CHM_COMMANDE_CLIENT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_COMMANDE\CHM_LISTE_COMMANDE.resx">
+      <DependentUpon>CHM_LISTE_COMMANDE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_COMMANDE\CHM_NV_FICHE_COMMANDE.resx">
+      <DependentUpon>CHM_NV_FICHE_COMMANDE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_CONFIG_POSTE.resx">
+      <DependentUpon>CHM_CONFIG_POSTE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_DEVI\CHM_FRM_LISTE_DEVIS.resx">
+      <DependentUpon>CHM_FRM_LISTE_DEVIS.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_DEVI\CHM_NV_DEVI.resx">
+      <DependentUpon>CHM_NV_DEVI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_DEVI\CHM_RPT_DEVI_CLIENT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CHM_RPT_DEVI_CLIENT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_EMPLOYE\CHM_NOUVEAU_EMPLOYE.resx">
+      <DependentUpon>CHM_NOUVEAU_EMPLOYE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_EMPLOYE\FONCTIONNALITE_UTILISATEUR.resx">
+      <DependentUpon>FONCTIONNALITE_UTILISATEUR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_EMPLOYE\NV_FONCTION.resx">
+      <DependentUpon>NV_FONCTION.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_ETAT\CHM_BRECEP_FR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CHM_BRECEP_FR1.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_ETAT\CHM_CODE_BARRE_ARTICLE_SOLDE.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CHM_CODE_BARRE_ARTICLE_SOLDE1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_ETAT\CHM_ETATS.resx">
+      <DependentUpon>CHM_ETATS.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_ETAT\CHM_ETAT_BON_LIVRAISON.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CHM_ETAT_BON_LIVRAISON1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_ETAT\CHM_INVENTAIRE_VIERGE.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CHM_INVENTAIRE_VIERGE1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_ETAT\CODE_BARRE_ARTICLE.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CODE_BARRE_ARTICLE1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_ETAT\RPT_BON_RETOUR_A4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_BON_RETOUR_A41.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_ETAT\RPT_TOUS_LISTE_VENTE_A4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_TOUS_LISTE_VENTE_A41.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_ETAT\RPT_TOUS_LISTE_VENTE_A4_PAR_UTILISATEUR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_TOUS_LISTE_VENTE_A4_PAR_UTILISATEUR1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_ETAT_COMMANDE.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CHM_ETAT_COMMANDE1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_REGLEMENTS_CLIENT\RPT_RETENUE_SOURCE.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_RETENUE_SOURCE.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_TICKET_CAISSE\CHMItem.resx">
+      <DependentUpon>CHMItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_TICKET_CAISSE\CHM_FACTURE_POS.resx">
+      <DependentUpon>CHM_FACTURE_POS.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_FACTURE\CHM_FACTURE_TICKET_CLIENT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CHM_FACTURE_TICKET_CLIENT1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_FACTURE\CHM_FICHE_FACTURE_CLIENT.resx">
+      <DependentUpon>CHM_FICHE_FACTURE_CLIENT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_FACTURE\CHM_FRM_NV_FACTURE.resx">
+      <DependentUpon>CHM_FRM_NV_FACTURE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_REGLEMENTS_CLIENT\CHM_FRM_REG.resx">
+      <DependentUpon>CHM_FRM_REG.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_FACTURE\CHM_LISTE_FACTURES.resx">
+      <DependentUpon>CHM_LISTE_FACTURES.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_FACTURE\CHM_RPT_FACTURE.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CHM_RPT_FACTURE1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_FACTURE\CHM_SELECTION_FACTURE.resx">
+      <DependentUpon>CHM_SELECTION_FACTURE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_FAMILLES_ART\CHM_FRM_LISTE_FAMILLE.resx">
+      <DependentUpon>CHM_FRM_LISTE_FAMILLE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_FAMILLES_ART\CHM_FRM_MAJ_FAMILLE.resx">
+      <DependentUpon>CHM_FRM_MAJ_FAMILLE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_FOURNISSEUR\CHM_FICHE_FOURNISSEUR.resx">
+      <DependentUpon>CHM_FICHE_FOURNISSEUR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_FOURNISSEUR\CHM_FRM_SELECT_FOURNISSEUR.resx">
+      <DependentUpon>CHM_FRM_SELECT_FOURNISSEUR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_FOURNISSEUR\CHM_LISTE_FOURNISSEUR.resx">
+      <DependentUpon>CHM_LISTE_FOURNISSEUR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_FOURNISSEUR\CHM_NV_FOURNISSEUR.resx">
+      <DependentUpon>CHM_NV_FOURNISSEUR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_FRM_COPIE.resx">
+      <DependentUpon>CHM_FRM_COPIE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_FRM_PASSWORD.resx">
+      <DependentUpon>CHM_FRM_PASSWORD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_INVENTAIRE\CHM_FRM_INVENTAIRE.resx">
+      <DependentUpon>CHM_FRM_INVENTAIRE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_INVENTAIRE\CHM_FRM_LISTE_INVENTAIRE.resx">
+      <DependentUpon>CHM_FRM_LISTE_INVENTAIRE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_INVENTAIRE\CHM_INVENTAIRE.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CHM_INVENTAIRE1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_INVENTAIRE\CHM_RPT_RECAP_INVENTAIRE.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CHM_RPT_RECAP_INVENTAIRE1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_MAGAZIN\CHM_LISTE_MAGAZIN.resx">
+      <DependentUpon>CHM_LISTE_MAGAZIN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_MAGAZIN\CHM_LISTE_STOCK_PAR_MAGAZIN.resx">
+      <DependentUpon>CHM_LISTE_STOCK_PAR_MAGAZIN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_MAGAZIN\CHM_NV_MAGAZIN.resx">
+      <DependentUpon>CHM_NV_MAGAZIN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_MARQUE_ARTICLE\CHM_FRM_LISTE_MARQUES.resx">
+      <DependentUpon>CHM_FRM_LISTE_MARQUES.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_MARQUE_ARTICLE\CHM_FRM_MAJ_MARQUE.resx">
+      <DependentUpon>CHM_FRM_MAJ_MARQUE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_REGLEMENTS_CLIENT\CHM_FRM_REGLEMENT_CLIENT.resx">
+      <DependentUpon>CHM_FRM_REGLEMENT_CLIENT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_STOCK\CHM_FRM_RUPTURE_STOCK.resx">
+      <DependentUpon>CHM_FRM_RUPTURE_STOCK.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_TICKET_CAISSE\CHM_FRM_LISTE_TICKET.resx">
+      <DependentUpon>CHM_FRM_LISTE_TICKET.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_TICKET_CAISSE\CHM_RPT_TICKET_CAISSE.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CHM_RPT_TICKET_CAISSE1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_TVA\CHM_LIST_TVA.resx">
+      <DependentUpon>CHM_LIST_TVA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_UNITE\CHM_FRM_MAJ_UNITE.resx">
+      <DependentUpon>CHM_FRM_MAJ_UNITE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_UTILISATEUR\CHM_ACTIVER_UTILISATEUR.resx">
+      <DependentUpon>CHM_ACTIVER_UTILISATEUR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_UTILISATEUR\CHM_FICHE_UTILISATEUR.resx">
+      <DependentUpon>CHM_FICHE_UTILISATEUR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_UTILISATEUR\CHM_FRM_DroitsAcces.resx">
+      <DependentUpon>CHM_FRM_DroitsAcces.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_UTILISATEUR\CHM_FRM_MAJ_GU.resx">
+      <DependentUpon>CHM_FRM_MAJ_GU.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_UTILISATEUR\CHM_IDENTIFICATION_UTILISATEUR.resx">
+      <DependentUpon>CHM_IDENTIFICATION_UTILISATEUR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_UTILISATEUR\CHM_LISTE_UTILISATEURS.resx">
+      <DependentUpon>CHM_LISTE_UTILISATEURS.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_UTILISATEUR\CHM_MON_TRAVAIL.resx">
+      <DependentUpon>CHM_MON_TRAVAIL.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_UTILISATEUR\CHM_NV_UTILISATEUR.resx">
+      <DependentUpon>CHM_NV_UTILISATEUR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHM_VENTE.resx">
+      <DependentUpon>CHM_VENTE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COMMANDE_FOURNISSEUR\CHM_FRM_LISTE_CMD_FRN.resx">
+      <DependentUpon>CHM_FRM_LISTE_CMD_FRN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COMMANDE_FOURNISSEUR\CHM_FRM_NV_CMD_FR.resx">
+      <DependentUpon>CHM_FRM_NV_CMD_FR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COMMANDE_FOURNISSEUR\CHM_RPT_CMD_FR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CHM_RPT_CMD_FR.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DS_GC.resx">
+      <DependentUpon>DS_GC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EQUIPEMENTS\CHM_FRM_EQP.resx">
+      <DependentUpon>CHM_FRM_EQP.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EQUIPEMENTS\CHM_FRM_LISTE_EQP.resx">
+      <DependentUpon>CHM_FRM_LISTE_EQP.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EQUIPEMENTS\CHM_FRM_MAJ_CONFIG_MAINT.resx">
+      <DependentUpon>CHM_FRM_MAJ_CONFIG_MAINT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EQUIPEMENTS\CHM_RPT_FICHE_SUIVEUSE_EQP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CHM_RPT_FICHE_SUIVEUSE_EQP.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EQUIPEMENTS\FRM_SELECT_EQP.resx">
+      <DependentUpon>FRM_SELECT_EQP.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EQUIPEMENTS\TYPE_MAINTENANCE\CHM_FRM_LISTE_TYPE_MAINT.resx">
+      <DependentUpon>CHM_FRM_LISTE_TYPE_MAINT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EQUIPEMENTS\TYPE_MAINTENANCE\CHM_FRM_MAJ_TYPE_MAINT.resx">
+      <DependentUpon>CHM_FRM_MAJ_TYPE_MAINT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FICHE_INTERVENTION\CHM_FRM_LISTE_FI.resx">
+      <DependentUpon>CHM_FRM_LISTE_FI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FICHE_INTERVENTION\CHM_FRM_MAJ_FI.resx">
+      <DependentUpon>CHM_FRM_MAJ_FI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PARAMETRES\CHM_FICHE_SOCIETE.resx">
+      <DependentUpon>CHM_FICHE_SOCIETE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SELLECTION_PRODUITS.resx">
+      <DependentUpon>SELLECTION_PRODUITS.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="CHM_ARTICLES\TARIFICATION_VENTE\DS_TRV.xsc">
+      <DependentUpon>DS_TRV.xsd</DependentUpon>
+    </None>
+    <None Include="CHM_ARTICLES\TARIFICATION_VENTE\DS_TRV.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_TRV1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CHM_ARTICLES\TARIFICATION_VENTE\DS_TRV.xss">
+      <DependentUpon>DS_TRV.xsd</DependentUpon>
+    </None>
+    <None Include="CHM_TVA\DSTVA.xsc">
+      <DependentUpon>DSTVA.xsd</DependentUpon>
+    </None>
+    <None Include="CHM_TVA\DSTVA.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSTVA.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="CHM_TVA\DSTVA.xss">
+      <DependentUpon>DSTVA.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\2.xps" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RawPrinterHelper.cs" />
+    <Compile Include="SELLECTION_PRODUITS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SELLECTION_PRODUITS.Designer.cs">
+      <DependentUpon>SELLECTION_PRODUITS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="Web References\CHMCNX\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\CHMGA\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\CHMGC\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\CHMMARQUE\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\CHMSTAT\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\CHM_FAMILLE_ARTICLE\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\CHM_LIGNE_ARTICLE\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo.ico" />
+    <Content Include="Resources\1317-istock-000001456060xsmall-s-.png" />
+    <Content Include="Resources\3-presse-papiers-icone-7006-64.png" />
+    <Content Include="Resources\304689.jpg" />
+    <Content Include="Resources\8209.jpg" />
+    <Content Include="Resources\82091.jpg" />
+    <Content Include="Resources\accepter-vert-ok-oui-icone-6163-32.png" />
+    <Content Include="Resources\accepter-vert-ok-oui-icone-6163-321.png" />
+    <None Include="CHM_ARTICLES\CHM_DS_IMP_CB.xsc">
+      <DependentUpon>CHM_DS_IMP_CB.xsd</DependentUpon>
+    </None>
+    <None Include="CHM_ARTICLES\CHM_DS_IMP_CB.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CHM_DS_IMP_CB.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="CHM_ARTICLES\CHM_DS_IMP_CB.xss">
+      <DependentUpon>CHM_DS_IMP_CB.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\Add_32x32.png" />
+    <None Include="Resources\Add_16x16.png" />
+    <None Include="Resources\Add_32x321.png" />
+    <None Include="Resources\AddFile_32x32.png" />
+    <None Include="Resources\AddItem_16x16.png" />
+    <None Include="Resources\administratives-preferences-parametres-outils-cle-icone-7188-32.png" />
+    <Content Include="Resources\ajouter-forum-deux-utilisateurs-icone-4495-48.png" />
+    <Content Include="Resources\ajouter-icone-5107-32.png" />
+    <Content Include="Resources\ajouter-icone-5107-321.png" />
+    <Content Include="Resources\ajouter-profil-icone-4591-48 %281%29.png" />
+    <Content Include="Resources\ajouter-un-camion-icone-9812-32.png" />
+    <Content Include="Resources\ajouter-une-liste-todo-icone-9494-48.png" />
+    <Content Include="Resources\anim2.gif" />
+    <Content Include="Resources\anim3.gif" />
+    <Content Include="Resources\anim_loading.gif" />
+    <Content Include="Resources\annuler-icone-4608-32.png" />
+    <Content Include="Resources\annuler-icone-4608-321.png" />
+    <Content Include="Resources\annuler-icone-4608-322.png" />
+    <Content Include="Resources\apple-fichier-un-dossier-complet-papier-icone-9450-96.png" />
+    <Content Include="Resources\apple-fichier-un-dossier-complet-papier-icone-9450-961.png" />
+    <Content Include="Resources\application-excel-facture-feuille-calcul-icone-7666-32.png" />
+    <Content Include="Resources\application-excel-facture-feuille-calcul-icone-7666-64.png" />
+    <Content Include="Resources\application-excel-facture-feuille-calcul-icone-7666-641.png" />
+    <None Include="Resources\Apply_16x16.png" />
+    <Content Include="Resources\archiver-dossier-services-publics-icone-7132-64.png" />
+    <Content Include="Resources\archives-annuaire-inserez-icone-7389-48.png" />
+    <Content Include="Resources\arrow-tourner-vers-la-droite-icone-8357-32.png" />
+    <Content Include="Resources\article-icone-8711-48.png" />
+    <Content Include="Resources\article-icone-8711-481.png" />
+    <Content Include="Resources\ARTICLE.png" />
+    <Content Include="Resources\back.png" />
+    <Content Include="Resources\barcode-id-icone-7345-48.png" />
+    <Content Include="Resources\barcode.png" />
+    <Content Include="Resources\Bg_MediaCenter.jpg" />
+    <Content Include="Resources\Bg_Office03.jpg" />
+    <Content Include="Resources\Bg_Office12.gif" />
+    <Content Include="Resources\bill-homme-personne-utilisateur-icone-6596-48.png" />
+    <Content Include="Resources\bill-homme-personne-utilisateur-icone-6596-64.png" />
+    <None Include="Resources\BLClient32.png" />
+    <None Include="Resources\BLClient64.png" />
+    <None Include="Resources\BLClient96.png" />
+    <None Include="Resources\BLFournisseur32.png" />
+    <None Include="Resources\BLFournisseur64.png" />
+    <None Include="Resources\BLFournisseur96.png" />
+    <None Include="Resources\BLFrn.png" />
+    <None Include="Resources\BLClient.png" />
+    <None Include="Resources\BLFrn1.png" />
+    <Content Include="Resources\boite-colis-icone-4466-96.png" />
+    <Content Include="Resources\boite-colis-icone-4466-961.png" />
+    <Content Include="Resources\bouton-fermeture-session-perspective--icone-7678-64.png" />
+    <Content Include="Resources\bouton-perspective-arret-icone-6487-64.png" />
+    <Content Include="Resources\bouton-perspective-redemarrage-icone-9500-64.png" />
+    <Content Include="Resources\bouton-perspective-redemarrage-icone-9500-96.png" />
+    <Content Include="Resources\bouton-perspective-veille--icone-6392-64.png" />
+    <Content Include="Resources\btn_fiche_client_form.bmp" />
+    <Content Include="Resources\btn_fiche_client_list.bmp" />
+    <Content Include="Resources\Btn_Std_ok.gif" />
+    <Content Include="Resources\build.png" />
+    <Content Include="Resources\build1.png" />
+    <Content Include="Resources\bv_sub_loading_60.gif" />
+    <None Include="Resources\cabriolet-voiture-rouge-icone-9411-48.png" />
+    <None Include="Resources\c14e3d_5de00c3103824f76a7268f5bc42e68ff.png_srz_356_334_85_22_0.50_1.20_0 %281%29.png" />
+    <Content Include="Resources\calendrier-bureau-icone-8296-128.png" />
+    <Content Include="Resources\calendrier-date-icone-5072-128.png" />
+    <Content Include="Resources\calendrier-texte-icone-9367-96.png" />
+    <Content Include="Resources\camion-icone-4478-32.png" />
+    <Content Include="Resources\carnet-adresses-bureau-icone-8497-96.png" />
+    <None Include="Resources\carrepair-flathead-garage-entretien-des-outils-cle-icone-6406-48.png" />
+    <Content Include="Resources\carte-credit-paiement-icone-8969-96.png" />
+    <Content Include="Resources\cartes-credit-argent-portefeuille-icone-8394-32.png" />
+    <Content Include="Resources\cartes-credit-argent-portefeuille-icone-8394-64.png" />
+    <Content Include="Resources\case-livraison-icone-7120-48 %281%29.png" />
+    <Content Include="Resources\case-orange-icone-4429-128.png" />
+    <Content Include="Resources\case-orange-icone-4429-1281.png" />
+    <None Include="Resources\category %281%29.png" />
+    <Content Include="Resources\cercle-gris-icone-8007-128.png" />
+    <Content Include="Resources\cercle-rouge-icone-5972-96.png" />
+    <Content Include="Resources\cercle-vert-icone-5126-48.png" />
+    <Content Include="Resources\client-icone-9349-128.png" />
+    <Content Include="Resources\client.jpg" />
+    <Content Include="Resources\clients.jpg" />
+    <Content Include="Resources\clients1.jpg" />
+    <None Include="Resources\Close_32x32.png" />
+    <None Include="Resources\CmdFournisseur32.png" />
+    <None Include="Resources\CmdFournisseur64.png" />
+    <None Include="Resources\CmdFournisseur96.png" />
+    <None Include="Resources\cmdClient.png" />
+    <None Include="Resources\cmdFrn.png" />
+    <Content Include="Resources\coller-icone-5810-48.png" />
+    <None Include="Resources\CommandeCLient.png" />
+    <None Include="Resources\CommandeCLient32.png" />
+    <None Include="Resources\CommandeCLient64.png" />
+    <None Include="Resources\CommandeCLient96.png" />
+    <Content Include="Resources\commande_1_80.png" />
+    <Content Include="Resources\completeTest.png" />
+    <Content Include="Resources\Comptable-et-expert-comptable.jpg" />
+    <Content Include="Resources\Copie de prev.png" />
+    <Content Include="Resources\daffaires-monnaies-dolar-metal-argent-paiement-icone-3854-32.png" />
+    <Content Include="Resources\daffaires-monnaies-dolar-metal-argent-paiement-icone-3854-48.png" />
+    <Content Include="Resources\daffaires-monnaies-dolar-metal-argent-paiement-icone-3854-481.png" />
+    <Content Include="Resources\daffaires-monnaies-dolar-metal-argent-paiement-icone-3854-64.png" />
+    <None Include="Resources\DeleteList_16x16.png" />
+    <None Include="Resources\DeleteList_32x32.png" />
+    <None Include="Resources\DeleteList2_16x16.png" />
+    <None Include="Resources\DeleteList2_32x32.png" />
+    <Content Include="Resources\demande-afficher-la-liste-icone-8709-32.png" />
+    <Content Include="Resources\demande-afficher-la-liste-icone-8709-321.png" />
+    <Content Include="Resources\demande-afficher-la-liste-icone-8709-322.png" />
+    <Content Include="Resources\demandes-un-dossier-icone-3816-48.png" />
+    <Content Include="Resources\demandes-un-dossier-icone-3816-64.png" />
+    <Content Include="Resources\description %282%29.gif" />
+    <Content Include="Resources\description %282%291.gif" />
+    <None Include="Resources\devisClient32.png" />
+    <None Include="Resources\devisClient64.png" />
+    <None Include="Resources\devisClient96.png" />
+    <None Include="Resources\DevisClient.png" />
+    <Content Include="Resources\document-enregistrez-icone-7256-32.png" />
+    <Content Include="Resources\document-revenir-icone-4759-32.png" />
+    <Content Include="Resources\dossier-des-idees-rouge-icone-9673-48.png" />
+    <Content Include="Resources\dossier-home3-icone-4318-64.png" />
+    <Content Include="Resources\dossier-kde-public-icone-5369-48.png" />
+    <Content Include="Resources\dossier-par-utilisateur-icone-6145-96.png" />
+    <None Include="Resources\DoubleFirst_16x16.png" />
+    <None Include="Resources\DoubleFirst_32x32.png" />
+    <None Include="Resources\DoubleLast_16x16.png" />
+    <None Include="Resources\DoubleLast_32x32.png" />
+    <None Include="Resources\DoubleNext_16x16.png" />
+    <None Include="Resources\DoubleNext_32x32.png" />
+    <None Include="Resources\DoublePrev_16x16.png" />
+    <None Include="Resources\DoublePrev_32x32.png" />
+    <None Include="Resources\Download_16x16.png" />
+    <None Include="Resources\Download_32x32.png" />
+    <None Include="Resources\douchette.png" />
+    <None Include="Resources\DoubleUp.png" />
+    <None Include="Resources\DoubleDown.png" />
+    <None Include="Resources\Down.png" />
+    <Content Include="Resources\ecommerce-panier-shoping-webshop-icone-6530-64.png" />
+    <Content Include="Resources\editeur-texte-icone-6825-96.png" />
+    <None Include="Resources\EditTask_16x16.png" />
+    <None Include="Resources\EditTask_32x32.png" />
+    <Content Include="Resources\enregistrerDupliquer.png" />
+    <Content Include="Resources\entree-preview-icone-8113-48.png" />
+    <Content Include="Resources\error-1.png" />
+    <Content Include="Resources\et1.png" />
+    <Content Include="Resources\facture-facture-icone-9075-48.png" />
+    <Content Include="Resources\facture-icone-7188-64.png" />
+    <Content Include="Resources\facture.jpg" />
+    <Content Include="Resources\facture1.jpg" />
+    <None Include="Resources\FactureCLient32.png" />
+    <None Include="Resources\FactureCLient64.png" />
+    <None Include="Resources\FactureCLient96.png" />
+    <None Include="Resources\FactureFournisseur32.png" />
+    <None Include="Resources\FactureFournisseur64.png" />
+    <None Include="Resources\FactureFournisseur96.png" />
+    <None Include="Resources\FactureFrn.png" />
+    <Content Include="Resources\faire-une-liste-a-icone-4585-48.png" />
+    <None Include="Resources\FctClient.png" />
+    <Content Include="Resources\feu-vert--icone-5166-128.png" />
+    <Content Include="Resources\fichiers-verrouillage-icone-6384-96.png" />
+    <Content Include="Resources\Fichier_Commande.png" />
+    <Content Include="Resources\filefind-icone-7697-32.png" />
+    <Content Include="Resources\filefind-icone-7697-48.png" />
+    <Content Include="Resources\fileview-liste-texte-icone-5928-48.png" />
+    <None Include="Resources\First_16x16.png" />
+    <None Include="Resources\First_32x32.png" />
+    <Content Include="Resources\fleches-interagir-recharger-mise-a-jour-icone-5225-32.png" />
+    <Content Include="Resources\fleches-interagir-recharger-mise-a-jour-icone-5225-48.png" />
+    <Content Include="Resources\fond-ecran-windows-xp-silver-gris.jpg" />
+    <Content Include="Resources\forfait-programmes-icone-9844-96.png" />
+    <Content Include="Resources\formulaire-de-demande-dajouter-icone-9331-32.png" />
+    <Content Include="Resources\forward.png" />
+    <Content Include="Resources\Fournisseurs.png" />
+    <Content Include="Resources\Fournisseurs1.png" />
+    <Content Include="Resources\Fournisseurs2.png" />
+    <Content Include="Resources\Fournisseurs64.png" />
+    <Content Include="Resources\gestionnaire-session-icone-6949-96.png" />
+    <Content Include="Resources\gestionnaire-session-icone-6949-961.png" />
+    <Content Include="Resources\halte-session-icone-9844-96.png" />
+    <Content Include="Resources\halte-session-icone-9844-961.png" />
+    <Content Include="Resources\halte-session-icone-9844-962.png" />
+    <Content Include="Resources\halte-session-icone-9844-963.png" />
+    <Content Include="Resources\halte-session-icone-9844-964.png" />
+    <Content Include="Resources\hibernate-session-icone-8980-96.png" />
+    <Content Include="Resources\home.png" />
+    <Content Include="Resources\images1.jpg" />
+    <Content Include="Resources\imprimer-icone-4391-32.png" />
+    <Content Include="Resources\info-utilisateur-icone-6195-96.png" />
+    <Content Include="Resources\information-2.png" />
+    <None Include="Resources\Insert_16x16.png" />
+    <None Include="Resources\Insert_32x32.png" />
+    <Content Include="Resources\interface-interne-clients.JPG" />
+    <Content Include="Resources\interface-interne-clients1.JPG" />
+    <Content Include="Resources\interface-interne-clients2.JPG" />
+    <Content Include="Resources\interface-interne-produits.jpg" />
+    <Content Include="Resources\interface-simple.jpg" />
+    <Content Include="Resources\jumelles-icone-4914-48.png" />
+    <None Include="Resources\Last_16x16.png" />
+    <None Include="Resources\Last_32x32.png" />
+    <None Include="Resources\liste-controle-todo-icone-6073-32.png" />
+    <None Include="Resources\liste-controle-todo-icone-6073-321.png" />
+    <Content Include="Resources\liste-tableau-fenetre-icone-8813-48.png" />
+    <Content Include="Resources\liste-texte-vue-icone-8037-96.png" />
+    <Content Include="Resources\livraison.jpg" />
+    <Content Include="Resources\loading2.gif" />
+    <Content Include="Resources\lock-stock-icone-7421-96.png" />
+    <Content Include="Resources\lock-stock-icone-7421-961.png" />
+    <Content Include="Resources\lock-stock-icone-7421-962.png" />
+    <Content Include="Resources\Lock.png" />
+    <Content Include="Resources\logo.png" />
+    <Content Include="Resources\logo1.png" />
+    <Content Include="Resources\logout-icone-7871-64.png" />
+    <Content Include="Resources\logout-icone-7871-641.png" />
+    <Content Include="Resources\logout-icone-8712-96.png" />
+    <Content Include="Resources\loupe.png" />
+    <None Include="Resources\marque32.png" />
+    <None Include="Resources\MoveDown_16x16.png" />
+    <None Include="Resources\MoveDown_32x32.png" />
+    <None Include="Resources\MoveUp_16x16.png" />
+    <None Include="Resources\MoveUp_32x32.png" />
+    <Content Include="Resources\na-2.png" />
+    <None Include="Resources\NewTask_32x32.png" />
+    <None Include="Resources\Next_16x16.png" />
+    <None Include="Resources\Next_32x32.png" />
+    <Content Include="Resources\noir-utilisateur-icone-6244-96.png" />
+    <Content Include="Resources\noir-utilisateur-icone-6244-9632.png" />
+    <Content Include="Resources\pass-small.png" />
+    <None Include="Resources\Paste_16x16.png" />
+    <None Include="Resources\Paste_32x32.png" />
+    <Content Include="Resources\pdf-icone-6190-48.png" />
+    <Content Include="Resources\point-interrogation-utilisateur-icone-6379-96.png" />
+    <Content Include="Resources\porte-en-icone-7778-32.png" />
+    <Content Include="Resources\porte-en-icone-7778-321.png" />
+    <Content Include="Resources\porte-sur-icone-9461-32.png" />
+    <None Include="Resources\presse-papiers-un-document-coller-icone-9440-32.png" />
+    <None Include="Resources\pos 48px.png" />
+    <None Include="Resources\pos 96px.png" />
+    <None Include="Resources\pos 64px.png" />
+    <Content Include="Resources\preview.png" />
+    <None Include="Resources\Prev_16x16.png" />
+    <None Include="Resources\Prev_32x32.png" />
+    <None Include="Resources\Preview_16x16.png" />
+    <None Include="Resources\Preview_32x32.png" />
+    <Content Include="Resources\printer.png" />
+    <Content Include="Resources\printer32.png" />
+    <None Include="Resources\Print_32x32.png" />
+    <None Include="Resources\Print_32x321.png" />
+    <None Include="Resources\Print_32x322.png" />
+    <Content Include="Resources\profil-icone-6739-48.png" />
+    <Content Include="Resources\profil-icone-6739-481.png" />
+    <None Include="Resources\profil-icone-6739-482.png" />
+    <Content Include="Resources\profil-icone-9817-48 %281%29.png" />
+    <Content Include="Resources\profil-icone-9817-48.png" />
+    <None Include="Resources\project-begeleiding.png" />
+    <None Include="Resources\project-management-photo.jpg" />
+    <None Include="Resources\project-plan-icon.png" />
+    <None Include="Resources\projects_folder_badged.png" />
+    <Content Include="Resources\quick_test.png" />
+    <Content Include="Resources\Quitter.png" />
+    <Content Include="Resources\reboot-session-icone-3797-48.png" />
+    <None Include="Resources\Refresh2_32x32.png" />
+    <Content Include="Resources\reg2.jpg" />
+    <None Include="Resources\Root-Category.png" />
+    <None Include="Resources\RemoveItem_32x32.png" />
+    <None Include="Resources\reglementClient64.png" />
+    <None Include="Resources\reglementFrn64.png" />
+    <Content Include="Resources\rouge-utilisateur-icone-3654-96.png" />
+    <Content Include="Resources\rouge-utilisateur-icone-3654-9632.png" />
+    <Content Include="Resources\RS_STOCK.gif" />
+    <Content Include="Resources\run_script.png" />
+    <Content Include="Resources\save.png" />
+    <None Include="Resources\SaveAndClose_16x16.png" />
+    <None Include="Resources\SaveAndClose_32x32.png" />
+    <Content Include="Resources\service-manager-icone-5775-32.png" />
+    <Content Include="Resources\session-interrupteur-icone-6284-48.png" />
+    <Content Include="Resources\session-interrupteur-icone-8166-96.png" />
+    <Content Include="Resources\session-interrupteur-icone-8166-961.png" />
+    <Content Include="Resources\session-interrupteur-icone-8166-962.png" />
+    <Content Include="Resources\session-manager-icone-5899-96.png" />
+    <None Include="Resources\Show_32x32.png" />
+    <Content Include="Resources\sites-web-icone-9796-96.png" />
+    <Content Include="Resources\supprimer-icone-6859-32.png" />
+    <None Include="Resources\TicketCaisse.png" />
+    <Content Include="Resources\Torchlight_chm.png" />
+    <Content Include="Resources\touches-icone-8868-96.png" />
+    <Content Include="Resources\trouver-loupe-recherche-zoom-icone-6756-32.png" />
+    <Content Include="Resources\Type_Recherche.png" />
+    <None Include="Resources\Up.png" />
+    <Content Include="Resources\utilisateur-dajouter-icone-8846-32.png" />
+    <Content Include="Resources\utilisateur-icone-9647-96.png" />
+    <Content Include="Resources\Utilisateurs.png" />
+    <Content Include="Resources\Utilisateurs1.png" />
+    <Content Include="Resources\vcard-ajouter-icone-9305-32.png" />
+    <Content Include="Resources\verrouillage-icone-9682-128.png" />
+    <Content Include="Resources\verrouillage-ouvert-icone-7009-48.png" />
+    <Content Include="Resources\vert-utilisateur-icone-9301-128.png" />
+    <Content Include="Resources\vert-utilisateur-icone-9301-32.png" />
+    <Content Include="Resources\vert-utilisateur-icone-9301-3232.png" />
+    <Content Include="Resources\vert-utilisateur-icone-9301-3264.png" />
+    <Content Include="Resources\yield-2.png" />
+    <Content Include="Resources\ZaKtoon.png" />
+    <None Include="Web References\CHMGC\DCLIENT.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CHMGC\DCOMMANDE_FOURNISSEUR.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CHMGC\DDEVIS_CLIENT.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CHMGC\DEQUIPEMENT.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CHMGC\DFACTURE_FOURNISSEUR.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CHMGC\DFICHE_INTERVENTION.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CHMGC\DTICKET_CAISSE.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CHMGC\DTVA.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CHMGC\DTYPE_MAINTENANCE.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CHMGC\DUNITE_ARTICLE.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CHMGC\DVEHICULE.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CHMGC\GSWS.disco" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DS_GC.xsc">
+      <DependentUpon>DS_GC.xsd</DependentUpon>
+    </None>
+    <None Include="DS_GC.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_GC2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_GC.xss">
+      <DependentUpon>DS_GC.xsd</DependentUpon>
+    </None>
+    <None Include="DS_MOUV.xsc">
+      <DependentUpon>DS_MOUV.xsd</DependentUpon>
+    </None>
+    <None Include="DS_MOUV.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_MOUV.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_MOUV.xss">
+      <DependentUpon>DS_MOUV.xsd</DependentUpon>
+    </None>
+    <None Include="Web References\CHMGC\GSWS.wsdl" />
+    <None Include="Web References\CHMGC\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\CHMGC\RESULTAT_UTILISATEUR.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CHMGC\RESULT_QUERY.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CHMMARQUE\CHM_MARQUE.disco" />
+    <None Include="Web References\CHMCNX\CHMCNX.disco" />
+    <None Include="Web References\CHMMARQUE\CHM_MARQUE.wsdl" />
+    <None Include="Web References\CHMMARQUE\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\CHMMARQUE\RESULT_QUERY.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CHMSTAT\CHMSTAT.disco" />
+    <None Include="Web References\CHMGA\CHMGACCES.disco" />
+    <None Include="Web References\CHMCNX\CHMCNX.wsdl" />
+    <None Include="Web References\CHMCNX\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\CHMGA\CHMGACCES.wsdl" />
+    <None Include="Web References\CHMGA\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\CHMSTAT\CHMSTAT.wsdl" />
+    <None Include="Web References\CHMSTAT\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\CHM_LIGNE_ARTICLE\CHM_LIGNE_ARTICLE.disco" />
+    <None Include="app.config" />
+    <None Include="Web References\CHM_LIGNE_ARTICLE\CHM_LIGNE_ARTICLE.wsdl" />
+    <None Include="Web References\CHM_LIGNE_ARTICLE\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\CHM_LIGNE_ARTICLE\RESULT_QUERY.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CHM_FAMILLE_ARTICLE\CHM_FAMILLE_ARTICLE.disco" />
+    <None Include="Web References\CHM_FAMILLE_ARTICLE\CHM_FAMILLE_ARTICLE.wsdl" />
+    <None Include="Web References\CHM_FAMILLE_ARTICLE\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\CHM_FAMILLE_ARTICLE\RESULT_QUERY.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:10001/CHMCNX.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CHMCNX\</RelPath>
+      <UpdateFromURL>http://localhost:10001/CHMCNX.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CHM_CLIENT_APP_CHMCNX_CHMCNX</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:10001/CHMGACCES.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CHMGA\</RelPath>
+      <UpdateFromURL>http://localhost:10001/CHMGACCES.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CHM_CLIENT_APP_CHMGA_CHMGACCES</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:10001/CHMSTAT.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CHMSTAT\</RelPath>
+      <UpdateFromURL>http://localhost:10001/CHMSTAT.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CHM_CLIENT_APP_CHMSTAT_CHMSTAT</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:10001/CHM_FAMILLE_ARTICLE.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CHM_FAMILLE_ARTICLE\</RelPath>
+      <UpdateFromURL>http://localhost:10001/CHM_FAMILLE_ARTICLE.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CHM_CLIENT_APP_CHM_FAMILLE_ARTICLE_CHM_FAMILLE_ARTICLE</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:10001/CHM_LIGNE_ARTICLE.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CHM_LIGNE_ARTICLE\</RelPath>
+      <UpdateFromURL>http://localhost:10001/CHM_LIGNE_ARTICLE.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CHM_CLIENT_APP_CHM_LIGNE_ARTICLE_CHM_LIGNE_ARTICLE</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:10001/CHM_MARQUE.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CHMMARQUE\</RelPath>
+      <UpdateFromURL>http://localhost:10001/CHM_MARQUE.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CHM_CLIENT_APP_CHMMARQUE_CHM_MARQUE</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:10001/GSWS.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CHMGC\</RelPath>
+      <UpdateFromURL>http://localhost:10001/GSWS.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CHM_CLIENT_APP_CHMGC_GSWS</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CHM_GESTION_COMERCIALE FR\CHMComponents\CHMComponents.csproj">
+      <Project>{473E5C60-7409-4130-96CD-6FDC1B6218DC}</Project>
+      <Name>CHMComponents</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CHM_GESTION_COMERCIALE\CHM_GESTION_COMERCIALE.csproj">
+      <Project>{7885EFF8-8CAA-46C3-86C8-74BCDEDA10EB}</Project>
+      <Name>CHM_GESTION_COMERCIALE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\License\License.csproj">
+      <Project>{38555B4F-A462-461E-8810-BCAB93B9A16E}</Project>
+      <Name>License</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="BusinessObjects.CrystalReports.10.5">
+      <Visible>False</Visible>
+      <ProductName>Crystal Reports Basic for Visual Studio 2008 %28x86, x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.ReportViewer.8.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Studio 2008 Report Viewer</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="CrystalDecisions.CrystalReports.Engine">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Data.AdoDotNetInterop">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Enterprise.Framework">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Enterprise.InfoStore">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Enterprise.PluginManager">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.KeyCode">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ClientDoc">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommLayer">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonControls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Controllers">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataSetConversion">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ObjectFactory">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ReportDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.XmlSerialize">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportSource">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Shared">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Windows.Forms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.BonusSkins.v15.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Data.v15.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.ExpressApp.v15.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.ExpressApp.Win.v15.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.OfficeSkins.v15.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Persistent.Base.v15.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Printing.v15.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.RichEdit.v15.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Utils.v15.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Xpo.v15.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraBars.v15.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraEditors.v15.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraGrid.v15.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraLayout.v15.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraNavBar.v15.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraPrinting.v15.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraRichEdit.v15.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraTreeList.v15.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraVerticalGrid.v15.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

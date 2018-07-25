@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_TRV" targetNamespace="http://tempuri.org/DS_TRV.xsd" xmlns:mstns="http://tempuri.org/DS_TRV.xsd" xmlns="http://tempuri.org/DS_TRV.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="GCConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="GCConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CHM_CLIENT_APP.Properties.Settings.GlobalReference.Default.GCConnectionString1" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="GC_ENNEJMAConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="GC_ENNEJMAConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CHM_CLIENT_APP.Properties.Settings.GlobalReference.Default.GC_ENNEJMAConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="UNITETableAdapter" GeneratorDataComponentClassName="UNITETableAdapter" Name="UNITE" UserDataComponentName="UNITETableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="GCConnectionString1 (Settings)" DbObjectName="GC.dbo.UNITE" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        UNITE.*
+FROM            UNITE</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CODE_UNITE" DataSetColumn="CODE_UNITE" />
+              <Mapping SourceColumn="LIB_UNITE" DataSetColumn="LIB_UNITE" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ARTICLETableAdapter" GeneratorDataComponentClassName="ARTICLETableAdapter" Name="ARTICLE" UserDataComponentName="ARTICLETableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="GC_ENNEJMAConnectionString (Settings)" DbObjectName="GC_ENNEJMA.dbo.V_ARTICLE" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Fill" GenerateShortCommands="false" GeneratorSourceName="Fill" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        CODE_ARTICLE, REF_ARTICLE, DESIGNATION_ARTICLE, CODE_MARQUE, DESCRIPTION_ARTICLE, CODE_BARRE_ARTICLE, QTE_ARTICLE, CODE_UNITE, QTE_MIN_ARTICLE, PHOTO_ARTICLE, 
+                         PRIX_HT_A_ARTICLE, TAUX_MAJORATION, CODE_TVA, ETAT_ARTICLE, CODE_FAMILLE, CODE_CATEG, CODE_MAG, CODE_FOURNISSEUR, MAX_REMISE, PRIX_SOLDE, CODE_BARRE_ARTICLE_SOLDE, 
+                         PRIX_HT_V_ARTICLE, REF_FAMILLE, DESIGNATION_FAMILLE, DESCRIPTION_FAMILLE, LIB_CATEG, DESCRIPTION_CATEG, REF_MARQUE, DESIGNATION_MARQUE, DESCRIPTION_MARQUE, LIB_UNITE, 
+                         REF_FOURNISSEUR, RS_FOURNISSEUR, ADRESSE_FOURNISSEUR, TEL_FOURNISSEUR, TAUX_TVA, NOM_MAG, ADRESSE_MAG, TEL_MAG, REF_FRN, STOCKABLE, PRIX_FIXE, PRIX_TTC, TVA_ACHAT, 
+                         TAUX_TVA_ACHAT
+FROM            V_ARTICLE</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CODE_ARTICLE" DataSetColumn="CODE_ARTICLE" />
+              <Mapping SourceColumn="REF_ARTICLE" DataSetColumn="REF_ARTICLE" />
+              <Mapping SourceColumn="DESIGNATION_ARTICLE" DataSetColumn="DESIGNATION_ARTICLE" />
+              <Mapping SourceColumn="CODE_MARQUE" DataSetColumn="CODE_MARQUE" />
+              <Mapping SourceColumn="DESCRIPTION_ARTICLE" DataSetColumn="DESCRIPTION_ARTICLE" />
+              <Mapping SourceColumn="CODE_BARRE_ARTICLE" DataSetColumn="CODE_BARRE_ARTICLE" />
+              <Mapping SourceColumn="QTE_ARTICLE" DataSetColumn="QTE_ARTICLE" />
+              <Mapping SourceColumn="CODE_UNITE" DataSetColumn="CODE_UNITE" />
+              <Mapping SourceColumn="QTE_MIN_ARTICLE" DataSetColumn="QTE_MIN_ARTICLE" />
+              <Mapping SourceColumn="PHOTO_ARTICLE" DataSetColumn="PHOTO_ARTICLE" />
+              <Mapping SourceColumn="PRIX_HT_A_ARTICLE" DataSetColumn="PRIX_HT_A_ARTICLE" />
+              <Mapping SourceColumn="TAUX_MAJORATION" DataSetColumn="TAUX_MAJORATION" />
+              <Mapping SourceColumn="CODE_TVA" DataSetColumn="CODE_TVA" />
+              <Mapping SourceColumn="ETAT_ARTICLE" DataSetColumn="ETAT_ARTICLE" />
+              <Mapping SourceColumn="CODE_FAMILLE" DataSetColumn="CODE_FAMILLE" />
+              <Mapping SourceColumn="CODE_CATEG" DataSetColumn="CODE_CATEG" />
+              <Mapping SourceColumn="CODE_MAG" DataSetColumn="CODE_MAG" />
+              <Mapping SourceColumn="CODE_FOURNISSEUR" DataSetColumn="CODE_FOURNISSEUR" />
+              <Mapping SourceColumn="MAX_REMISE" DataSetColumn="MAX_REMISE" />
+              <Mapping SourceColumn="PRIX_SOLDE" DataSetColumn="PRIX_SOLDE" />
+              <Mapping SourceColumn="CODE_BARRE_ARTICLE_SOLDE" DataSetColumn="CODE_BARRE_ARTICLE_SOLDE" />
+              <Mapping SourceColumn="PRIX_HT_V_ARTICLE" DataSetColumn="PRIX_HT_V_ARTICLE" />
+              <Mapping SourceColumn="REF_FAMILLE" DataSetColumn="REF_FAMILLE" />
+              <Mapping SourceColumn="DESIGNATION_FAMILLE" DataSetColumn="DESIGNATION_FAMILLE" />
+              <Mapping SourceColumn="DESCRIPTION_FAMILLE" DataSetColumn="DESCRIPTION_FAMILLE" />
+              <Mapping SourceColumn="LIB_CATEG" DataSetColumn="LIB_CATEG" />
+              <Mapping SourceColumn="DESCRIPTION_CATEG" DataSetColumn="DESCRIPTION_CATEG" />
+              <Mapping SourceColumn="REF_MARQUE" DataSetColumn="REF_MARQUE" />
+              <Mapping SourceColumn="DESIGNATION_MARQUE" DataSetColumn="DESIGNATION_MARQUE" />
+              <Mapping SourceColumn="DESCRIPTION_MARQUE" DataSetColumn="DESCRIPTION_MARQUE" />
+              <Mapping SourceColumn="LIB_UNITE" DataSetColumn="LIB_UNITE" />
+              <Mapping SourceColumn="REF_FOURNISSEUR" DataSetColumn="REF_FOURNISSEUR" />
+              <Mapping SourceColumn="RS_FOURNISSEUR" DataSetColumn="RS_FOURNISSEUR" />
+              <Mapping SourceColumn="ADRESSE_FOURNISSEUR" DataSetColumn="ADRESSE_FOURNISSEUR" />
+              <Mapping SourceColumn="TEL_FOURNISSEUR" DataSetColumn="TEL_FOURNISSEUR" />
+              <Mapping SourceColumn="TAUX_TVA" DataSetColumn="TAUX_TVA" />
+              <Mapping SourceColumn="NOM_MAG" DataSetColumn="NOM_MAG" />
+              <Mapping SourceColumn="ADRESSE_MAG" DataSetColumn="ADRESSE_MAG" />
+              <Mapping SourceColumn="TEL_MAG" DataSetColumn="TEL_MAG" />
+              <Mapping SourceColumn="REF_FRN" DataSetColumn="REF_FRN" />
+              <Mapping SourceColumn="STOCKABLE" DataSetColumn="STOCKABLE" />
+              <Mapping SourceColumn="PRIX_FIXE" DataSetColumn="PRIX_FIXE" />
+              <Mapping SourceColumn="PRIX_TTC" DataSetColumn="PRIX_TTC" />
+              <Mapping SourceColumn="TVA_ACHAT" DataSetColumn="TVA_ACHAT" />
+              <Mapping SourceColumn="TAUX_TVA_ACHAT" DataSetColumn="TAUX_TVA_ACHAT" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_TRV" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_TRV" msprop:Generator_UserDSName="DS_TRV">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TRV" msprop:Generator_UserTableName="TRV" msprop:Generator_RowEvArgName="TRVRowChangeEvent" msprop:Generator_TableVarName="tableTRV" msprop:Generator_TablePropName="TRV" msprop:Generator_RowDeletingName="TRVRowDeleting" msprop:Generator_RowChangingName="TRVRowChanging" msprop:Generator_RowDeletedName="TRVRowDeleted" msprop:Generator_RowEvHandlerName="TRVRowChangeEventHandler" msprop:Generator_TableClassName="TRVDataTable" msprop:Generator_RowChangedName="TRVRowChanged" msprop:Generator_RowClassName="TRVRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TRV_ID" msdata:Caption="Id" msprop:Generator_ColumnVarNameInTable="columnTRV_ID" msprop:Generator_ColumnPropNameInRow="TRV_ID" msprop:Generator_ColumnPropNameInTable="TRV_IDColumn" msprop:Generator_UserColumnName="TRV_ID" type="xs:decimal" />
+              <xs:element name="TRV_LIBELLE" msdata:Caption="Libellé Tarif" msprop:Generator_ColumnVarNameInTable="columnTRV_LIBELLE" msprop:Generator_ColumnPropNameInRow="TRV_LIBELLE" msprop:Generator_ColumnPropNameInTable="TRV_LIBELLEColumn" msprop:Generator_UserColumnName="TRV_LIBELLE" type="xs:string" minOccurs="0" />
+              <xs:element name="TRV_CODE_ARTICLE" msdata:Caption="Article" msprop:nullValue="&lt;DBNull&gt;" msprop:Generator_ColumnPropNameInRow="TRV_CODE_ARTICLE" msprop:Generator_ColumnVarNameInTable="columnTRV_CODE_ARTICLE" msprop:Generator_ColumnPropNameInTable="TRV_CODE_ARTICLEColumn" msprop:Generator_UserColumnName="TRV_CODE_ARTICLE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TRV_CODE_CLIENT" msdata:Caption="Client" msprop:nullValue="&lt;DBNull&gt;" msprop:Generator_ColumnPropNameInRow="TRV_CODE_CLIENT" msprop:Generator_ColumnVarNameInTable="columnTRV_CODE_CLIENT" msprop:Generator_ColumnPropNameInTable="TRV_CODE_CLIENTColumn" msprop:Generator_UserColumnName="TRV_CODE_CLIENT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TRV_CODE_UNITE" msdata:Caption="Unité" msprop:nullValue="&lt;DBNull&gt;" msprop:Generator_ColumnPropNameInRow="TRV_CODE_UNITE" msprop:Generator_ColumnVarNameInTable="columnTRV_CODE_UNITE" msprop:Generator_ColumnPropNameInTable="TRV_CODE_UNITEColumn" msprop:Generator_UserColumnName="TRV_CODE_UNITE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TRV_PRIX_HT" msdata:Caption="Prix HT" msprop:Generator_ColumnVarNameInTable="columnTRV_PRIX_HT" msprop:Generator_ColumnPropNameInRow="TRV_PRIX_HT" msprop:Generator_ColumnPropNameInTable="TRV_PRIX_HTColumn" msprop:Generator_UserColumnName="TRV_PRIX_HT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TRV_TX_REMISE" msdata:Caption="% Remise" msprop:Generator_ColumnVarNameInTable="columnTRV_TX_REMISE" msprop:Generator_ColumnPropNameInRow="TRV_TX_REMISE" msprop:Generator_ColumnPropNameInTable="TRV_TX_REMISEColumn" msprop:Generator_UserColumnName="TRV_TX_REMISE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TRV_DEBUT_VALID" msdata:Caption="Debut validité" msprop:Generator_ColumnVarNameInTable="columnTRV_DEBUT_VALID" msprop:Generator_ColumnPropNameInRow="TRV_DEBUT_VALID" msprop:Generator_ColumnPropNameInTable="TRV_DEBUT_VALIDColumn" msprop:Generator_UserColumnName="TRV_DEBUT_VALID" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TRV_FIN_VALID" msdata:Caption="Fin validité" msprop:Generator_ColumnVarNameInTable="columnTRV_FIN_VALID" msprop:Generator_ColumnPropNameInRow="TRV_FIN_VALID" msprop:Generator_ColumnPropNameInTable="TRV_FIN_VALIDColumn" msprop:Generator_UserColumnName="TRV_FIN_VALID" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TRV_DATE_CREATION" msdata:Caption="Date Création" msprop:Generator_ColumnVarNameInTable="columnTRV_DATE_CREATION" msprop:Generator_ColumnPropNameInRow="TRV_DATE_CREATION" msprop:Generator_ColumnPropNameInTable="TRV_DATE_CREATIONColumn" msprop:Generator_UserColumnName="TRV_DATE_CREATION" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TRV_CREATEUR" msdata:Caption="Créateur" msprop:Generator_ColumnVarNameInTable="columnTRV_CREATEUR" msprop:Generator_ColumnPropNameInRow="TRV_CREATEUR" msprop:Generator_ColumnPropNameInTable="TRV_CREATEURColumn" msprop:Generator_UserColumnName="TRV_CREATEUR" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TRV_DATE_MODIF" msdata:Caption="Date Modification" msprop:Generator_ColumnVarNameInTable="columnTRV_DATE_MODIF" msprop:Generator_ColumnPropNameInRow="TRV_DATE_MODIF" msprop:Generator_ColumnPropNameInTable="TRV_DATE_MODIFColumn" msprop:Generator_UserColumnName="TRV_DATE_MODIF" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TRV_MODIFICATEUR" msdata:Caption="Modificateur" msprop:Generator_ColumnVarNameInTable="columnTRV_MODIFICATEUR" msprop:Generator_ColumnPropNameInRow="TRV_MODIFICATEUR" msprop:Generator_ColumnPropNameInTable="TRV_MODIFICATEURColumn" msprop:Generator_UserColumnName="TRV_MODIFICATEUR" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="UNITE" msprop:Generator_UserTableName="UNITE" msprop:Generator_RowEvArgName="UNITERowChangeEvent" msprop:Generator_TableVarName="tableUNITE" msprop:Generator_TablePropName="UNITE" msprop:Generator_RowDeletingName="UNITERowDeleting" msprop:Generator_RowChangingName="UNITERowChanging" msprop:Generator_RowDeletedName="UNITERowDeleted" msprop:Generator_RowEvHandlerName="UNITERowChangeEventHandler" msprop:Generator_TableClassName="UNITEDataTable" msprop:Generator_RowChangedName="UNITERowChanged" msprop:Generator_RowClassName="UNITERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CODE_UNITE" msdata:ReadOnly="true" msdata:Caption="Code" msprop:Generator_ColumnVarNameInTable="columnCODE_UNITE" msprop:Generator_ColumnPropNameInRow="CODE_UNITE" msprop:Generator_ColumnPropNameInTable="CODE_UNITEColumn" msprop:Generator_UserColumnName="CODE_UNITE" type="xs:decimal" />
+              <xs:element name="LIB_UNITE" msprop:Generator_ColumnVarNameInTable="columnLIB_UNITE" msprop:Generator_ColumnPropNameInRow="LIB_UNITE" msprop:Generator_ColumnPropNameInTable="LIB_UNITEColumn" msprop:Generator_UserColumnName="LIB_UNITE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ARTICLE" msprop:Generator_UserTableName="ARTICLE" msprop:Generator_RowEvArgName="ARTICLERowChangeEvent" msprop:Generator_TableVarName="tableARTICLE" msprop:Generator_TablePropName="ARTICLE" msprop:Generator_RowDeletingName="ARTICLERowDeleting" msprop:Generator_RowChangingName="ARTICLERowChanging" msprop:Generator_RowDeletedName="ARTICLERowDeleted" msprop:Generator_RowEvHandlerName="ARTICLERowChangeEventHandler" msprop:Generator_TableClassName="ARTICLEDataTable" msprop:Generator_RowChangedName="ARTICLERowChanged" msprop:Generator_RowClassName="ARTICLERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CODE_ARTICLE" msdata:Caption="Code" msprop:Generator_ColumnVarNameInTable="columnCODE_ARTICLE" msprop:Generator_ColumnPropNameInRow="CODE_ARTICLE" msprop:Generator_ColumnPropNameInTable="CODE_ARTICLEColumn" msprop:Generator_UserColumnName="CODE_ARTICLE" type="xs:decimal" />
+              <xs:element name="REF_ARTICLE" msdata:Caption="Réf." msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="REF_ARTICLE" msprop:Generator_ColumnVarNameInTable="columnREF_ARTICLE" msprop:Generator_ColumnPropNameInTable="REF_ARTICLEColumn" msprop:Generator_UserColumnName="REF_ARTICLE" type="xs:string" minOccurs="0" />
+              <xs:element name="DESIGNATION_ARTICLE" msdata:Caption="Désignation" msprop:Generator_ColumnVarNameInTable="columnDESIGNATION_ARTICLE" msprop:Generator_ColumnPropNameInRow="DESIGNATION_ARTICLE" msprop:Generator_ColumnPropNameInTable="DESIGNATION_ARTICLEColumn" msprop:Generator_UserColumnName="DESIGNATION_ARTICLE" type="xs:string" minOccurs="0" />
+              <xs:element name="CODE_MARQUE" msdata:Caption="Code Marque" msprop:Generator_ColumnVarNameInTable="columnCODE_MARQUE" msprop:Generator_ColumnPropNameInRow="CODE_MARQUE" msprop:Generator_ColumnPropNameInTable="CODE_MARQUEColumn" msprop:Generator_UserColumnName="CODE_MARQUE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DESCRIPTION_ARTICLE" msdata:Caption="Description Article" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="DESCRIPTION_ARTICLE" msprop:Generator_ColumnVarNameInTable="columnDESCRIPTION_ARTICLE" msprop:Generator_ColumnPropNameInTable="DESCRIPTION_ARTICLEColumn" msprop:Generator_UserColumnName="DESCRIPTION_ARTICLE" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="CODE_BARRE_ARTICLE" msdata:Caption="Code à barre" msprop:Generator_ColumnVarNameInTable="columnCODE_BARRE_ARTICLE" msprop:Generator_ColumnPropNameInRow="CODE_BARRE_ARTICLE" msprop:Generator_ColumnPropNameInTable="CODE_BARRE_ARTICLEColumn" msprop:Generator_UserColumnName="CODE_BARRE_ARTICLE" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="QTE_ARTICLE" msdata:Caption="Qté" msprop:Generator_ColumnVarNameInTable="columnQTE_ARTICLE" msprop:Generator_ColumnPropNameInRow="QTE_ARTICLE" msprop:Generator_ColumnPropNameInTable="QTE_ARTICLEColumn" msprop:Generator_UserColumnName="QTE_ARTICLE" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="CODE_UNITE" msdata:Caption="Code Unité" msprop:Generator_ColumnVarNameInTable="columnCODE_UNITE" msprop:Generator_ColumnPropNameInRow="CODE_UNITE" msprop:Generator_ColumnPropNameInTable="CODE_UNITEColumn" msprop:Generator_UserColumnName="CODE_UNITE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QTE_MIN_ARTICLE" msdata:Caption="Qté Minimale" msprop:Generator_ColumnVarNameInTable="columnQTE_MIN_ARTICLE" msprop:Generator_ColumnPropNameInRow="QTE_MIN_ARTICLE" msprop:Generator_ColumnPropNameInTable="QTE_MIN_ARTICLEColumn" msprop:Generator_UserColumnName="QTE_MIN_ARTICLE" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="PHOTO_ARTICLE" msdata:Caption="Photo" msprop:Generator_ColumnVarNameInTable="columnPHOTO_ARTICLE" msprop:Generator_ColumnPropNameInRow="PHOTO_ARTICLE" msprop:Generator_ColumnPropNameInTable="PHOTO_ARTICLEColumn" msprop:Generator_UserColumnName="PHOTO_ARTICLE" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="PRIX_HT_A_ARTICLE" msdata:Caption="Prix HT Achat" msprop:Generator_ColumnVarNameInTable="columnPRIX_HT_A_ARTICLE" msprop:Generator_ColumnPropNameInRow="PRIX_HT_A_ARTICLE" msprop:Generator_ColumnPropNameInTable="PRIX_HT_A_ARTICLEColumn" msprop:Generator_UserColumnName="PRIX_HT_A_ARTICLE" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="TAUX_MAJORATION" msdata:Caption="% Majoration" msprop:Generator_ColumnVarNameInTable="columnTAUX_MAJORATION" msprop:Generator_ColumnPropNameInRow="TAUX_MAJORATION" msprop:Generator_ColumnPropNameInTable="TAUX_MAJORATIONColumn" msprop:Generator_UserColumnName="TAUX_MAJORATION" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="CODE_TVA" msdata:Caption="Code TVA Vente" msprop:Generator_ColumnVarNameInTable="columnCODE_TVA" msprop:Generator_ColumnPropNameInRow="CODE_TVA" msprop:Generator_ColumnPropNameInTable="CODE_TVAColumn" msprop:Generator_UserColumnName="CODE_TVA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ETAT_ARTICLE" msdata:Caption="Bloqué" msprop:Generator_ColumnVarNameInTable="columnETAT_ARTICLE" msprop:Generator_ColumnPropNameInRow="ETAT_ARTICLE" msprop:Generator_ColumnPropNameInTable="ETAT_ARTICLEColumn" msprop:Generator_UserColumnName="ETAT_ARTICLE" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="CODE_FAMILLE" msdata:Caption="Code Famille" msprop:Generator_ColumnVarNameInTable="columnCODE_FAMILLE" msprop:Generator_ColumnPropNameInRow="CODE_FAMILLE" msprop:Generator_ColumnPropNameInTable="CODE_FAMILLEColumn" msprop:Generator_UserColumnName="CODE_FAMILLE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CODE_CATEG" msdata:Caption="Code Catégorie" msprop:Generator_ColumnVarNameInTable="columnCODE_CATEG" msprop:Generator_ColumnPropNameInRow="CODE_CATEG" msprop:Generator_ColumnPropNameInTable="CODE_CATEGColumn" msprop:Generator_UserColumnName="CODE_CATEG" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CODE_MAG" msdata:Caption="Code Magasin" msprop:Generator_ColumnVarNameInTable="columnCODE_MAG" msprop:Generator_ColumnPropNameInRow="CODE_MAG" msprop:Generator_ColumnPropNameInTable="CODE_MAGColumn" msprop:Generator_UserColumnName="CODE_MAG" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CODE_FOURNISSEUR" msdata:Caption="Code Fournisseur" msprop:Generator_ColumnVarNameInTable="columnCODE_FOURNISSEUR" msprop:Generator_ColumnPropNameInRow="CODE_FOURNISSEUR" msprop:Generator_ColumnPropNameInTable="CODE_FOURNISSEURColumn" msprop:Generator_UserColumnName="CODE_FOURNISSEUR" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MAX_REMISE" msdata:Caption="% Max Remise" msprop:Generator_ColumnVarNameInTable="columnMAX_REMISE" msprop:Generator_ColumnPropNameInRow="MAX_REMISE" msprop:Generator_ColumnPropNameInTable="MAX_REMISEColumn" msprop:Generator_UserColumnName="MAX_REMISE" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="PRIX_SOLDE" msdata:Caption="Prix Solde" msprop:Generator_ColumnVarNameInTable="columnPRIX_SOLDE" msprop:Generator_ColumnPropNameInRow="PRIX_SOLDE" msprop:Generator_ColumnPropNameInTable="PRIX_SOLDEColumn" msprop:Generator_UserColumnName="PRIX_SOLDE" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="CODE_BARRE_ARTICLE_SOLDE" msdata:Caption="Code à barre Solde" msprop:Generator_ColumnVarNameInTable="columnCODE_BARRE_ARTICLE_SOLDE" msprop:Generator_ColumnPropNameInRow="CODE_BARRE_ARTICLE_SOLDE" msprop:Generator_ColumnPropNameInTable="CODE_BARRE_ARTICLE_SOLDEColumn" msprop:Generator_UserColumnName="CODE_BARRE_ARTICLE_SOLDE" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="PRIX_HT_V_ARTICLE" msdata:Caption="Prix HT Vente" msprop:Generator_ColumnVarNameInTable="columnPRIX_HT_V_ARTICLE" msprop:Generator_ColumnPropNameInRow="PRIX_HT_V_ARTICLE" msprop:Generator_ColumnPropNameInTable="PRIX_HT_V_ARTICLEColumn" msprop:Generator_UserColumnName="PRIX_HT_V_ARTICLE" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="REF_FAMILLE" msdata:Caption="Réf Famille" msprop:Generator_ColumnVarNameInTable="columnREF_FAMILLE" msprop:Generator_ColumnPropNameInRow="REF_FAMILLE" msprop:Generator_ColumnPropNameInTable="REF_FAMILLEColumn" msprop:Generator_UserColumnName="REF_FAMILLE" type="xs:string" minOccurs="0" />
+              <xs:element name="DESIGNATION_FAMILLE" msdata:Caption="Famille" msprop:Generator_ColumnVarNameInTable="columnDESIGNATION_FAMILLE" msprop:Generator_ColumnPropNameInRow="DESIGNATION_FAMILLE" msprop:Generator_ColumnPropNameInTable="DESIGNATION_FAMILLEColumn" msprop:Generator_UserColumnName="DESIGNATION_FAMILLE" type="xs:string" minOccurs="0" />
+              <xs:element name="DESCRIPTION_FAMILLE" msdata:Caption="Desc. Famille" msprop:Generator_ColumnVarNameInTable="columnDESCRIPTION_FAMILLE" msprop:Generator_ColumnPropNameInRow="DESCRIPTION_FAMILLE" msprop:Generator_ColumnPropNameInTable="DESCRIPTION_FAMILLEColumn" msprop:Generator_UserColumnName="DESCRIPTION_FAMILLE" type="xs:string" minOccurs="0" />
+              <xs:element name="LIB_CATEG" msdata:Caption="Catégorie" msprop:Generator_ColumnVarNameInTable="columnLIB_CATEG" msprop:Generator_ColumnPropNameInRow="LIB_CATEG" msprop:Generator_ColumnPropNameInTable="LIB_CATEGColumn" msprop:Generator_UserColumnName="LIB_CATEG" type="xs:string" minOccurs="0" />
+              <xs:element name="DESCRIPTION_CATEG" msdata:Caption="Desc. Categorie" msprop:Generator_ColumnVarNameInTable="columnDESCRIPTION_CATEG" msprop:Generator_ColumnPropNameInRow="DESCRIPTION_CATEG" msprop:Generator_ColumnPropNameInTable="DESCRIPTION_CATEGColumn" msprop:Generator_UserColumnName="DESCRIPTION_CATEG" type="xs:string" minOccurs="0" />
+              <xs:element name="REF_MARQUE" msdata:Caption="Ref. Marque" msprop:Generator_ColumnVarNameInTable="columnREF_MARQUE" msprop:Generator_ColumnPropNameInRow="REF_MARQUE" msprop:Generator_ColumnPropNameInTable="REF_MARQUEColumn" msprop:Generator_UserColumnName="REF_MARQUE" type="xs:string" minOccurs="0" />
+              <xs:element name="DESIGNATION_MARQUE" msdata:Caption="Marque" msprop:Generator_ColumnVarNameInTable="columnDESIGNATION_MARQUE" msprop:Generator_ColumnPropNameInRow="DESIGNATION_MARQUE" msprop:Generator_ColumnPropNameInTable="DESIGNATION_MARQUEColumn" msprop:Generator_UserColumnName="DESIGNATION_MARQUE" type="xs:string" minOccurs="0" />
+              <xs:element name="DESCRIPTION_MARQUE" msdata:Caption="Desc. Marque" msprop:Generator_ColumnVarNameInTable="columnDESCRIPTION_MARQUE" msprop:Generator_ColumnPropNameInRow="DESCRIPTION_MARQUE" msprop:Generator_ColumnPropNameInTable="DESCRIPTION_MARQUEColumn" msprop:Generator_UserColumnName="DESCRIPTION_MARQUE" type="xs:string" minOccurs="0" />
+              <xs:element name="LIB_UNITE" msdata:Caption="Unité" msprop:Generator_ColumnVarNameInTable="columnLIB_UNITE" msprop:Generator_ColumnPropNameInRow="LIB_UNITE" msprop:Generator_ColumnPropNameInTable="LIB_UNITEColumn" msprop:Generator_UserColumnName="LIB_UNITE" type="xs:string" minOccurs="0" />
+              <xs:element name="REF_FOURNISSEUR" msdata:Caption="Réf. Fournisseur" msprop:Generator_ColumnVarNameInTable="columnREF_FOURNISSEUR" msprop:Generator_ColumnPropNameInRow="REF_FOURNISSEUR" msprop:Generator_ColumnPropNameInTable="REF_FOURNISSEURColumn" msprop:Generator_UserColumnName="REF_FOURNISSEUR" type="xs:string" minOccurs="0" />
+              <xs:element name="RS_FOURNISSEUR" msdata:Caption="Fournisseur" msprop:Generator_ColumnVarNameInTable="columnRS_FOURNISSEUR" msprop:Generator_ColumnPropNameInRow="RS_FOURNISSEUR" msprop:Generator_ColumnPropNameInTable="RS_FOURNISSEURColumn" msprop:Generator_UserColumnName="RS_FOURNISSEUR" type="xs:string" minOccurs="0" />
+              <xs:element name="ADRESSE_FOURNISSEUR" msdata:Caption="Adresse Fournisseur" msprop:Generator_ColumnVarNameInTable="columnADRESSE_FOURNISSEUR" msprop:Generator_ColumnPropNameInRow="ADRESSE_FOURNISSEUR" msprop:Generator_ColumnPropNameInTable="ADRESSE_FOURNISSEURColumn" msprop:Generator_UserColumnName="ADRESSE_FOURNISSEUR" type="xs:string" minOccurs="0" />
+              <xs:element name="TEL_FOURNISSEUR" msdata:Caption="Tel Fournisseur" msprop:Generator_ColumnVarNameInTable="columnTEL_FOURNISSEUR" msprop:Generator_ColumnPropNameInRow="TEL_FOURNISSEUR" msprop:Generator_ColumnPropNameInTable="TEL_FOURNISSEURColumn" msprop:Generator_UserColumnName="TEL_FOURNISSEUR" type="xs:string" minOccurs="0" />
+              <xs:element name="TAUX_TVA" msdata:Caption="Taux Tva Vente" msprop:Generator_ColumnVarNameInTable="columnTAUX_TVA" msprop:Generator_ColumnPropNameInRow="TAUX_TVA" msprop:Generator_ColumnPropNameInTable="TAUX_TVAColumn" msprop:Generator_UserColumnName="TAUX_TVA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NOM_MAG" msdata:Caption="Magasin Par Défaut" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="NOM_MAG" msprop:Generator_ColumnVarNameInTable="columnNOM_MAG" msprop:Generator_ColumnPropNameInTable="NOM_MAGColumn" msprop:Generator_UserColumnName="NOM_MAG" type="xs:string" minOccurs="0" />
+              <xs:element name="ADRESSE_MAG" msdata:Caption="Adresse Magasin" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="ADRESSE_MAG" msprop:Generator_ColumnVarNameInTable="columnADRESSE_MAG" msprop:Generator_ColumnPropNameInTable="ADRESSE_MAGColumn" msprop:Generator_UserColumnName="ADRESSE_MAG" type="xs:string" minOccurs="0" />
+              <xs:element name="TEL_MAG" msdata:Caption="Tel Magasin" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="TEL_MAG" msprop:Generator_ColumnVarNameInTable="columnTEL_MAG" msprop:Generator_ColumnPropNameInTable="TEL_MAGColumn" msprop:Generator_UserColumnName="TEL_MAG" type="xs:string" minOccurs="0" />
+              <xs:element name="REF_FRN" msdata:Caption="Reférence Fournisseur" msprop:Generator_ColumnVarNameInTable="columnREF_FRN" msprop:Generator_ColumnPropNameInRow="REF_FRN" msprop:Generator_ColumnPropNameInTable="REF_FRNColumn" msprop:Generator_UserColumnName="REF_FRN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STOCKABLE" msdata:Caption="Stockable" msprop:Generator_ColumnVarNameInTable="columnSTOCKABLE" msprop:Generator_ColumnPropNameInRow="STOCKABLE" msprop:Generator_ColumnPropNameInTable="STOCKABLEColumn" msprop:Generator_UserColumnName="STOCKABLE" type="xs:boolean" minOccurs="0" />
+              <xs:element name="PRIX_FIXE" msdata:Caption="Prix Fixe" msprop:Generator_ColumnVarNameInTable="columnPRIX_FIXE" msprop:Generator_ColumnPropNameInRow="PRIX_FIXE" msprop:Generator_ColumnPropNameInTable="PRIX_FIXEColumn" msprop:Generator_UserColumnName="PRIX_FIXE" type="xs:boolean" minOccurs="0" />
+              <xs:element name="PRIX_TTC" msdata:Caption="Prix TTC" msprop:Generator_ColumnVarNameInTable="columnPRIX_TTC" msprop:Generator_ColumnPropNameInRow="PRIX_TTC" msprop:Generator_ColumnPropNameInTable="PRIX_TTCColumn" msprop:Generator_UserColumnName="PRIX_TTC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TVA_ACHAT" msdata:Caption="Code Tva Achat" msprop:Generator_ColumnVarNameInTable="columnTVA_ACHAT" msprop:Generator_ColumnPropNameInRow="TVA_ACHAT" msprop:Generator_ColumnPropNameInTable="TVA_ACHATColumn" msprop:Generator_UserColumnName="TVA_ACHAT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TAUX_TVA_ACHAT" msdata:Caption="Taux Tva Achat" msprop:Generator_ColumnVarNameInTable="columnTAUX_TVA_ACHAT" msprop:Generator_ColumnPropNameInRow="TAUX_TVA_ACHAT" msprop:Generator_ColumnPropNameInTable="TAUX_TVA_ACHATColumn" msprop:Generator_UserColumnName="TAUX_TVA_ACHAT" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CLIENT" msprop:Generator_UserTableName="CLIENT" msprop:Generator_RowEvArgName="CLIENTRowChangeEvent" msprop:Generator_TableVarName="tableCLIENT" msprop:Generator_TablePropName="CLIENT" msprop:Generator_RowDeletingName="CLIENTRowDeleting" msprop:Generator_RowChangingName="CLIENTRowChanging" msprop:Generator_RowDeletedName="CLIENTRowDeleted" msprop:Generator_RowEvHandlerName="CLIENTRowChangeEventHandler" msprop:Generator_TableClassName="CLIENTDataTable" msprop:Generator_RowChangedName="CLIENTRowChanged" msprop:Generator_RowClassName="CLIENTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CODE_CLIENT" msprop:Generator_ColumnVarNameInTable="columnCODE_CLIENT" msprop:Generator_ColumnPropNameInRow="CODE_CLIENT" msprop:Generator_ColumnPropNameInTable="CODE_CLIENTColumn" msprop:Generator_UserColumnName="CODE_CLIENT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RS_CLIENT" msprop:Generator_ColumnVarNameInTable="columnRS_CLIENT" msprop:Generator_ColumnPropNameInRow="RS_CLIENT" msprop:Generator_ColumnPropNameInTable="RS_CLIENTColumn" msprop:Generator_UserColumnName="RS_CLIENT" type="xs:string" minOccurs="0" />
+              <xs:element name="REF_CLIENT" msprop:Generator_ColumnVarNameInTable="columnREF_CLIENT" msprop:Generator_ColumnPropNameInRow="REF_CLIENT" msprop:Generator_ColumnPropNameInTable="REF_CLIENTColumn" msprop:Generator_UserColumnName="REF_CLIENT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="TRVKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TRV" />
+      <xs:field xpath="mstns:TRV_ID" />
+    </xs:unique>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:UNITE" />
+      <xs:field xpath="mstns:CODE_UNITE" />
+    </xs:unique>
+    <xs:unique name="ARTICLE_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ARTICLE" />
+      <xs:field xpath="mstns:CODE_ARTICLE" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

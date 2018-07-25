@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CHM_DS_IMP_CB" targetNamespace="http://tempuri.org/CHM_DS_IMP_CB.xsd" xmlns:mstns="http://tempuri.org/CHM_DS_IMP_CB.xsd" xmlns="http://tempuri.org/CHM_DS_IMP_CB.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CHM_DS_IMP_CB" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="CHM_DS_IMP_CB" msprop:Generator_DataSetName="CHM_DS_IMP_CB" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CB5" msprop:Generator_UserTableName="CB5" msprop:Generator_RowDeletedName="CB5RowDeleted" msprop:Generator_RowChangedName="CB5RowChanged" msprop:Generator_RowClassName="CB5Row" msprop:Generator_RowChangingName="CB5RowChanging" msprop:Generator_RowEvArgName="CB5RowChangeEvent" msprop:Generator_RowEvHandlerName="CB5RowChangeEventHandler" msprop:Generator_TableClassName="CB5DataTable" msprop:Generator_TableVarName="tableCB5" msprop:Generator_RowDeletingName="CB5RowDeleting" msprop:Generator_TablePropName="CB5">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CODE_ARTICLE1" msprop:Generator_UserColumnName="CODE_ARTICLE1" msprop:Generator_ColumnVarNameInTable="columnCODE_ARTICLE1" msprop:Generator_ColumnPropNameInRow="CODE_ARTICLE1" msprop:Generator_ColumnPropNameInTable="CODE_ARTICLE1Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DES_ARTICLE1" msprop:Generator_UserColumnName="DES_ARTICLE1" msprop:Generator_ColumnVarNameInTable="columnDES_ARTICLE1" msprop:Generator_ColumnPropNameInRow="DES_ARTICLE1" msprop:Generator_ColumnPropNameInTable="DES_ARTICLE1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="PRIX_TTC1" msprop:Generator_UserColumnName="PRIX_TTC1" msprop:Generator_ColumnVarNameInTable="columnPRIX_TTC1" msprop:Generator_ColumnPropNameInRow="PRIX_TTC1" msprop:Generator_ColumnPropNameInTable="PRIX_TTC1Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CB_ARTICLE1" msprop:Generator_UserColumnName="CB_ARTICLE1" msprop:Generator_ColumnVarNameInTable="columnCB_ARTICLE1" msprop:Generator_ColumnPropNameInRow="CB_ARTICLE1" msprop:Generator_ColumnPropNameInTable="CB_ARTICLE1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="CODE_ARTICLE2" msprop:Generator_UserColumnName="CODE_ARTICLE2" msprop:Generator_ColumnVarNameInTable="columnCODE_ARTICLE2" msprop:Generator_ColumnPropNameInRow="CODE_ARTICLE2" msprop:Generator_ColumnPropNameInTable="CODE_ARTICLE2Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DES_ARTICLE2" msprop:Generator_UserColumnName="DES_ARTICLE2" msprop:Generator_ColumnVarNameInTable="columnDES_ARTICLE2" msprop:Generator_ColumnPropNameInRow="DES_ARTICLE2" msprop:Generator_ColumnPropNameInTable="DES_ARTICLE2Column" type="xs:string" minOccurs="0" />
+              <xs:element name="PRIX_TTC2" msprop:Generator_UserColumnName="PRIX_TTC2" msprop:Generator_ColumnVarNameInTable="columnPRIX_TTC2" msprop:Generator_ColumnPropNameInRow="PRIX_TTC2" msprop:Generator_ColumnPropNameInTable="PRIX_TTC2Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CB_ARTICLE2" msprop:Generator_UserColumnName="CB_ARTICLE2" msprop:Generator_ColumnVarNameInTable="columnCB_ARTICLE2" msprop:Generator_ColumnPropNameInRow="CB_ARTICLE2" msprop:Generator_ColumnPropNameInTable="CB_ARTICLE2Column" type="xs:string" minOccurs="0" />
+              <xs:element name="CODE_ARTICLE3" msprop:Generator_UserColumnName="CODE_ARTICLE3" msprop:Generator_ColumnVarNameInTable="columnCODE_ARTICLE3" msprop:Generator_ColumnPropNameInRow="CODE_ARTICLE3" msprop:Generator_ColumnPropNameInTable="CODE_ARTICLE3Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DES_ARTICLE3" msprop:Generator_UserColumnName="DES_ARTICLE3" msprop:Generator_ColumnVarNameInTable="columnDES_ARTICLE3" msprop:Generator_ColumnPropNameInRow="DES_ARTICLE3" msprop:Generator_ColumnPropNameInTable="DES_ARTICLE3Column" type="xs:string" minOccurs="0" />
+              <xs:element name="PRIX_TTC3" msprop:Generator_UserColumnName="PRIX_TTC3" msprop:Generator_ColumnVarNameInTable="columnPRIX_TTC3" msprop:Generator_ColumnPropNameInRow="PRIX_TTC3" msprop:Generator_ColumnPropNameInTable="PRIX_TTC3Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CB_ARTICLE3" msprop:Generator_UserColumnName="CB_ARTICLE3" msprop:Generator_ColumnVarNameInTable="columnCB_ARTICLE3" msprop:Generator_ColumnPropNameInRow="CB_ARTICLE3" msprop:Generator_ColumnPropNameInTable="CB_ARTICLE3Column" type="xs:string" minOccurs="0" />
+              <xs:element name="CODE_ARTICLE4" msprop:Generator_UserColumnName="CODE_ARTICLE4" msprop:Generator_ColumnVarNameInTable="columnCODE_ARTICLE4" msprop:Generator_ColumnPropNameInRow="CODE_ARTICLE4" msprop:Generator_ColumnPropNameInTable="CODE_ARTICLE4Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DES_ARTICLE4" msprop:Generator_UserColumnName="DES_ARTICLE4" msprop:Generator_ColumnVarNameInTable="columnDES_ARTICLE4" msprop:Generator_ColumnPropNameInRow="DES_ARTICLE4" msprop:Generator_ColumnPropNameInTable="DES_ARTICLE4Column" type="xs:string" minOccurs="0" />
+              <xs:element name="PRIX_TTC4" msprop:Generator_UserColumnName="PRIX_TTC4" msprop:Generator_ColumnVarNameInTable="columnPRIX_TTC4" msprop:Generator_ColumnPropNameInRow="PRIX_TTC4" msprop:Generator_ColumnPropNameInTable="PRIX_TTC4Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CB_ARTICLE4" msprop:Generator_UserColumnName="CB_ARTICLE4" msprop:Generator_ColumnVarNameInTable="columnCB_ARTICLE4" msprop:Generator_ColumnPropNameInRow="CB_ARTICLE4" msprop:Generator_ColumnPropNameInTable="CB_ARTICLE4Column" type="xs:string" minOccurs="0" />
+              <xs:element name="CODE_ARTICLE5" msprop:Generator_UserColumnName="CODE_ARTICLE5" msprop:Generator_ColumnVarNameInTable="columnCODE_ARTICLE5" msprop:Generator_ColumnPropNameInRow="CODE_ARTICLE5" msprop:Generator_ColumnPropNameInTable="CODE_ARTICLE5Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DES_ARTICLE5" msprop:Generator_UserColumnName="DES_ARTICLE5" msprop:Generator_ColumnVarNameInTable="columnDES_ARTICLE5" msprop:Generator_ColumnPropNameInRow="DES_ARTICLE5" msprop:Generator_ColumnPropNameInTable="DES_ARTICLE5Column" type="xs:string" minOccurs="0" />
+              <xs:element name="PRIX_TTC5" msprop:Generator_UserColumnName="PRIX_TTC5" msprop:Generator_ColumnVarNameInTable="columnPRIX_TTC5" msprop:Generator_ColumnPropNameInRow="PRIX_TTC5" msprop:Generator_ColumnPropNameInTable="PRIX_TTC5Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CB_ARTICLE5" msprop:Generator_UserColumnName="CB_ARTICLE5" msprop:Generator_ColumnVarNameInTable="columnCB_ARTICLE5" msprop:Generator_ColumnPropNameInRow="CB_ARTICLE5" msprop:Generator_ColumnPropNameInTable="CB_ARTICLE5Column" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DT_ART" msprop:Generator_UserTableName="DT_ART" msprop:Generator_RowDeletedName="DT_ARTRowDeleted" msprop:Generator_RowChangedName="DT_ARTRowChanged" msprop:Generator_RowClassName="DT_ARTRow" msprop:Generator_RowChangingName="DT_ARTRowChanging" msprop:Generator_RowEvArgName="DT_ARTRowChangeEvent" msprop:Generator_RowEvHandlerName="DT_ARTRowChangeEventHandler" msprop:Generator_TableClassName="DT_ARTDataTable" msprop:Generator_TableVarName="tableDT_ART" msprop:Generator_RowDeletingName="DT_ARTRowDeleting" msprop:Generator_TablePropName="DT_ART">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CODE_ARTICLE" msprop:Generator_UserColumnName="CODE_ARTICLE" msprop:Generator_ColumnVarNameInTable="columnCODE_ARTICLE" msprop:Generator_ColumnPropNameInRow="CODE_ARTICLE" msprop:Generator_ColumnPropNameInTable="CODE_ARTICLEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DES_ARTICLE" msprop:Generator_UserColumnName="DES_ARTICLE" msprop:Generator_ColumnVarNameInTable="columnDES_ARTICLE" msprop:Generator_ColumnPropNameInRow="DES_ARTICLE" msprop:Generator_ColumnPropNameInTable="DES_ARTICLEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PRIX_TTC" msprop:Generator_UserColumnName="PRIX_TTC" msprop:Generator_ColumnVarNameInTable="columnPRIX_TTC" msprop:Generator_ColumnPropNameInRow="PRIX_TTC" msprop:Generator_ColumnPropNameInTable="PRIX_TTCColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CB_ARTICLE" msprop:Generator_UserColumnName="CB_ARTICLE" msprop:Generator_ColumnVarNameInTable="columnCB_ARTICLE" msprop:Generator_ColumnPropNameInRow="CB_ARTICLE" msprop:Generator_ColumnPropNameInTable="CB_ARTICLEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="QTE" msprop:Generator_UserColumnName="QTE" msprop:Generator_ColumnVarNameInTable="columnQTE" msprop:Generator_ColumnPropNameInRow="QTE" msprop:Generator_ColumnPropNameInTable="QTEColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CB4" msprop:Generator_UserTableName="CB4" msprop:Generator_RowDeletedName="CB4RowDeleted" msprop:Generator_TableClassName="CB4DataTable" msprop:Generator_RowChangedName="CB4RowChanged" msprop:Generator_RowClassName="CB4Row" msprop:Generator_RowChangingName="CB4RowChanging" msprop:Generator_RowEvArgName="CB4RowChangeEvent" msprop:Generator_RowEvHandlerName="CB4RowChangeEventHandler" msprop:Generator_TablePropName="CB4" msprop:Generator_TableVarName="tableCB4" msprop:Generator_RowDeletingName="CB4RowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CODE_ARTICLE1" msprop:Generator_UserColumnName="CODE_ARTICLE1" msprop:Generator_ColumnPropNameInRow="CODE_ARTICLE1" msprop:Generator_ColumnVarNameInTable="columnCODE_ARTICLE1" msprop:Generator_ColumnPropNameInTable="CODE_ARTICLE1Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DES_ARTICLE1" msprop:Generator_UserColumnName="DES_ARTICLE1" msprop:Generator_ColumnPropNameInRow="DES_ARTICLE1" msprop:Generator_ColumnVarNameInTable="columnDES_ARTICLE1" msprop:Generator_ColumnPropNameInTable="DES_ARTICLE1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="PRIX_TTC1" msprop:Generator_UserColumnName="PRIX_TTC1" msprop:Generator_ColumnPropNameInRow="PRIX_TTC1" msprop:Generator_ColumnVarNameInTable="columnPRIX_TTC1" msprop:Generator_ColumnPropNameInTable="PRIX_TTC1Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CB_ARTICLE1" msprop:Generator_UserColumnName="CB_ARTICLE1" msprop:Generator_ColumnPropNameInRow="CB_ARTICLE1" msprop:Generator_ColumnVarNameInTable="columnCB_ARTICLE1" msprop:Generator_ColumnPropNameInTable="CB_ARTICLE1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="CODE_ARTICLE2" msprop:Generator_UserColumnName="CODE_ARTICLE2" msprop:Generator_ColumnPropNameInRow="CODE_ARTICLE2" msprop:Generator_ColumnVarNameInTable="columnCODE_ARTICLE2" msprop:Generator_ColumnPropNameInTable="CODE_ARTICLE2Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DES_ARTICLE2" msprop:Generator_UserColumnName="DES_ARTICLE2" msprop:Generator_ColumnPropNameInRow="DES_ARTICLE2" msprop:Generator_ColumnVarNameInTable="columnDES_ARTICLE2" msprop:Generator_ColumnPropNameInTable="DES_ARTICLE2Column" type="xs:string" minOccurs="0" />
+              <xs:element name="PRIX_TTC2" msprop:Generator_UserColumnName="PRIX_TTC2" msprop:Generator_ColumnPropNameInRow="PRIX_TTC2" msprop:Generator_ColumnVarNameInTable="columnPRIX_TTC2" msprop:Generator_ColumnPropNameInTable="PRIX_TTC2Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CB_ARTICLE2" msprop:Generator_UserColumnName="CB_ARTICLE2" msprop:Generator_ColumnPropNameInRow="CB_ARTICLE2" msprop:Generator_ColumnVarNameInTable="columnCB_ARTICLE2" msprop:Generator_ColumnPropNameInTable="CB_ARTICLE2Column" type="xs:string" minOccurs="0" />
+              <xs:element name="CODE_ARTICLE3" msprop:Generator_UserColumnName="CODE_ARTICLE3" msprop:Generator_ColumnPropNameInRow="CODE_ARTICLE3" msprop:Generator_ColumnVarNameInTable="columnCODE_ARTICLE3" msprop:Generator_ColumnPropNameInTable="CODE_ARTICLE3Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DES_ARTICLE3" msprop:Generator_UserColumnName="DES_ARTICLE3" msprop:Generator_ColumnPropNameInRow="DES_ARTICLE3" msprop:Generator_ColumnVarNameInTable="columnDES_ARTICLE3" msprop:Generator_ColumnPropNameInTable="DES_ARTICLE3Column" type="xs:string" minOccurs="0" />
+              <xs:element name="PRIX_TTC3" msprop:Generator_UserColumnName="PRIX_TTC3" msprop:Generator_ColumnPropNameInRow="PRIX_TTC3" msprop:Generator_ColumnVarNameInTable="columnPRIX_TTC3" msprop:Generator_ColumnPropNameInTable="PRIX_TTC3Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CB_ARTICLE3" msprop:Generator_UserColumnName="CB_ARTICLE3" msprop:Generator_ColumnPropNameInRow="CB_ARTICLE3" msprop:Generator_ColumnVarNameInTable="columnCB_ARTICLE3" msprop:Generator_ColumnPropNameInTable="CB_ARTICLE3Column" type="xs:string" minOccurs="0" />
+              <xs:element name="CODE_ARTICLE4" msprop:Generator_UserColumnName="CODE_ARTICLE4" msprop:Generator_ColumnPropNameInRow="CODE_ARTICLE4" msprop:Generator_ColumnVarNameInTable="columnCODE_ARTICLE4" msprop:Generator_ColumnPropNameInTable="CODE_ARTICLE4Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DES_ARTICLE4" msprop:Generator_UserColumnName="DES_ARTICLE4" msprop:Generator_ColumnPropNameInRow="DES_ARTICLE4" msprop:Generator_ColumnVarNameInTable="columnDES_ARTICLE4" msprop:Generator_ColumnPropNameInTable="DES_ARTICLE4Column" type="xs:string" minOccurs="0" />
+              <xs:element name="PRIX_TTC4" msprop:Generator_UserColumnName="PRIX_TTC4" msprop:Generator_ColumnPropNameInRow="PRIX_TTC4" msprop:Generator_ColumnVarNameInTable="columnPRIX_TTC4" msprop:Generator_ColumnPropNameInTable="PRIX_TTC4Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CB_ARTICLE4" msprop:Generator_UserColumnName="CB_ARTICLE4" msprop:Generator_ColumnPropNameInRow="CB_ARTICLE4" msprop:Generator_ColumnVarNameInTable="columnCB_ARTICLE4" msprop:Generator_ColumnPropNameInTable="CB_ARTICLE4Column" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CB1" msprop:Generator_UserTableName="CB1" msprop:Generator_RowDeletedName="CB1RowDeleted" msprop:Generator_TableClassName="CB1DataTable" msprop:Generator_RowChangedName="CB1RowChanged" msprop:Generator_RowClassName="CB1Row" msprop:Generator_RowChangingName="CB1RowChanging" msprop:Generator_RowEvArgName="CB1RowChangeEvent" msprop:Generator_RowEvHandlerName="CB1RowChangeEventHandler" msprop:Generator_TablePropName="CB1" msprop:Generator_TableVarName="tableCB1" msprop:Generator_RowDeletingName="CB1RowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CODE_ARTICLE1" msprop:Generator_UserColumnName="CODE_ARTICLE1" msprop:Generator_ColumnPropNameInRow="CODE_ARTICLE1" msprop:Generator_ColumnVarNameInTable="columnCODE_ARTICLE1" msprop:Generator_ColumnPropNameInTable="CODE_ARTICLE1Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DES_ARTICLE1" msprop:Generator_UserColumnName="DES_ARTICLE1" msprop:Generator_ColumnPropNameInRow="DES_ARTICLE1" msprop:Generator_ColumnVarNameInTable="columnDES_ARTICLE1" msprop:Generator_ColumnPropNameInTable="DES_ARTICLE1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="PRIX_TTC1" msprop:Generator_UserColumnName="PRIX_TTC1" msprop:Generator_ColumnPropNameInRow="PRIX_TTC1" msprop:Generator_ColumnVarNameInTable="columnPRIX_TTC1" msprop:Generator_ColumnPropNameInTable="PRIX_TTC1Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CB_ARTICLE1" msprop:Generator_UserColumnName="CB_ARTICLE1" msprop:Generator_ColumnPropNameInRow="CB_ARTICLE1" msprop:Generator_ColumnVarNameInTable="columnCB_ARTICLE1" msprop:Generator_ColumnPropNameInTable="CB_ARTICLE1Column" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

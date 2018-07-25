@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://192.168.1.213:10001/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://192.168.1.213:10001/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://192.168.1.213:10001/">
+      <s:element name="Connection">
+        <s:complexType />
+      </s:element>
+      <s:element name="ConnectionResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="close">
+        <s:complexType />
+      </s:element>
+      <s:element name="closeResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getDateS">
+        <s:complexType />
+      </s:element>
+      <s:element name="getDateSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getDateSResult" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getListeMarque">
+        <s:complexType />
+      </s:element>
+      <s:element name="getListeMarqueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getListeMarqueResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="loadMarque">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CODE_MARQUE" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="loadMarqueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loadMarqueResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertMarque">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="REF_MARQUE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DESIGNATION_MARQUE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DESCRIPTION_MARQUE" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertMarqueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="insertMarqueResult" type="tns:RESULT_QUERY" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="RESULT_QUERY">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CODE" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="OK" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="MESSAGE" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="updateMarque">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CODE_MARQUE" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="DESIGNATION_MARQUE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DESCRIPTION_MARQUE" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateMarqueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="updateMarqueResult" type="tns:RESULT_QUERY" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteMarque">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CODE_MARQUE" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteMarqueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="deleteMarqueResult" type="tns:RESULT_QUERY" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ConnectionSoapIn">
+    <wsdl:part name="parameters" element="tns:Connection" />
+  </wsdl:message>
+  <wsdl:message name="ConnectionSoapOut">
+    <wsdl:part name="parameters" element="tns:ConnectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="closeSoapIn">
+    <wsdl:part name="parameters" element="tns:close" />
+  </wsdl:message>
+  <wsdl:message name="closeSoapOut">
+    <wsdl:part name="parameters" element="tns:closeResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDateSSoapIn">
+    <wsdl:part name="parameters" element="tns:getDateS" />
+  </wsdl:message>
+  <wsdl:message name="getDateSSoapOut">
+    <wsdl:part name="parameters" element="tns:getDateSResponse" />
+  </wsdl:message>
+  <wsdl:message name="getListeMarqueSoapIn">
+    <wsdl:part name="parameters" element="tns:getListeMarque" />
+  </wsdl:message>
+  <wsdl:message name="getListeMarqueSoapOut">
+    <wsdl:part name="parameters" element="tns:getListeMarqueResponse" />
+  </wsdl:message>
+  <wsdl:message name="loadMarqueSoapIn">
+    <wsdl:part name="parameters" element="tns:loadMarque" />
+  </wsdl:message>
+  <wsdl:message name="loadMarqueSoapOut">
+    <wsdl:part name="parameters" element="tns:loadMarqueResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertMarqueSoapIn">
+    <wsdl:part name="parameters" element="tns:insertMarque" />
+  </wsdl:message>
+  <wsdl:message name="insertMarqueSoapOut">
+    <wsdl:part name="parameters" element="tns:insertMarqueResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateMarqueSoapIn">
+    <wsdl:part name="parameters" element="tns:updateMarque" />
+  </wsdl:message>
+  <wsdl:message name="updateMarqueSoapOut">
+    <wsdl:part name="parameters" element="tns:updateMarqueResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteMarqueSoapIn">
+    <wsdl:part name="parameters" element="tns:deleteMarque" />
+  </wsdl:message>
+  <wsdl:message name="deleteMarqueSoapOut">
+    <wsdl:part name="parameters" element="tns:deleteMarqueResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CHM_MARQUESoap">
+    <wsdl:operation name="Connection">
+      <wsdl:input message="tns:ConnectionSoapIn" />
+      <wsdl:output message="tns:ConnectionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="close">
+      <wsdl:input message="tns:closeSoapIn" />
+      <wsdl:output message="tns:closeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getDateS">
+      <wsdl:input message="tns:getDateSSoapIn" />
+      <wsdl:output message="tns:getDateSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getListeMarque">
+      <wsdl:input message="tns:getListeMarqueSoapIn" />
+      <wsdl:output message="tns:getListeMarqueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="loadMarque">
+      <wsdl:input message="tns:loadMarqueSoapIn" />
+      <wsdl:output message="tns:loadMarqueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insertMarque">
+      <wsdl:input message="tns:insertMarqueSoapIn" />
+      <wsdl:output message="tns:insertMarqueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateMarque">
+      <wsdl:input message="tns:updateMarqueSoapIn" />
+      <wsdl:output message="tns:updateMarqueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteMarque">
+      <wsdl:input message="tns:deleteMarqueSoapIn" />
+      <wsdl:output message="tns:deleteMarqueSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CHM_MARQUESoap" type="tns:CHM_MARQUESoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Connection">
+      <soap:operation soapAction="http://192.168.1.213:10001/Connection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="close">
+      <soap:operation soapAction="http://192.168.1.213:10001/close" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDateS">
+      <soap:operation soapAction="http://192.168.1.213:10001/getDateS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListeMarque">
+      <soap:operation soapAction="http://192.168.1.213:10001/getListeMarque" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loadMarque">
+      <soap:operation soapAction="http://192.168.1.213:10001/loadMarque" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertMarque">
+      <soap:operation soapAction="http://192.168.1.213:10001/insertMarque" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateMarque">
+      <soap:operation soapAction="http://192.168.1.213:10001/updateMarque" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteMarque">
+      <soap:operation soapAction="http://192.168.1.213:10001/deleteMarque" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CHM_MARQUESoap12" type="tns:CHM_MARQUESoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Connection">
+      <soap12:operation soapAction="http://192.168.1.213:10001/Connection" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="close">
+      <soap12:operation soapAction="http://192.168.1.213:10001/close" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDateS">
+      <soap12:operation soapAction="http://192.168.1.213:10001/getDateS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListeMarque">
+      <soap12:operation soapAction="http://192.168.1.213:10001/getListeMarque" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loadMarque">
+      <soap12:operation soapAction="http://192.168.1.213:10001/loadMarque" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertMarque">
+      <soap12:operation soapAction="http://192.168.1.213:10001/insertMarque" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateMarque">
+      <soap12:operation soapAction="http://192.168.1.213:10001/updateMarque" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteMarque">
+      <soap12:operation soapAction="http://192.168.1.213:10001/deleteMarque" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CHM_MARQUE">
+    <wsdl:port name="CHM_MARQUESoap" binding="tns:CHM_MARQUESoap">
+      <soap:address location="http://localhost:10001/CHM_MARQUE.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CHM_MARQUESoap12" binding="tns:CHM_MARQUESoap12">
+      <soap12:address location="http://localhost:10001/CHM_MARQUE.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

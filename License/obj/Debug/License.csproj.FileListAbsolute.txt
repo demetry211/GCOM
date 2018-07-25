@@ -1,0 +1,29 @@
+F:\Mon travail\ANNAJMA\CHM_GESTION_COMERCIALE FR 2008\License\bin\Debug\License.dll
+F:\Mon travail\ANNAJMA\CHM_GESTION_COMERCIALE FR 2008\License\bin\Debug\License.pdb
+F:\Mon travail\ANNAJMA\CHM_GESTION_COMERCIALE FR 2008\License\obj\Debug\ResolveAssemblyReference.cache
+F:\Mon travail\ANNAJMA\CHM_GESTION_COMERCIALE FR 2008\License\obj\Debug\License.dll
+F:\Mon travail\ANNAJMA\CHM_GESTION_COMERCIALE FR 2008\License\obj\Debug\License.pdb
+F:\Mon travail\2S2E\CHM_GESTION_COMERCIALE FR 2008\License\bin\Debug\License.dll
+F:\Mon travail\2S2E\CHM_GESTION_COMERCIALE FR 2008\License\bin\Debug\License.pdb
+F:\Mon travail\2S2E\CHM_GESTION_COMERCIALE FR 2008\License\obj\Debug\ResolveAssemblyReference.cache
+F:\Mon travail\2S2E\CHM_GESTION_COMERCIALE FR 2008\License\obj\Debug\License.dll
+F:\Mon travail\2S2E\CHM_GESTION_COMERCIALE FR 2008\License\obj\Debug\License.pdb
+D:\Mon travail\2S2E\CHM_GESTION_COMERCIALE FR 2008\License\bin\Debug\License.dll
+D:\Mon travail\2S2E\CHM_GESTION_COMERCIALE FR 2008\License\bin\Debug\License.pdb
+D:\Mon travail\2S2E\CHM_GESTION_COMERCIALE FR 2008\License\obj\Debug\ResolveAssemblyReference.cache
+D:\Mon travail\2S2E\CHM_GESTION_COMERCIALE FR 2008\License\obj\Debug\License.dll
+D:\Mon travail\2S2E\CHM_GESTION_COMERCIALE FR 2008\License\obj\Debug\License.pdb
+E:\Mon travail\2S2E\CHM_GESTION_COMERCIALE FR 2008\License\bin\Debug\License.dll
+E:\Mon travail\2S2E\CHM_GESTION_COMERCIALE FR 2008\License\bin\Debug\License.pdb
+E:\Mon travail\2S2E\CHM_GESTION_COMERCIALE FR 2008\License\obj\Debug\ResolveAssemblyReference.cache
+E:\Mon travail\2S2E\CHM_GESTION_COMERCIALE FR 2008\License\obj\Debug\License.dll
+E:\Mon travail\2S2E\CHM_GESTION_COMERCIALE FR 2008\License\obj\Debug\License.pdb
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2008\License\bin\Debug\License.dll
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2008\License\bin\Debug\License.pdb
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2008\License\obj\Debug\ResolveAssemblyReference.cache
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2008\License\obj\Debug\License.dll
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2008\License\obj\Debug\License.pdb
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2015\License\bin\Debug\License.dll
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2015\License\bin\Debug\License.pdb
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2015\License\obj\Debug\License.dll
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2015\License\obj\Debug\License.pdb

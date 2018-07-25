@@ -1,0 +1,54 @@
+<publishData>
+  <publishTarget publishUrl="C:\WebSite\">
+    <file relUrl="Config.xml" publishTime="05/27/2012 12:17:45" />
+    <file relUrl="bin/Connection.dll" publishTime="05/18/2012 17:02:39" />
+    <file relUrl="bin/Connection.pdb" publishTime="05/18/2012 17:02:39" />
+    <file relUrl="Service1.asmx" publishTime="02/07/2011 09:04:16" />
+    <file relUrl="Web.config" publishTime="02/07/2011 09:39:58" />
+  </publishTarget>
+  <publishTarget publishUrl="\\192.168.0.70\ConnectionBase\">
+    <file relUrl="Config.xml" publishTime="02/18/2011 15:32:32" />
+    <file relUrl="bin/Connection.dll" publishTime="02/19/2011 13:00:38" />
+    <file relUrl="bin/Connection.pdb" publishTime="02/19/2011 13:00:38" />
+    <file relUrl="Service1.asmx" publishTime="02/07/2011 09:04:16" />
+    <file relUrl="Web.config" publishTime="02/07/2011 09:39:58" />
+  </publishTarget>
+  <publishTarget publishUrl="http://192.168.0.200/ConnectionBaseDonnee/">
+    <file relUrl="bin/Connection.pdb" publishTime="02/18/2011 15:32:46" />
+    <file relUrl="Connection.csproj" publishTime="02/18/2011 15:32:33" />
+    <file relUrl="bin/Connection.dll" publishTime="02/18/2011 15:32:46" />
+    <file relUrl="Mvto.cs" publishTime="02/18/2011 09:37:05" />
+    <file relUrl="Service1.asmx.cs" publishTime="02/18/2011 15:26:09" />
+    <file relUrl="CMDCUISINE.cs" publishTime="02/18/2011 10:53:46" />
+    <file relUrl="Web.config" publishTime="02/07/2011 09:39:58" />
+    <file relUrl="CMDCUISINE.rpt" publishTime="02/18/2011 10:53:46" />
+    <file relUrl="Connection.csproj.user" publishTime="02/18/2011 15:32:33" />
+    <file relUrl="Config.xml" publishTime="02/18/2011 15:32:32" />
+    <file relUrl="ConnexionSQL.cs" publishTime="02/07/2011 09:38:25" />
+    <file relUrl="Connexion.cs" publishTime="02/07/2011 09:35:45" />
+    <file relUrl="CnxBase.cs" publishTime="02/09/2011 15:25:48" />
+    <file relUrl="Service1.asmx" publishTime="02/07/2011 09:04:16" />
+    <file relUrl="Properties/AssemblyInfo.cs" publishTime="02/07/2011 09:04:18" />
+  </publishTarget>
+  <publishTarget publishUrl="http://localhost/connectionWeb/">
+    <file relUrl="bin/Connection.pdb" publishTime="02/07/2011 11:23:55" />
+    <file relUrl="Connection.csproj" publishTime="02/07/2011 10:37:13" />
+    <file relUrl="bin/Connection.dll" publishTime="02/07/2011 11:23:55" />
+    <file relUrl="Web.config" publishTime="02/07/2011 09:39:58" />
+    <file relUrl="Connection.Publish.xml" publishTime="02/07/2011 11:11:51" />
+    <file relUrl="Service1.asmx.cs" publishTime="02/07/2011 11:23:54" />
+    <file relUrl="Connection.csproj.user" publishTime="02/07/2011 10:37:13" />
+    <file relUrl="Config.xml" publishTime="10/04/2010 10:43:43" />
+    <file relUrl="ConnexionSQL.cs" publishTime="02/07/2011 09:38:25" />
+    <file relUrl="Connexion.cs" publishTime="02/07/2011 09:35:45" />
+    <file relUrl="CnxBase.cs" publishTime="02/07/2011 10:03:40" />
+    <file relUrl="Service1.asmx" publishTime="02/07/2011 09:04:16" />
+    <file relUrl="Properties/AssemblyInfo.cs" publishTime="02/07/2011 09:04:18" />
+  </publishTarget>
+  <publishTarget publishUrl="http://localhost/ConnectionBaseDonnee/">
+    <file relUrl="bin/Connection.dll" publishTime="02/07/2011 09:12:26" />
+    <file relUrl="bin/Connection.pdb" publishTime="02/07/2011 09:12:26" />
+    <file relUrl="Service1.asmx" publishTime="02/07/2011 09:04:16" />
+    <file relUrl="Web.config" publishTime="02/07/2011 09:04:17" />
+  </publishTarget>
+</publishData>

@@ -1,0 +1,5 @@
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2015\CHM_GESTION_COMERCIALE FR\GCOM.Services\bin\Debug\GCOM.Services.dll
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2015\CHM_GESTION_COMERCIALE FR\GCOM.Services\bin\Debug\GCOM.Services.pdb
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2015\CHM_GESTION_COMERCIALE FR\GCOM.Services\obj\Debug\GCOM.Services.csprojResolveAssemblyReference.cache
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2015\CHM_GESTION_COMERCIALE FR\GCOM.Services\obj\Debug\GCOM.Services.dll
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2015\CHM_GESTION_COMERCIALE FR\GCOM.Services\obj\Debug\GCOM.Services.pdb

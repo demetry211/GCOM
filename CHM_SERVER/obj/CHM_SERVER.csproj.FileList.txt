@@ -1,0 +1,11 @@
+bin\Debug\GESTION_COMMERCIALE.mdf
+bin\Debug\GESTION_COMMERCIALE_log.ldf
+bin\Debug\CHM_SERVER.exe.config
+bin\Debug\CHM_SERVER.exe
+bin\Debug\CHM_SERVER.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\CHM_SERVER.Form1.resources
+obj\Debug\CHM_SERVER.Properties.Resources.resources
+obj\Debug\CHM_SERVER.csproj.GenerateResource.Cache
+obj\Debug\CHM_SERVER.exe
+obj\Debug\CHM_SERVER.pdb

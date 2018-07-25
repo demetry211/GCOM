@@ -1,0 +1,9 @@
+<Configurations>
+  <Configuration id="GC">
+    <Server>dell-pc\chm</Server>
+    <DB>GC_GOUIRI</DB>
+    <User>sa</User>
+    <Pwd>123</Pwd>
+    <pwd_admin>demetry211</pwd_admin>
+  </Configuration>
+</Configurations>

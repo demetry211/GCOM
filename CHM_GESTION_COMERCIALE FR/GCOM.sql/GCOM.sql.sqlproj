@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>GCOM.sql</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{abe03892-a97a-44ed-a507-23706147f20d}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>GCOM.sql</RootNamespace>
+    <AssemblyName>GCOM.sql</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Views\" />
+    <Folder Include="Security\" />
+    <Folder Include="dbo\Stored Procedures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\VEHICULE.sql" />
+    <Build Include="dbo\Tables\UTILISATEUR.sql" />
+    <Build Include="dbo\Tables\UNITE.sql" />
+    <Build Include="dbo\Tables\TVA.sql" />
+    <Build Include="dbo\Tables\TRACE_LG_BR_FR.sql" />
+    <Build Include="dbo\Tables\TRACE_BON_RECEP_FOURNISSEUR.sql" />
+    <Build Include="dbo\Tables\TICKET_CAISSE.sql" />
+    <Build Include="dbo\Tables\TARIF_VENTE.sql" />
+    <Build Include="dbo\Tables\STOCK.sql" />
+    <Build Include="dbo\Tables\SOCIETE.sql" />
+    <Build Include="dbo\Tables\REGLEMENT_CLIENT.sql" />
+    <Build Include="dbo\Tables\PRIVILEGE_UTILISATEUR.sql" />
+    <Build Include="dbo\Tables\MENU.sql" />
+    <Build Include="dbo\Tables\MARQUE.sql" />
+    <Build Include="dbo\Tables\MAGAZIN.sql" />
+    <Build Include="dbo\Tables\LIVRAISON.sql" />
+    <Build Include="dbo\Tables\LIGNE_INVENTAIRE.sql" />
+    <Build Include="dbo\Tables\LIGNE_FACTURE.sql" />
+    <Build Include="dbo\Tables\LIGNE_COMMANDE.sql" />
+    <Build Include="dbo\Tables\LIGNE_BRETOUR_CLIENT.sql" />
+    <Build Include="dbo\Tables\LG_TC.sql" />
+    <Build Include="dbo\Tables\LG_FI.sql" />
+    <Build Include="dbo\Tables\LG_FACT_FR.sql" />
+    <Build Include="dbo\Tables\LG_DC.sql" />
+    <Build Include="dbo\Tables\LG_CMD_FR.sql" />
+    <Build Include="dbo\Tables\LG_BR_FR.sql" />
+    <Build Include="dbo\Tables\LG_BON_LIVRAISON.sql" />
+    <Build Include="dbo\Tables\INVENTAIRE.sql" />
+    <Build Include="dbo\Tables\hbs_unite.sql" />
+    <Build Include="dbo\Tables\FOURNISSEUR.sql" />
+    <Build Include="dbo\Tables\FONCTION_UTILISATEUR.sql" />
+    <Build Include="dbo\Tables\FICHE_INTERVENTION.sql" />
+    <Build Include="dbo\Tables\FAMILLE.sql" />
+    <Build Include="dbo\Tables\FAM_COMPTA.sql" />
+    <Build Include="dbo\Tables\FACTURE_FOURNISSEUR.sql" />
+    <Build Include="dbo\Tables\FACTURE.sql" />
+    <Build Include="dbo\Tables\FACTURATION_FOURNISSEUR.sql" />
+    <Build Include="dbo\Tables\FACTURATION.sql" />
+    <Build Include="dbo\Tables\EQUIPEMENT.sql" />
+    <Build Include="dbo\Tables\EMPLOYE.sql" />
+    <Build Include="dbo\Tables\DEVIS_CLIENT.sql" />
+    <Build Include="dbo\Tables\CONNECTED_MACHINES.sql" />
+    <Build Include="dbo\Tables\COMPTE_CLIENT.sql" />
+    <Build Include="dbo\Tables\COMMANDE_FOURNISSEUR.sql" />
+    <Build Include="dbo\Tables\COMMANDE.sql" />
+    <Build Include="dbo\Tables\codes.sql" />
+    <Build Include="dbo\Tables\CLIENTS_.sql" />
+    <Build Include="dbo\Tables\CLIENT.sql" />
+    <Build Include="dbo\Tables\CATEGORIE.sql" />
+    <Build Include="dbo\Tables\BON_RETOUR_CLIENT.sql" />
+    <Build Include="dbo\Tables\BON_RECEP_FOURNISSEUR.sql" />
+    <Build Include="dbo\Tables\BON_DE_LIVRAISON.sql" />
+    <Build Include="dbo\Tables\ATTACHE_BR_CMD_FR.sql" />
+    <Build Include="dbo\Tables\ARTICLE.sql" />
+    <Build Include="dbo\Tables\ACCES_MENU.sql" />
+    <Build Include="dbo\Views\VLG_BR_FR_SANS_FACT.sql" />
+    <Build Include="dbo\Views\V_TC.sql" />
+    <Build Include="dbo\Views\V_REG_CLIENT.sql" />
+    <Build Include="dbo\Views\V_PIECE_CLIENT_SANS_FACTURE.sql" />
+    <Build Include="dbo\Views\V_PIECE_ATTENTE_CLIENT.sql" />
+    <Build Include="dbo\Views\V_LIVRAISON_CMD_ACHAT.sql" />
+    <Build Include="dbo\Views\V_LG_FACT_FR.sql" />
+    <Build Include="dbo\Views\V_LG_DC.sql" />
+    <Build Include="dbo\Views\V_LG_CMD_FR.sql" />
+    <Build Include="dbo\Views\V_LG_BR_FR_SANS_FACT.sql" />
+    <Build Include="dbo\Views\V_FI_EQP.sql" />
+    <Build Include="dbo\Views\V_FACTURE_FOURNISSEUR.sql" />
+    <Build Include="dbo\Views\V_EQUIPEMENT.sql" />
+    <Build Include="dbo\Views\V_ENCOURS_VENTE.sql" />
+    <Build Include="dbo\Views\V_DC.sql" />
+    <Build Include="dbo\Views\V_CMD_FR.sql" />
+    <Build Include="dbo\Views\V_ARTICLE_POS.sql" />
+    <Build Include="dbo\Views\V_ARTICLE.sql" />
+    <Build Include="dbo\Stored Procedures\GetAllTableSizes.sql" />
+  </ItemGroup>
+</Project>

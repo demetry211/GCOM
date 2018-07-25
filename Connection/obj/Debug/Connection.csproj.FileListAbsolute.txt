@@ -1,0 +1,131 @@
+D:\Travail Med\WebService\Connection\Connection\bin\Connection.dll
+D:\Travail Med\WebService\Connection\Connection\bin\Connection.pdb
+D:\Travail Med\WebService\Connection\Connection\obj\Debug\ResolveAssemblyReference.cache
+D:\Travail Med\WebService\Connection\Connection\obj\Debug\Connection.dll
+D:\Travail Med\WebService\Connection\Connection\obj\Debug\Connection.pdb
+F:\PDA ARABE\WebService\Connection\Connection\bin\Connection.dll
+F:\PDA ARABE\WebService\Connection\Connection\bin\Connection.pdb
+F:\PDA ARABE\WebService\Connection\Connection\obj\Debug\ResolveAssemblyReference.cache
+F:\PDA ARABE\WebService\Connection\Connection\obj\Debug\Connection.dll
+F:\PDA ARABE\WebService\Connection\Connection\obj\Debug\Connection.pdb
+\\tsclient\I\Travail\PV+webservice\WebService\Connection\Connection\bin\Connection.dll
+\\tsclient\I\Travail\PV+webservice\WebService\Connection\Connection\bin\Connection.pdb
+\\tsclient\I\Travail\PV+webservice\WebService\Connection\Connection\obj\Debug\ResolveAssemblyReference.cache
+\\tsclient\I\Travail\PV+webservice\WebService\Connection\Connection\obj\Debug\Connection.dll
+\\tsclient\I\Travail\PV+webservice\WebService\Connection\Connection\obj\Debug\Connection.pdb
+I:\Travail\PV+webservice\WebService\Connection\Connection\bin\Connection.dll
+I:\Travail\PV+webservice\WebService\Connection\Connection\bin\Connection.pdb
+I:\Travail\PV+webservice\WebService\Connection\Connection\obj\Debug\ResolveAssemblyReference.cache
+I:\Travail\PV+webservice\WebService\Connection\Connection\obj\Debug\Connection.dll
+I:\Travail\PV+webservice\WebService\Connection\Connection\obj\Debug\Connection.pdb
+\\tsclient\D\Travail\PV+webservice\WebService\Connection\Connection\bin\Connection.dll
+\\tsclient\D\Travail\PV+webservice\WebService\Connection\Connection\bin\Connection.pdb
+\\tsclient\D\Travail\PV+webservice\WebService\Connection\Connection\obj\Debug\ResolveAssemblyReference.cache
+\\tsclient\D\Travail\PV+webservice\WebService\Connection\Connection\obj\Debug\Connection.dll
+\\tsclient\D\Travail\PV+webservice\WebService\Connection\Connection\obj\Debug\Connection.pdb
+D:\Travail\Connection\Connection\bin\Connection.dll
+D:\Travail\Connection\Connection\bin\Connection.pdb
+D:\Travail\Connection\Connection\obj\Debug\ResolveAssemblyReference.cache
+D:\Travail\Connection\Connection\obj\Debug\Connection.dll
+D:\Travail\Connection\Connection\obj\Debug\Connection.pdb
+C:\Travail\Connection\Connection\bin\Connection.dll
+C:\Travail\Connection\Connection\bin\Connection.pdb
+C:\Travail\Connection\Connection\obj\Debug\ResolveAssemblyReference.cache
+C:\Travail\Connection\Connection\obj\Debug\Connection.dll
+C:\Travail\Connection\Connection\obj\Debug\Connection.pdb
+C:\Users\MOHAMED\Desktop\Connection\Connection\Connection\bin\Connection.dll
+C:\Users\MOHAMED\Desktop\Connection\Connection\Connection\bin\Connection.pdb
+C:\Users\MOHAMED\Desktop\Connection\Connection\Connection\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\MOHAMED\Desktop\Connection\Connection\Connection\obj\Debug\Connection.dll
+C:\Users\MOHAMED\Desktop\Connection\Connection\Connection\obj\Debug\Connection.pdb
+\\192.168.0.165\e\Source\Lybie\Benghazi\Connection\Connection\bin\Connection.dll
+\\192.168.0.165\e\Source\Lybie\Benghazi\Connection\Connection\bin\Connection.pdb
+\\192.168.0.165\e\Source\Lybie\Benghazi\Connection\Connection\obj\Debug\ResolveAssemblyReference.cache
+\\192.168.0.165\e\Source\Lybie\Benghazi\Connection\Connection\obj\Debug\Connection.dll
+\\192.168.0.165\e\Source\Lybie\Benghazi\Connection\Connection\obj\Debug\Connection.pdb
+\\192.168.0.165\e\Source\Commerciale\PV Libya\Connection SERVICE\bin\Connection.dll
+\\192.168.0.165\e\Source\Commerciale\PV Libya\Connection SERVICE\bin\Connection.pdb
+\\192.168.0.165\e\Source\Commerciale\PV Libya\Connection SERVICE\obj\Debug\ResolveAssemblyReference.cache
+\\192.168.0.165\e\Source\Commerciale\PV Libya\Connection SERVICE\obj\Debug\Connection.dll
+\\192.168.0.165\e\Source\Commerciale\PV Libya\Connection SERVICE\obj\Debug\Connection.pdb
+D:\Source Codes\WANASSA\Point de vente arabisee\Connection SERVICE\bin\Connection.dll
+D:\Source Codes\WANASSA\Point de vente arabisee\Connection SERVICE\bin\Connection.pdb
+D:\Source Codes\WANASSA\Point de vente arabisee\Connection SERVICE\obj\Debug\ResolveAssemblyReference.cache
+D:\Source Codes\WANASSA\Point de vente arabisee\Connection SERVICE\obj\Debug\Connection.dll
+D:\Source Codes\WANASSA\Point de vente arabisee\Connection SERVICE\obj\Debug\Connection.pdb
+C:\Connection\bin\Connection.dll
+C:\Connection\bin\Connection.pdb
+C:\Connection\obj\Debug\ResolveAssemblyReference.cache
+C:\Connection\obj\Debug\Connection.dll
+C:\Connection\obj\Debug\Connection.pdb
+D:\Source Codes\WANASSA\android\Connection\bin\Connection.dll
+D:\Source Codes\WANASSA\android\Connection\bin\Connection.pdb
+D:\Source Codes\WANASSA\android\Connection\obj\Debug\ResolveAssemblyReference.cache
+D:\Source Codes\WANASSA\android\Connection\obj\Debug\Connection.dll
+D:\Source Codes\WANASSA\android\Connection\obj\Debug\Connection.pdb
+C:\Users\dell\Documents\Visual Studio 2005\Projects\GCM\Connection\bin\Connection.dll
+C:\Users\dell\Documents\Visual Studio 2005\Projects\GCM\Connection\bin\Connection.pdb
+C:\Users\dell\Documents\Visual Studio 2005\Projects\GCM\Connection\bin\GCMDC.dll
+C:\Users\dell\Documents\Visual Studio 2005\Projects\GCM\Connection\bin\GCMDC.pdb
+C:\Users\dell\Documents\Visual Studio 2005\Projects\GCM\Connection\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\dell\Documents\Visual Studio 2005\Projects\GCM\Connection\obj\Debug\Connection.dll
+C:\Users\dell\Documents\Visual Studio 2005\Projects\GCM\Connection\obj\Debug\Connection.pdb
+D:\Mohamed\Mon travail\CHM_GESTION_COMERCIALE FR\Connection\bin\Connection.dll
+D:\Mohamed\Mon travail\CHM_GESTION_COMERCIALE FR\Connection\bin\Connection.pdb
+D:\Mohamed\Mon travail\CHM_GESTION_COMERCIALE FR\Connection\obj\Debug\ResolveAssemblyReference.cache
+D:\Mohamed\Mon travail\CHM_GESTION_COMERCIALE FR\Connection\obj\Debug\Connection.dll
+D:\Mohamed\Mon travail\CHM_GESTION_COMERCIALE FR\Connection\obj\Debug\Connection.pdb
+D:\Mohamed\Mon travail\ECM\CHM_GESTION_COMERCIALE FR\Connection\obj\Debug\ResolveAssemblyReference.cache
+D:\Mohamed\Mon travail\ECM\CHM_GESTION_COMERCIALE FR\Connection\obj\Debug\Connection.pdb
+D:\Mohamed\Mon travail\ECM\CHM_GESTION_COMERCIALE FR\Connection\bin\Connection.dll
+D:\Mohamed\Mon travail\ECM\CHM_GESTION_COMERCIALE FR\Connection\bin\Connection.pdb
+D:\Mohamed\Mon travail\ECM\CHM_GESTION_COMERCIALE FR\Connection\obj\Debug\Connection.dll
+D:\Mon Dossier\ECM\CHM_GESTION_COMERCIALE FR\Connection\bin\Connection.dll
+D:\Mon Dossier\ECM\CHM_GESTION_COMERCIALE FR\Connection\bin\Connection.pdb
+D:\Mon Dossier\ECM\CHM_GESTION_COMERCIALE FR\Connection\obj\Debug\ResolveAssemblyReference.cache
+D:\Mon Dossier\ECM\CHM_GESTION_COMERCIALE FR\Connection\obj\Debug\Connection.dll
+D:\Mon Dossier\ECM\CHM_GESTION_COMERCIALE FR\Connection\obj\Debug\Connection.pdb
+D:\Mon Dossier\ANNAJMA\CHM_GESTION_COMERCIALE FR\Connection\obj\Debug\ResolveAssemblyReference.cache
+D:\Mon Dossier\ANNAJMA\CHM_GESTION_COMERCIALE FR\Connection\obj\Debug\Connection.pdb
+D:\Mon Dossier\ANNAJMA\CHM_GESTION_COMERCIALE FR\Connection\bin\Connection.dll
+D:\Mon Dossier\ANNAJMA\CHM_GESTION_COMERCIALE FR\Connection\bin\Connection.pdb
+D:\Mon Dossier\ANNAJMA\CHM_GESTION_COMERCIALE FR\Connection\obj\Debug\Connection.dll
+F:\Mon travail\ANNAJMA\CHM_GESTION_COMERCIALE FR 2008\Connection\bin\Connection.dll
+F:\Mon travail\ANNAJMA\CHM_GESTION_COMERCIALE FR 2008\Connection\bin\Connection.pdb
+F:\Mon travail\ANNAJMA\CHM_GESTION_COMERCIALE FR 2008\Connection\obj\Debug\ResolveAssemblyReference.cache
+F:\Mon travail\ANNAJMA\CHM_GESTION_COMERCIALE FR 2008\Connection\obj\Debug\Connection.dll
+F:\Mon travail\ANNAJMA\CHM_GESTION_COMERCIALE FR 2008\Connection\obj\Debug\Connection.pdb
+F:\Mon travail\2S2E\CHM_GESTION_COMERCIALE FR 2008\Connection\bin\Connection.dll
+F:\Mon travail\2S2E\CHM_GESTION_COMERCIALE FR 2008\Connection\bin\Connection.pdb
+F:\Mon travail\2S2E\CHM_GESTION_COMERCIALE FR 2008\Connection\obj\Debug\ResolveAssemblyReference.cache
+F:\Mon travail\2S2E\CHM_GESTION_COMERCIALE FR 2008\Connection\obj\Debug\Connection.dll
+F:\Mon travail\2S2E\CHM_GESTION_COMERCIALE FR 2008\Connection\obj\Debug\Connection.pdb
+D:\Source Codes\2S2E\CHM_GESTION_COMERCIALE FR 2008\Connection\bin\Connection.dll
+D:\Source Codes\2S2E\CHM_GESTION_COMERCIALE FR 2008\Connection\bin\Connection.pdb
+D:\Source Codes\2S2E\CHM_GESTION_COMERCIALE FR 2008\Connection\obj\Debug\ResolveAssemblyReference.cache
+D:\Source Codes\2S2E\CHM_GESTION_COMERCIALE FR 2008\Connection\obj\Debug\Connection.dll
+D:\Source Codes\2S2E\CHM_GESTION_COMERCIALE FR 2008\Connection\obj\Debug\Connection.pdb
+E:\Mon travail\2S2E\CHM_GESTION_COMERCIALE FR 2008\Connection\bin\Connection.dll
+E:\Mon travail\2S2E\CHM_GESTION_COMERCIALE FR 2008\Connection\bin\Connection.pdb
+E:\Mon travail\2S2E\CHM_GESTION_COMERCIALE FR 2008\Connection\obj\Debug\ResolveAssemblyReference.cache
+E:\Mon travail\2S2E\CHM_GESTION_COMERCIALE FR 2008\Connection\obj\Debug\Connection.dll
+E:\Mon travail\2S2E\CHM_GESTION_COMERCIALE FR 2008\Connection\obj\Debug\Connection.pdb
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2008\Connection\bin\Connection.dll
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2008\Connection\bin\Connection.pdb
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2008\Connection\obj\Debug\ResolveAssemblyReference.cache
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2008\Connection\obj\Debug\Connection.dll
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2008\Connection\obj\Debug\Connection.pdb
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2015\Connection\bin\Connection.dll.config
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2015\Connection\bin\Connection.dll
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2015\Connection\bin\Connection.pdb
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2015\Connection\bin\adodb.dll
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2015\Connection\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2015\Connection\bin\CrystalDecisions.ReportSource.dll
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2015\Connection\bin\CrystalDecisions.Shared.dll
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2015\Connection\bin\stdole.dll
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2015\Connection\bin\CrystalDecisions.CrystalReports.Engine.xml
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2015\Connection\bin\CrystalDecisions.ReportSource.xml
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2015\Connection\bin\CrystalDecisions.Shared.xml
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2015\Connection\obj\Debug\Connection.csprojResolveAssemblyReference.cache
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2015\Connection\obj\Debug\Connection.dll
+C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2015\Connection\obj\Debug\Connection.pdb

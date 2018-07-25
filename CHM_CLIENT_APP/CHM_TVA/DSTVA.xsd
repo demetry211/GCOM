@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSTVA" targetNamespace="http://tempuri.org/DSTVA.xsd" xmlns:mstns="http://tempuri.org/DSTVA.xsd" xmlns="http://tempuri.org/DSTVA.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="GCOMConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="GCOMConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CHM_CLIENT_APP.Properties.Settings.GlobalReference.Default.GCOMConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSTVA" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSTVA" msprop:Generator_UserDSName="DSTVA">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TVA" msprop:Generator_TableClassName="TVADataTable" msprop:Generator_TableVarName="tableTVA" msprop:Generator_RowChangedName="TVARowChanged" msprop:Generator_TablePropName="TVA" msprop:Generator_RowDeletingName="TVARowDeleting" msprop:Generator_RowChangingName="TVARowChanging" msprop:Generator_RowEvHandlerName="TVARowChangeEventHandler" msprop:Generator_RowDeletedName="TVARowDeleted" msprop:Generator_RowClassName="TVARow" msprop:Generator_UserTableName="TVA" msprop:Generator_RowEvArgName="TVARowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CODE_TVA" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:Caption="Code" msprop:Generator_ColumnVarNameInTable="columnCODE_TVA" msprop:Generator_ColumnPropNameInRow="CODE_TVA" msprop:Generator_ColumnPropNameInTable="CODE_TVAColumn" msprop:Generator_UserColumnName="CODE_TVA" type="xs:decimal" />
+              <xs:element name="TVA_LIBELLE" msdata:Caption="Libellé" msprop:Generator_ColumnVarNameInTable="columnTVA_LIBELLE" msprop:Generator_ColumnPropNameInRow="TVA_LIBELLE" msprop:Generator_ColumnPropNameInTable="TVA_LIBELLEColumn" msprop:Generator_UserColumnName="TVA_LIBELLE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TAXE" msprop:Generator_TableClassName="TAXEDataTable" msprop:Generator_TableVarName="tableTAXE" msprop:Generator_RowChangedName="TAXERowChanged" msprop:Generator_TablePropName="TAXE" msprop:Generator_RowDeletingName="TAXERowDeleting" msprop:Generator_RowChangingName="TAXERowChanging" msprop:Generator_RowEvHandlerName="TAXERowChangeEventHandler" msprop:Generator_RowDeletedName="TAXERowDeleted" msprop:Generator_RowClassName="TAXERow" msprop:Generator_UserTableName="TAXE" msprop:Generator_RowEvArgName="TAXERowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TAX_ID" msdata:Caption="Id" msprop:Generator_ColumnVarNameInTable="columnTAX_ID" msprop:Generator_ColumnPropNameInRow="TAX_ID" msprop:Generator_ColumnPropNameInTable="TAX_IDColumn" msprop:Generator_UserColumnName="TAX_ID" type="xs:decimal" />
+              <xs:element name="CODE_TVA" msdata:Caption="Code TVA" msprop:Generator_ColumnVarNameInTable="columnCODE_TVA" msprop:Generator_ColumnPropNameInRow="CODE_TVA" msprop:Generator_ColumnPropNameInTable="CODE_TVAColumn" msprop:Generator_UserColumnName="CODE_TVA" type="xs:decimal" />
+              <xs:element name="TAX_LIBELLE" msdata:Caption="Libellé" msprop:Generator_ColumnVarNameInTable="columnTAX_LIBELLE" msprop:Generator_ColumnPropNameInRow="TAX_LIBELLE" msprop:Generator_ColumnPropNameInTable="TAX_LIBELLEColumn" msprop:Generator_UserColumnName="TAX_LIBELLE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TAX_TAUX" msdata:Caption="Taux" msprop:Generator_ColumnVarNameInTable="columnTAX_TAUX" msprop:Generator_ColumnPropNameInRow="TAX_TAUX" msprop:Generator_ColumnPropNameInTable="TAX_TAUXColumn" msprop:Generator_UserColumnName="TAX_TAUX" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TAX_DEB_APPLIC" msdata:Caption="Date Début Application" msprop:Generator_ColumnVarNameInTable="columnTAX_DEB_APPLIC" msprop:Generator_ColumnPropNameInRow="TAX_DEB_APPLIC" msprop:Generator_ColumnPropNameInTable="TAX_DEB_APPLICColumn" msprop:Generator_UserColumnName="TAX_DEB_APPLIC" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TAX_DATE_CREATION" msdata:Caption="Date Création" msprop:Generator_ColumnVarNameInTable="columnTAX_DATE_CREATION" msprop:Generator_ColumnPropNameInRow="TAX_DATE_CREATION" msprop:Generator_ColumnPropNameInTable="TAX_DATE_CREATIONColumn" msprop:Generator_UserColumnName="TAX_DATE_CREATION" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TAX_CREATEUR" msdata:Caption="Créateur" msprop:Generator_ColumnVarNameInTable="columnTAX_CREATEUR" msprop:Generator_ColumnPropNameInRow="TAX_CREATEUR" msprop:Generator_ColumnPropNameInTable="TAX_CREATEURColumn" msprop:Generator_UserColumnName="TAX_CREATEUR" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TAX_DATE_MODIF" msdata:Caption="Date modification" msprop:Generator_ColumnVarNameInTable="columnTAX_DATE_MODIF" msprop:Generator_ColumnPropNameInRow="TAX_DATE_MODIF" msprop:Generator_ColumnPropNameInTable="TAX_DATE_MODIFColumn" msprop:Generator_UserColumnName="TAX_DATE_MODIF" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TAX_MODIFICATEUR" msdata:Caption="Modificateur" msprop:Generator_ColumnVarNameInTable="columnTAX_MODIFICATEUR" msprop:Generator_ColumnPropNameInRow="TAX_MODIFICATEUR" msprop:Generator_ColumnPropNameInTable="TAX_MODIFICATEURColumn" msprop:Generator_UserColumnName="TAX_MODIFICATEUR" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TVA" />
+      <xs:field xpath="mstns:CODE_TVA" />
+    </xs:unique>
+    <xs:unique name="TAXE_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TAXE" />
+      <xs:field xpath="mstns:TAX_ID" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="TVA_TAXE" msdata:parent="TVA" msdata:child="TAXE" msdata:parentkey="CODE_TVA" msdata:childkey="CODE_TVA" msprop:Generator_UserChildTable="TAXE" msprop:Generator_ChildPropName="GetTAXERows" msprop:Generator_UserRelationName="TVA_TAXE" msprop:Generator_RelationVarName="relationTVA_TAXE" msprop:Generator_UserParentTable="TVA" msprop:Generator_ParentPropName="TVARow" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
