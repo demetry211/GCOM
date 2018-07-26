@@ -27,3 +27,9 @@ C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2015\License\bin\De
 C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2015\License\bin\Debug\License.pdb
 C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2015\License\obj\Debug\License.dll
 C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2015\License\obj\Debug\License.pdb
+C:\Users\chake\Source\Repos\GCOM\License\bin\Debug\License.dll
+C:\Users\chake\Source\Repos\GCOM\License\bin\Debug\License.pdb
+C:\Users\chake\Source\Repos\GCOM\License\obj\Debug\License.csprojAssemblyReference.cache
+C:\Users\chake\Source\Repos\GCOM\License\obj\Debug\License.csproj.CoreCompileInputs.cache
+C:\Users\chake\Source\Repos\GCOM\License\obj\Debug\License.dll
+C:\Users\chake\Source\Repos\GCOM\License\obj\Debug\License.pdb

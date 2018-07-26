@@ -26,7 +26,7 @@ namespace CHM_CLIENT_APP
         public static string TicketPrinter = "";
         public static string ReportPrinter = "";
         public static bool entete = false;
-        public static string Prefix = "GC2S2E";
+        public static string Prefix = "GCOM";
 
 
 

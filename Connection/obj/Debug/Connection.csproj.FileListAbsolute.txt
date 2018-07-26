@@ -129,3 +129,19 @@ C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2015\Connection\bin
 C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2015\Connection\obj\Debug\Connection.csprojResolveAssemblyReference.cache
 C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2015\Connection\obj\Debug\Connection.dll
 C:\Program Files\CHM Projects\2S2E\CHM_GESTION_COMERCIALE FR 2015\Connection\obj\Debug\Connection.pdb
+C:\Users\chake\Source\Repos\GCOM\Connection\bin\Connection.dll.config
+C:\Users\chake\Source\Repos\GCOM\Connection\bin\Connection.dll
+C:\Users\chake\Source\Repos\GCOM\Connection\bin\Connection.pdb
+C:\Users\chake\Source\Repos\GCOM\Connection\bin\adodb.dll
+C:\Users\chake\Source\Repos\GCOM\Connection\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\chake\Source\Repos\GCOM\Connection\bin\CrystalDecisions.ReportSource.dll
+C:\Users\chake\Source\Repos\GCOM\Connection\bin\CrystalDecisions.Shared.dll
+C:\Users\chake\Source\Repos\GCOM\Connection\bin\stdole.dll
+C:\Users\chake\Source\Repos\GCOM\Connection\bin\CrystalDecisions.CrystalReports.Engine.xml
+C:\Users\chake\Source\Repos\GCOM\Connection\bin\CrystalDecisions.ReportSource.xml
+C:\Users\chake\Source\Repos\GCOM\Connection\bin\CrystalDecisions.Shared.xml
+C:\Users\chake\Source\Repos\GCOM\Connection\obj\Debug\Connection.csprojAssemblyReference.cache
+C:\Users\chake\Source\Repos\GCOM\Connection\obj\Debug\Connection.csproj.CoreCompileInputs.cache
+C:\Users\chake\Source\Repos\GCOM\Connection\obj\Debug\Connection.csproj.CopyComplete
+C:\Users\chake\Source\Repos\GCOM\Connection\obj\Debug\Connection.dll
+C:\Users\chake\Source\Repos\GCOM\Connection\obj\Debug\Connection.pdb
